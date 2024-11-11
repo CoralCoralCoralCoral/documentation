@@ -14,22 +14,22 @@
 
 ## Backlog
 
--   Setting up documentation format
--   Setting up documentation repository
--   Setting up project management tools
--   Initial customer user story development
--   Development of a prototype
+-   Set up sprint documentation format
+-   Set up documentation repository
+-   Set up sprints and kanban board
+-   Develop initial customer stories
+-   Develop prototype
 
 ### Complete Backlog Tasks
 
--   Setting up documentation format
--   Setting up documentation repository
--   Setting up project management tools
--   Initial customer user story development
+-   Set up sprint documentation format
+-   Set up documentation repository
+-   Set up sprints and kanban board
+-   Develop initial customer stories
 
 ### New Backlog Tasks
 
--   Development of a prototype
+-   Develop prototype
 
 ## Exception Handling
 

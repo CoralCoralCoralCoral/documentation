@@ -1,4 +1,4 @@
-# Sprint 2: 2024-11-6 to 2024-11-12
+# Sprint 4: 2024-11-20 to 2024-11-26
 
 ## Overview
 
@@ -6,17 +6,11 @@
 
 ## Meeting Minutes
 
-### Meeting 1 (2024-11-09, Teams)
+### Meeting 1
 
-### Meeting 2 (2024-11-11, School of Management)
+### Meeting 2
 
 ## Backlog
-
--   Develop prototype
--   Refine user stories
--   Implement basic user interface
--   Implement basic epidemic simulation
--   Implement basic http api server
 
 ### Complete Backlog Tasks
 
