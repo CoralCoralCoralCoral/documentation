@@ -157,7 +157,74 @@ Agenda:
 ## Product Documents
 
 ### Customer Meeting and Analysis
-// todo(segun)
+
+
+Sprint 1 Customer Meeting
+
+Four concepts were pitched to the customer during the meeting. 
+
+1. Factory Simulation: Building a Net Zero Factory
+ 
+ Objective:
+  Develop a simulation game where the player assumes the whole of a factory manager, tasked with the role of building and expanding factory while balancing the growth of the factory with achieving net carbon emission.
+ 
+ Mechanics:
+ . Players make strategic decision in offsetting carbon emissions and implementing green initiatives
+ . Resources include money, political reputations, which can affect decision-making.
+ .The game introduces complexities and consequences to players' choices.
+ .Policies that are green-driven have to be optimized to balance profits and emissions, requring the players to juggle between priorities.
+ 
+ Feedback
+ Customer acknowledged that while the concept was innovative, the scope for complexity is limited. 
+
+
+2. Epidemic Response Simulator
+
+ Objective:
+ Create a real-world simulation game where the players act as public health officials managing an epidemic, using realistic models and interventions to contain the outbreak.
+
+ Mechanics:
+ . Players start with minimal information about the pathogen 
+ . Tools include public health interventions such as mask mandates, area lockdowns or vaccine development.
+ . Introduces randomness to simulate real-world probability
+ . Decisions lead to random outcomes based on demographics, efficacy and public compliance.
+
+ Feedback:
+ Customer agreed that the concept strongly alligns with serious game and might appeal to the intended target audience such as health students and health decision makers. 
+
+3. De-escalation Training Simulator
+
+ Objective:
+ A simulation aimed at training users in de-escalating volatile scenerios, such as handling distressed individuals or angry customers.
+
+ Mechanics:
+ . Sceneario-based interactions where players are prompted to choose multiple dialogues or action to de-escalate situation.
+ .Preamble about what has happened, and player given a brief.
+ . Different scenerios could include customer service challenges in workplace, hospitals, and public events.
+ .potential integration of AI to generate dialogues and responses.
+
+ Feedback:
+ Customer finds it  intriguing than what was attempted last year if there is technical expertise within the group to actualise it. A plethora of materials online also makes it more feasible.
+
+4. Bath Go:
+ Objective:
+ An augumented reality game that combines geo-location with trivia and collectible mechanics, inspired by Pokemon Go.
+
+ Mechanics:
+ .Players explore Bath and its surrounding areas to discover landmarks, restaurants, shops, etc whilst collecting virtual cards.
+ .Cards could include historical, cultural or practical  information about the location.
+ .Gamification elements like completing levels and using collectible cards accrued for competitive play
+
+Feedback:
+ Runs the risk of oversimplification of serious games and might not be otherwise considered a serious game.
+
+
+General Meeting Feedback from Customer and Next steps
+ Most promising concepts were both Epidemic Response Simulator and De-Escalation Training Simulator, due to their allignment with serious games and their potenetial impacts. 
+ Customer adviced that ideas are furtehr evaluated and narrow down choices by next meeting. 
+ 
+
+ 
 
 ### User Stories
 
