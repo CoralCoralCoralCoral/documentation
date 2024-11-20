@@ -8,7 +8,7 @@ As a **user** I want **an oracle to give me advice** so that **I can learn and i
 
 #### Acceptance criteria
 
-Is there a way for the user to receive relevant advice from an oracle that helps them
+Is there a way for the user to receive relevant advice from an oracle that helps them?
 
 ### 6 (v1)
 
@@ -20,7 +20,7 @@ Is there a way for the user to scope their actions to an area?
 
 ### 7 (v1)
 
-As a **user** I want **to be able to manage resources** so that **the simulation is realistic and challenging**
+As a **user** I want to **be able to manage resources** so that **the simulation is realistic and challenging**
 
 #### Acceptance criteria
 

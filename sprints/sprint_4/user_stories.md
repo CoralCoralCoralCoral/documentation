@@ -4,7 +4,7 @@
 
 ### 12 (v1)
 
-As a **user** I want **to be given feedback when my performance drops below some threshold** so that **I can learn without losing the game**
+As a **user** I want to **be given feedback when my performance drops below some threshold** so that **I can learn without losing the game**
 
 #### Acceptance criteria
 
@@ -20,7 +20,7 @@ Is there a way for the user to scope their actions to an area?
 
 ### 14 (v1)
 
-As a **user** I want **to be able to manage resources** so that **the simulation is realistic and challenging**
+As a **user** I want to **manage resources** so that **the simulation is realistic and challenging**
 
 #### Acceptance criteria
 
@@ -28,7 +28,7 @@ Does the game have a way for the user to strategically use resources?
 
 ### 15 (v1)
 
-As a **user** I want **to be able to take actions that improve the accuracy and breadth of information i receive** so that **I can optimize my actions**
+As a **user** I want to **take actions that improve the accuracy and breadth of information i receive** so that **I can optimize my actions**
 
 #### Acceptance criteria
 
@@ -36,7 +36,7 @@ Are there a set of actions that improve the accuracy and breadth of information 
 
 ### 16 (v1)
 
-As a **user** I want **to be able to take intervening actions** so that **I can control the spread of the pathogen**
+As a **user** I want to **take intervening actions** so that **I can control the spread of the pathogen**
 
 #### Acceptance criteria
 
@@ -44,7 +44,7 @@ Are there a set of actions that allows the user to intervene in the spread of th
 
 ### 17 (v1)
 
-As a **user** I want **to be able to take actions that expand my knowledge of the disease so that I can improve the effectiveness of my interventions**
+As a **user** I want to **take actions that expand my knowledge of the disease so that I can improve the effectiveness of my interventions**
 
 #### Acceptance criteria
 

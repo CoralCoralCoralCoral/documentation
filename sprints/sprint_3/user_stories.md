@@ -4,7 +4,7 @@
 
 ### 8 (v1)
 
-As a **user** I want to be able to **pause and resume** the game so that **I can take breaks to strategize and think**
+As a **user** I want to **pause and resume** the game so that **I can take breaks to strategize and think**
 
 #### Acceptance criteria
 
@@ -12,7 +12,7 @@ Is there a mechanism that allows the user to pause and resume the simulation?
 
 ### 9 (v1)
 
-As a **user** I want to **to be able to create a new game** so that **I can start playing when I want**
+As a **user** I want to **create a new game** so that **I can start playing when I want**
 
 #### Acceptance criteria
 
@@ -20,7 +20,7 @@ Is there a mechanism for the user to initialize a game?
 
 ### 10 (v1)
 
-As a **user** I want **to be able to visualize information that is revealed to me** so that **I can make decisions about how to respond in the game**
+As a **user** I want to **visualize information that is revealed to me** so that **I can make decisions about how to respond in the game**
 
 #### Acceptance criteria
 
@@ -28,7 +28,7 @@ Does the game display information that is revealed to the user?
 
 ### 11 (v1)
 
-As a **user** I want **to be able to to query information temporally and geographically** so that **I can understand the state of the epidemic for any given location and time**
+As a **user** I want to **query information temporally and geographically** so that **I can understand the state of the epidemic for any given location and time**
 
 #### Acceptance criteria
 
