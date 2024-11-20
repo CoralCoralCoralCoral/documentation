@@ -12,29 +12,13 @@ Does the user receive feedback when their performance drops below a set threshol
 
 ### 13 (v1)
 
-As a **user** I want to **implement actions within a given geographic area** so that **I can use resources efficiently**
-
-#### Acceptance criteria
-
-Is there a way for the user to scope their actions to an area?
-
-### 14 (v1)
-
-As a **user** I want to **manage resources** so that **the simulation is realistic and challenging**
-
-#### Acceptance criteria
-
-Does the game have a way for the user to strategically use resources?
-
-### 15 (v1)
-
 As a **user** I want to **take actions that improve the accuracy and breadth of information i receive** so that **I can optimize my actions**
 
 #### Acceptance criteria
 
 Are there a set of actions that improve the accuracy and breadth of information revealed to the user?
 
-### 16 (v1)
+### 14 (v1)
 
 As a **user** I want to **take intervening actions** so that **I can control the spread of the pathogen**
 
@@ -42,9 +26,9 @@ As a **user** I want to **take intervening actions** so that **I can control the
 
 Are there a set of actions that allows the user to intervene in the spread of the pathogen?
 
-### 17 (v1)
+### 15 (v1)
 
-As a **user** I want to **take actions that expand my knowledge of the disease so that I can improve the effectiveness of my interventions**
+As a **user** I want to **take actions that expand my knowledge of the disease** so that **I can improve the effectiveness of my interventions**
 
 #### Acceptance criteria
 
@@ -71,5 +55,7 @@ None
 -   13 (v1)
 -   14 (v1)
 -   15 (v1)
--   16 (v1)
--   17 (v1)
+
+## Summary of Changes
+
+With this set of new user stories, we are beginning to hone in on more specific gameplay mechanics that begin to describe a concrete picture of how the user will interact with the game. These include more specific types of Oracle behaviours, as well as the specific classes of actions the user can be expected to perform: surveillance, intervention and intervention efficiency development actions.
