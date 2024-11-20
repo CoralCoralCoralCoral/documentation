@@ -4,7 +4,7 @@
 
 ### 5 (v1)
 
-As a _user_ I want _an oracle to give me advice_ so that _I can learn and improve_
+As a **user** I want **an oracle to give me advice** so that **I can learn and improve**
 
 #### Acceptance criteria
 
@@ -12,7 +12,7 @@ Is there a way for the user to receive relevant advice from an oracle that helps
 
 ### 6 (v1)
 
-As a _user_ I want to _implement actions within a given geographic area_ so that _I can use resources efficiently_
+As a **user** I want to **implement actions within a given geographic area** so that **I can use resources efficiently**
 
 #### Acceptance criteria
 
@@ -20,7 +20,7 @@ Is there a way for the user to scope their actions to an area?
 
 ### 7 (v1)
 
-As a _user_ I want _to be able to manage resources_ so that _the simulation is realistic and challenging_
+As a **user** I want **to be able to manage resources** so that **the simulation is realistic and challenging**
 
 #### Acceptance criteria
 

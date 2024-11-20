@@ -4,7 +4,7 @@
 
 ### 12 (v1)
 
-As a _user_ I want _to be given feedback when my performance drops below some threshold_ so that _I can learn without losing the game_
+As a **user** I want **to be given feedback when my performance drops below some threshold** so that **I can learn without losing the game**
 
 #### Acceptance criteria
 
@@ -12,7 +12,7 @@ Does the user receive feedback when their performance drops below a set threshol
 
 ### 13 (v1)
 
-As a _user_ I want to _implement actions within a given geographic area_ so that _I can use resources efficiently_
+As a **user** I want to **implement actions within a given geographic area** so that **I can use resources efficiently**
 
 #### Acceptance criteria
 
@@ -20,7 +20,7 @@ Is there a way for the user to scope their actions to an area?
 
 ### 14 (v1)
 
-As a _user_ I want _to be able to manage resources_ so that _the simulation is realistic and challenging_
+As a **user** I want **to be able to manage resources** so that **the simulation is realistic and challenging**
 
 #### Acceptance criteria
 
@@ -28,7 +28,7 @@ Does the game have a way for the user to strategically use resources?
 
 ### 15 (v1)
 
-As a _user_ I want _to be able to take actions that improve the accuracy and breadth of information i receive_ so that _I can optimize my actions_
+As a **user** I want **to be able to take actions that improve the accuracy and breadth of information i receive** so that **I can optimize my actions**
 
 #### Acceptance criteria
 
@@ -36,7 +36,7 @@ Are there a set of actions that improve the accuracy and breadth of information 
 
 ### 16 (v1)
 
-As a _user_ I want _to be able to take intervening actions_ so that _I can control the spread of the pathogen_
+As a **user** I want **to be able to take intervening actions** so that **I can control the spread of the pathogen**
 
 #### Acceptance criteria
 
@@ -44,7 +44,7 @@ Are there a set of actions that allows the user to intervene in the spread of th
 
 ### 17 (v1)
 
-As a _user_ I want _to be able to take actions that expand my knowledge of the disease so that I can improve the effectiveness of my interventions_
+As a **user** I want **to be able to take actions that expand my knowledge of the disease so that I can improve the effectiveness of my interventions**
 
 #### Acceptance criteria
 

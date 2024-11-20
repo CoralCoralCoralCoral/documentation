@@ -4,7 +4,7 @@
 
 ### 1 (v1)
 
-As a _user_ I want to _see a user interface_ so that _I can visualize the simulation_
+As a **user** I want to **see a user interface** so that **I can visualize the simulation**
 
 #### Acceptance criteria
 
@@ -12,7 +12,7 @@ Is there a user interface that allows the user to visualize the simulation?
 
 ### 2 (v1)
 
-As a _user_ I want _an interactive user interface_ so that _I can play the game_
+As a **user** I want **an interactive user interface** so that **I can play the game**
 
 #### Acceptance criteria
 
@@ -20,7 +20,7 @@ Is there an interactive interface that allows the user to interact with the game
 
 ### 3 (v1)
 
-As a _user_ I want _to run a simulation of an epidemic_ so that _I can learn about epidemics_
+As a **user** I want **to run a simulation of an epidemic** so that **I can learn about epidemics**
 
 #### Acceptance criteria
 
@@ -28,7 +28,7 @@ Is there a process that runs a simulation of an epidemic?
 
 ### 4 (v1)
 
-As a _user_ I want _to be able to use a number of strategies_ so that _the gameplay is varied and it is more realistic_
+As a **user** I want **to be able to use a number of strategies** so that **the gameplay is varied and it is more realistic**
 
 #### Acceptance criteria
 
