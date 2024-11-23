@@ -1,17 +1,17 @@
-Name:
+#Name:
 Lockdown
 
-Scope (Space, Provincial, Global):
+##Scope (Space, Provincial, Global):
 Global
 
-Effect:
+##Effect:
 Stops movement between residence and office. Stops movement between resident and most social spaces (i.e. bars restaurant, etc.). Lowers movement between resident and some social spaces (shops, parks, etc)
 
 Will on be applied to agents which are compliant (maybe). The longer the lockdown persists the lower compliance becomes for all agents.
 
-Cost:
+##Cost:
 Direct cost: Very high political power cost to start and high ongoing political power cost.
 
 Indirect cost: GDP lowers due to less economic activity (less agents moving = less GDP).
 
-Sources (If any):
+##Sources (If any):
