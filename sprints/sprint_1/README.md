@@ -1,8 +1,18 @@
 # Sprint 1: 2024-10-30 to 2024-11-05
 
 ## Overview
+We decided that we would go foward with the epdidemic prevention game.
+
+We decided to work on prototypes for the MVP.
+
+We started to create initial User Stories.
 
 ## Review
+We decided that we should standardize our user stories.
+
+We needed further work on the prototypes.
+
+We needed to start working on use cases.
 
 ## Meeting Minutes
 
