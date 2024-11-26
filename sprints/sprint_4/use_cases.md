@@ -7,7 +7,7 @@
 
 ### 2. **Purpose** -- The Oracle should give advice upon meeting certain thresholds.
 
-### 3. **Associated User Stories** -- User story 12 (V1)
+### 3. **Associated User Stories** -- User story 5 (V2)
 
 ### 4. **Actors** -- The user and the Oracle.
 
@@ -43,7 +43,7 @@
 
 ### 2. **Purpose** -- The Oracle should give advice upon meeting certain thresholds.
 
-### 3. **Associated User Stories** -- User story 12 (V1)
+### 3. **Associated User Stories** -- User story 5 (V2)
 
 ### 4. **Actors** -- The user and the Oracle.
 
@@ -79,7 +79,7 @@
 
 ### 2. **Purpose** -- The Oracle should give advice upon meeting certain thresholds.
 
-### 3. **Associated User Stories** -- User story 12 (V1)
+### 3. **Associated User Stories** -- User story 5 (V2)
 
 ### 4. **Actors** -- The user and the Oracle.
 
