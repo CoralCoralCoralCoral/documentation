@@ -43,7 +43,7 @@ Does the user receive feedback when their performance drops below a set threshol
 -   2 (v1)
 -   3 (v1)
 -   4 (v1)
--   5 (v1)
+-   5 (v2)
 -   6 (v1)
 -   7 (v1)
 -   8 (v1)
