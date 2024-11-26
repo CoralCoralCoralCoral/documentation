@@ -127,18 +127,18 @@
 
 #### **Step 2** -- The User will select one of the surveillance actions that are currently available. If the user wants to select an action they have not unlocked the go to alternative flow 1.
 
-#### **Step 3** -- The Oracle will give the user advice that they should consider starting an appropriate research project. The user can ask for some more advice. Go to Alternative Flow 1.
+#### **Step 3** --  The User can enable this action.
 
-#### **Step 4** -- The user dismisses the Oracle and continues playing.
+#### **Step 4** -- The User continues playing.
 
 ### 7. Alternative Flow #1 -- Exceptions to main flow.
 
-#### **Step 1** -- The Oracle will explain the benefits of research and how it can help their efforts to control the disease. The User can ask for alternative actions to take.
+#### **Step 1** -- The User will hover over the locked action.
 
-#### **Step 2** -- Other actions will be suggested to the user.
+#### **Step 2** -- Information on the action and how to unlock it will apear underneath the action.
 
-#### **Step 3** -- The user dismisses the Oracle and continues playing.
+#### **Step 3** -- The User continues playing.
 
-### 8. **Postcondition** -- The game will be paused and the user can start playing at any point.
+### 8. **Postcondition** -- The action is applied and a pop up informing the user of the change is given.
 
 
