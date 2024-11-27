@@ -24,10 +24,9 @@
 
 ### User Stories
 
-#### New User Stories
+[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_3/user_stories.md)
 
-#### Revised User Stories
 
-#### Final Set
+### User Cases
 
-#### Summary of Changes
+[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_3/use_cases.md)
