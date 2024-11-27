@@ -237,9 +237,10 @@ General Meeting Feedback from Customer and Next steps
 
 ### User Stories
 
-[https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_1/use_cases.md]
+[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_1/user_stories.md)
+
 
 ### User Cases
 
-[https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_1/user_stories.md]
+[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_1/use_cases.md)
 
