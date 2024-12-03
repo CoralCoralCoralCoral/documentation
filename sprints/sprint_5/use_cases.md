@@ -40,3 +40,30 @@
 ### 8. Postcondition -- The game will continue to play after the user is finished. Any changes made by the user are done by the system.
 
 
+## 2 (v1)
+
+### 1. Title -- Prioritize Testing for High-Risk Groups  
+
+### 2. Purpose --  High-risk groups are identified based on available data (e.g., elderly or those with pre-existing conditions). Actions are taken to help them. 
+
+### 3. Associated User Stories -- 13 (v1)
+
+### 4. Actors -- The User
+
+### 5. Preconditions -- The game is running correctly.
+
+### 6. Main Flow -- regular flow of activities
+
+#### Step 1 - The player selects high-risk groups for testing.    
+
+#### Step 2 - The system allocates resources to prioritize these groups. 
+
+#### Step 3 - The simulation updates to show testing results for high-risk populations.   
+
+### 7. Alternative Flow #1 -- exceptions to main flow
+
+#### Step 1 - If prioritization delays testing for others, the system provides a warning. 
+
+### 8. Postcondition -- High-risk groups are tested, influencing the progression of the epidemic in the simulation. 
+
+
