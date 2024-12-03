@@ -7,7 +7,7 @@
 
 ### 2. Purpose --  As a public health official, I want to know how testing accuracy varies by area so I can allocate resources more effectively.   
 
-### 3. Associated User Stories -- 14 (v1)
+### 3. Associated User Stories -- 14 (v1), 11 (v1)
 
 ### 4. Actors -- The User
 
