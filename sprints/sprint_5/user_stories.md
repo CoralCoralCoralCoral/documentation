@@ -2,8 +2,8 @@
 
 ## New User Stories
 
-### 1 (v1)
-
+### 15 (v1)
+ As a public health official, I want to know how testing accuracy varies by area so I can allocate resources more effectively.   
 
 
 #### Acceptance criteria
