@@ -1,0 +1,29 @@
+services:
+  rabbitmq:
+    image: 'rabbitmq:4-management'
+    environment:
+      - 'RABBITMQ_DEFAULT_PASS=guest'
+      - 'RABBITMQ_DEFAULT_USER=guest'
+    expose:
+      - "5672"
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  sim-server:
+    image: ghcr.io/coralcoralcoralcoral/simulation-engine:main
+    environment:
+      - 'RMQ_URI=amqp://guest:guest@rabbitmq:5672/'
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+  api-server:
+    image: ghcr.io/coralcoralcoralcoral/api-server:main
+    environment:
+      - 'RMQ_URI=amqp://guest:guest@rabbitmq:5672/'
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - 8080:8080
