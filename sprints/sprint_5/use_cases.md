@@ -67,3 +67,31 @@
 ### 8. Postcondition -- High-risk groups are tested, influencing the progression of the epidemic in the simulation. 
 
 
+## 3 (v1)
+
+### 1. Title -- See How Delayed Testing Affects the Outbreak    
+
+### 2. Purpose --   As a public health official, I want to understand how delays in testing affect the spread of the disease so I can make better plans to reduce these delays
+
+### 3. Associated User Stories -- 15 (v1)
+
+### 4. Actors -- The User
+
+### 5. Preconditions -- The game is running correctly.
+
+### 6. Main Flow -- regular flow of activities
+
+#### Step 1 - the user deploys a testing strategy and sets its start date.     
+
+#### Step 2 - The system calculates delays based on available resources and logistics
+
+#### Step 3 - The simulation shows how delays impact infection rates and the epidemic’s spread. 
+
+#### Step 4 - The player adjusts interventions (e.g., adding more labs or improving logistics) to reduce delays. 
+
+### 7. Alternative Flow #1 -- exceptions to main flow
+
+#### Step 1 - The player can choose alternative strategies to compensate for delays.   
+
+### 8. Postcondition --   The simulation reflects the real-world consequences of delays, allowing the player to refine their plans.   
+
