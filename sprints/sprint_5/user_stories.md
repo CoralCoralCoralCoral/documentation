@@ -28,17 +28,24 @@ As a user I want to see how research affects the outbreak so that I can learn ab
 Is there is addition information options for research.
 
 
-### 4 (v1)
+### 18 (v1)
 
-
+As a user I want to load a save file so that I can restart playing from that point.
 
 #### Acceptance criteria
 
-
+Is there a mechanism for the user to load a save?
 
 ## Revised User Stories
 
-None
+
+### 9 (v2)
+
+As a user I want to save my game state so that I can start and stop playing when I want and so that I can share my save with others.
+
+#### Acceptance criteria
+
+Is there a mechanism for the user to save a game?
 
 ## Final Set
 
