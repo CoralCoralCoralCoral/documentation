@@ -95,3 +95,34 @@
 
 ### 8. Postcondition --   The simulation reflects the real-world consequences of delays, allowing the player to refine their plans.   
 
+
+
+## 4 (v1)
+
+### 1.  Title -- Save Games 
+
+### 2. Purpose -- As a user, I want to save and load my save so that I can stop playing and come back later. 
+
+### 3. Associated User Stories -- 9 (v2)
+
+### 4. Actors -- The User.
+
+### 5. Preconditions -- The game has a functioning save and load function.
+
+### 6. Main Flow -- regular flow of activities
+
+#### Step 1 - The user goes to the main menu and presses the save button.
+
+#### Step 2 - The system generates a json file with 
+
+#### Step 3 - The user can interact with the game to see data and plan to intiate actions.
+
+#### Step 4 - The user resumes the game by pressing the resume button or triggering the corresponding command.  If this fails go to alternative flow 1.
+
+#### Step 5 - The system restarts the simulation, continuing from the paused state. 
+
+### 7. Alternative Flow #1 -- exceptions to main flow
+
+#### Exception 1 - Error message is sent to user that the pause/play function is not working correctly.
+
+### 8. Postcondition -- The game successfully runs with any changes made implemented.
