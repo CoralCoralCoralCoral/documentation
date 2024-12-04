@@ -113,16 +113,12 @@
 
 #### Step 1 - The user goes to the main menu and presses the save button.
 
-#### Step 2 - The system generates a json file with 
+#### Step 2 - The system generates a json file with relavent data in it and sends this to the user. If the message fails go to alternative flow 1
 
-#### Step 3 - The user can interact with the game to see data and plan to intiate actions.
-
-#### Step 4 - The user resumes the game by pressing the resume button or triggering the corresponding command.  If this fails go to alternative flow 1.
-
-#### Step 5 - The system restarts the simulation, continuing from the paused state. 
+#### Step 3 - The user can download the save file and continue playing.
 
 ### 7. Alternative Flow #1 -- exceptions to main flow
 
-#### Exception 1 - Error message is sent to user that the pause/play function is not working correctly.
+#### Exception 1 - Error message is sent to user or system that the save file has not been sent.
 
 ### 8. Postcondition -- The game successfully runs with any changes made implemented.
