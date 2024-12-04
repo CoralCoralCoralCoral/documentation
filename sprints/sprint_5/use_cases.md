@@ -101,13 +101,13 @@
 
 ### 1.  Title -- Save Games 
 
-### 2. Purpose -- As a user, I want to save and load my save so that I can stop playing and come back later. 
+### 2. Purpose -- As a user, I want to save my game so that I can stop playing and come back later. 
 
 ### 3. Associated User Stories -- 9 (v2)
 
 ### 4. Actors -- The User.
 
-### 5. Preconditions -- The game has a functioning save and load function.
+### 5. Preconditions -- The game has a functioning save systme.
 
 ### 6. Main Flow -- regular flow of activities
 
@@ -121,4 +121,32 @@
 
 #### Exception 1 - Error message is sent to user or system that the save file has not been sent.
 
-### 8. Postcondition -- The game successfully runs with any changes made implemented.
+### 8. Postcondition -- The game successfully runs.
+
+
+
+## 5 (v1)
+
+### 1.  Title -- Load Games 
+
+### 2. Purpose -- As a user, I want to save and load my save so that I can stop playing and come back later. 
+
+### 3. Associated User Stories -- 18 (v1)
+
+### 4. Actors -- The User.
+
+### 5. Preconditions -- The user goes to the main webpage of the game.
+
+### 6. Main Flow -- regular flow of activities
+
+#### Step 1 - The user presses the load game button on the main menu page.
+
+#### Step 2 - The user selects a file to upload as their save. If save file is invalid go to alternative flow 1
+
+#### Step 3 - The user can start playing the game from the game state found in the save.
+
+### 7. Alternative Flow #1 -- exceptions to main flow
+
+#### Exception 1 - Error message is sent to user or system that the save file is not valid.
+
+### 8. Postcondition -- The game successfully runs from the point of the save.
