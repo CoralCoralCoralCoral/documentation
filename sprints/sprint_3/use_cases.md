@@ -25,7 +25,7 @@
 
 #### Step 5 - The system restarts the simulation, continuing from the paused state. 
 
-### 7. Alternative Flow #1 -- exceptions to main flow
+### 7. Alternative Flow 1 -- exceptions to main flow
 
 #### Exception 1 - Error message is sent to user that the pause/play function is not working correctly.
 
@@ -53,7 +53,7 @@
 
 #### Step 3 - The UI map will change to show the needed data and the user can continue playing the game
 
-### 7. Alternative Flow #1 -- exceptions to main flow
+### 7. Alternative Flow 1 -- exceptions to main flow
 
 ### 8. Postcondition -- The game successfully shows the updated map.
 
