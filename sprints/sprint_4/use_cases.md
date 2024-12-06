@@ -1,4 +1,3 @@
-
 # Use Cases
 
 ## 12 (v1)
@@ -19,11 +18,11 @@
 
 #### **Step 2** -- The Oracle will inform the user of the problem, for example that hospitals are near full capacity, and the situation needs to be handled urgently.
 
-#### **Step 3** -- The Oracle will give the user advice that they should consider an intervention in order to solve the situation. The user can ask for some more advice. Go to Alternative Flow 1.
+#### **Step 3** -- The Oracle will give the user advice that they should consider an intervention in order to solve the situation. The user can ask for some more advice. Go to Alternative Flow.
 
 #### **Step 4** -- The user dismisses the Oracle and continues playing.
 
-### 7. Alternative Flow #1 -- Exceptions to main flow.
+### 7. Alternative Flow -- Exceptions to main flow.
 
 #### **Step 1** -- The Oracle will explain why the intervention could help. The User can ask for alternative actions to take.
 
@@ -32,10 +31,6 @@
 #### **Step 3** -- The user dismisses the Oracle and continues playing.
 
 ### 8. **Postcondition** -- The game will be paused and the user can start playing at any point.
-
-
-
-
 
 ## 13 (v1)
 
@@ -55,11 +50,11 @@
 
 #### **Step 2** -- The Oracle will inform the user of the problem, for example that a certain jurisdiction has poor testing and that they do not have an accurate view of the epidemic’s spread, and the situation needs to be handled urgently.
 
-#### **Step 3** -- The Oracle will give the user advice that they should consider increasing testing/different testing method in order to solve the situation. The user can ask for some more advice. Go to Alternative Flow 1.
+#### **Step 3** -- The Oracle will give the user advice that they should consider increasing testing/different testing method in order to solve the situation. The user can ask for some more advice. Go to Alternative Flow.
 
 #### **Step 4** -- The user dismisses the Oracle and continues playing.
 
-### 7. Alternative Flow #1 -- Exceptions to main flow.
+### 7. Alternative Flow -- Exceptions to main flow.
 
 #### **Step 1** -- The Oracle will explain why testing is important. The User can ask for alternative actions to take.
 
@@ -68,10 +63,6 @@
 #### **Step 3** -- The user dismisses the Oracle and continues playing.
 
 ### 8. **Postcondition** -- The game will be paused and the user can start playing at any point.
-
-
-
-
 
 ## 14 (v1)
 
@@ -105,10 +96,6 @@
 
 ### 8. **Postcondition** -- The game will be paused and the user can start playing at any point.
 
-
-
-
-
 ## 15 (v1)
 
 ### 1. **Title** –- Surveillance actions in healthcare spaces.
@@ -127,7 +114,7 @@
 
 #### **Step 2** -- The User will select one of the surveillance actions that are currently available. If the user wants to select an action they have not unlocked the go to alternative flow 1.
 
-#### **Step 3** --  The User can enable this action.
+#### **Step 3** -- The User can enable this action.
 
 #### **Step 4** -- The User continues playing.
 
@@ -140,5 +127,3 @@
 #### **Step 3** -- The User continues playing.
 
 ### 8. **Postcondition** -- The action is applied and a pop up informing the user of the change is given.
-
-
