@@ -23,7 +23,7 @@
 
 #### Step 4 - The system updates the simulation to reflect the effects of the action in the chosen area. 
 
-### 7. Alternative Flow #number -- exceptions to main flow
+### 7. Alternative Flow -- exceptions to main flow
 
 #### Exception 1 - If the user tries to apply actions to an unselected region, the system provides a prompt to select a scope first. 
 
@@ -51,7 +51,7 @@
 
 #### Step 3 - The user monitors resource trends and adjusts strategies to avoid depletion. 
 
-### 7. Alternative Flow #number -- exceptions to main flow
+### 7. Alternative Flow -- exceptions to main flow
 
 #### Exception 1 - If resources run low, the system provides alerts and suggests ways to obtain more (e.g., reallocating or prioritizing). 
 

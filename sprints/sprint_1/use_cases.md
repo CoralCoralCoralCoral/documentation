@@ -26,7 +26,7 @@
 
 #### Step 3 - The user observes how data changes over time. 
 
-### 7. Alternative Flow #number -- exceptions to main flow
+### 7. Alternative Flow -- exceptions to main flow
 
 #### Exception 1 - If the user interface fails to load, the system displays an error message and provides troubleshooting steps. 
 
@@ -54,7 +54,7 @@
 
 #### Step 3 - The user receives feedback on their actions (e.g., changes in infection rates or resource allocation). 
 
-### 7. Alternative Flow #number -- exceptions to main flow
+### 7. Alternative Flow -- exceptions to main flow
 
 #### Exception 1 - If input is invalid (e.g., exceeding resource limits), the system displays a warning and suggests corrections. 
 
@@ -82,7 +82,7 @@
 
 #### Step 3 - The user can pause mid-simulation and rewind post-simulation to explore different outcomes. 
 
-### 7. Alternative Flow #number -- exceptions to main flow
+### 7. Alternative Flow -- exceptions to main flow
 
 #### Exception 1 - If the selected scenario has errors (e.g., conflicting parameters), the system prompts the user to adjust settings.
 
@@ -112,7 +112,7 @@
 
 #### Step 3 - The user evaluates outcomes and decides whether to adjust or add new strategies. 
 
-### 7. Alternative Flow #number -- exceptions to main flow
+### 7. Alternative Flow -- exceptions to main flow
 
 #### Exception 1 - If a strategy is unavailable due to resource limitations, the system suggests alternatives. 
 
