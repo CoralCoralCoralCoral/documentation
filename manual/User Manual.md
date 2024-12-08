@@ -56,3 +56,19 @@ Open a browser and enter 'http://localhost:8080/', this will take you to the app
 ## User Guide
 
 ## Maintainance Guide
+
+### Tech Stack
+
+The tech stack consists of three main parts:
+
+1. An Api Server
+2. A [RabbitMQ](https://www.rabbitmq.com/) instance
+3. A Simulation Service
+
+There will be one Api server insance which serves up the static built UI/frontend, handles websocket connections to transmit simulation data and commands, and interacts with the RabbitMQ instance to pass messages to a simulation instance.
+
+The [RabbitMQ](https://www.rabbitmq.com/) instance handles the messaging between the Api Server and any number of Simulation instances, message types include create-game, game-metrics, and game-commands.
+
+Finally there is some number of simulation server instances, each simulation/game is contained by a single instance though one instance can run many simulations concurrently. The simulation server is responsible for doing the actual simulation work that is sent back to the client through Rabbit and the Api Server.
+
+Running multiple copies of the simulation service can be beneficial, both for availability - if one instance on a host happens to crash there is still another running, and for distribution of load - having instances on multiple machines can ease the per machine compute workload.
