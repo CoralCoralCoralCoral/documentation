@@ -1,9 +1,9 @@
 services:
   rabbitmq:
-    image: 'rabbitmq:4-management'
+    image: "rabbitmq:4-management"
     environment:
-      - 'RABBITMQ_DEFAULT_PASS=guest'
-      - 'RABBITMQ_DEFAULT_USER=guest'
+      - "RABBITMQ_DEFAULT_PASS=guest"
+      - "RABBITMQ_DEFAULT_USER=guest"
     expose:
       - "5672"
     healthcheck:
@@ -14,14 +14,14 @@ services:
   sim-server:
     image: ghcr.io/coralcoralcoralcoral/simulation-engine:main
     environment:
-      - 'RMQ_URI=amqp://guest:guest@rabbitmq:5672/'
+      - "RMQ_URI=amqp://guest:guest@rabbitmq:5672/"
     depends_on:
       rabbitmq:
         condition: service_healthy
   api-server:
     image: ghcr.io/coralcoralcoralcoral/api-server:main
     environment:
-      - 'SPRING_RABBITMQ_HOST=rabbitmq'
+      - "SPRING_RABBITMQ_HOST=rabbitmq"
     depends_on:
       rabbitmq:
         condition: service_healthy
