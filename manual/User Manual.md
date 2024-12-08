@@ -12,6 +12,23 @@ If you are using the prebuilt docker images (**Recommended path**) during the fi
 
 To find out more about Mapbox [click here](https://www.mapbox.com/), for personal use the free tier allows plenty of requests, if you are an organisation check the licensing requirements for Mapbox as to whether a certain tier is needed.
 
+## Quick Start Guide
+
+This is the simplest list of steps to run the app, if you need more information consult the full Installation Guide below.
+
+1. Install [Docker Desktop](https://docs.docker.com/desktop/)
+2. Open the Docker Desktop app (or otherwise start the docker services)
+3. Download the 'docker-compose.yml' file in this folder
+4. Open a terminal/console in the same folder as the compose file
+5. Run the following command: `docker compose -f docker-compose.yml up -d`
+6. Open your browser and visit 'http://localhost:8080/'
+
+When you want to stop the app:
+
+1. Open the Docker Desktop app
+2. Go to the 'Containers' section
+3. Press the stop button next to the top level container named 'Epidemic-Simulation'
+
 ## Installation Guide
 
 ### Using Docker Compose (Recommended)

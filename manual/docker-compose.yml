@@ -1,3 +1,5 @@
+name: Epidemic-Simulation
+
 services:
   rabbitmq:
     image: "rabbitmq:4-management"
