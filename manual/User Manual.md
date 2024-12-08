@@ -1,5 +1,17 @@
 # User Manual
 
+## Note
+
+The project includes an interactive map, this is provided by Mapbox which requires an API key in order to function, this is the only functionality that requires an API key, **with no key the rest of the app WILL continue to work as expected**.
+
+If you are using the prebuilt docker images (**Recommended path**) during the first semester you do not need to do anything different as they will be built using a key in order for functionality to be tested and shown off.
+
+**After semeter one** the prebuilt images may no longer have a working map, if you want this feature to be available again you will need to rebuild a portion of the app as detailed below.
+
+**If you are locally building** you will need to provide a Mapbox API key for the map of the app to function.
+
+To find out more about Mapbox [click here](https://www.mapbox.com/), for personal use the free tier allows plenty of requests, if you are an organisation check the licensing requirements for Mapbox as to whether a certain tier is needed.
+
 ## Installation Guide
 
 ### Using Docker Compose (Recommended)
