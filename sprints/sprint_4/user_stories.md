@@ -52,8 +52,7 @@ Does the user receive feedback when their performance drops below a set threshol
 -   11 (v1)
 -   12 (v1)
 -   13 (v1)
--   14 (v1)
--   15 (v1)
+-   14 (v1)  
 
 ## Summary of Changes
 
