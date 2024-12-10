@@ -213,11 +213,3 @@ Next Actionable Steps
 
 
 
-### User Stories
-
-[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_3/user_stories.md)
-
-
-### User Cases
-
-[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_3/use_cases.md)

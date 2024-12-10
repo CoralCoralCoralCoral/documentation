@@ -126,7 +126,6 @@ Next Step
 ## Product Documents
 
 ### Customer Meeting and Analysis
-
 Customer meeting 4
 
 Date:20/11/2024
@@ -190,14 +189,3 @@ Action Plan for Next Sprint
  3. Develop a reactive Oracle to provide contextual advice based on game states.
  4. Ensure the Oracle system is modular and extendable for future refinements.
  5. Test and debug the core gameplay loop to ensure stability and usability. 
-
-
-### User Stories
-
-[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_4/user_stories.md)
-
-
-### User Cases
-
-[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_4/use_cases.md)
-

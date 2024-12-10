@@ -326,6 +326,7 @@ Complete installation guide Documentation Team By Sprint End In Progress.
 ## Product Documents
 
 ### Customer Meeting and Analysis
+
 Customer meeting 5
 Date: 27/11/2024
 Attendees: Customer and Team Coral
@@ -496,14 +497,3 @@ Meeting Conclusion:
 • Progress will be reviewed in the next sprint, focusing on integration, testing, and optimization.
 
 
-
-### User Stories
-
-[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_5/user_stories.md)
-
-
-### User Cases
-
-[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_5/use_cases.md)
-
-#### Summary of Changes
