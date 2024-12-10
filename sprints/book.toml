@@ -1,0 +1,22 @@
+[book]
+title = "Sprint Documentation"
+authors = ["John Doe", "Jane Doe"]
+description = "Sprint documentation for coral"
+src = "."                                      # the source files will be found in `root/my-src` instead of `root/src`
+language = "en"
+text-direction = "ltr"
+
+[rust]
+edition = "2018"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html.search]
+limit-results = 15
+
+[output.typst]
+
+[output.typst.output]
+format = "pdf"
