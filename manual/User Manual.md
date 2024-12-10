@@ -69,6 +69,18 @@ When you want to **stop** the app:
 1. Open a terminal/console in the same folder as the compose file
 2. Run the following command: `docker compose -f docker-compose.yml down`
 
+### Organisation Guide
+
+As an organisation looking to serve the app to multiple users you can either follow the basic steps for a single user, installing the whole stack on a single device or have a more distributed setup based on your architecture.
+
+If you decide to use the single user setup, be sure to edit the Docker Compose and network settings of your device to allow other clients on your network to access the container. The Spring instance serves on port 8080, this can be mapped to another port outside the container if needed/wanted.
+
+Alternatively, it may be better to use a more distributed architecture, we would recommend running the Spring Api-Server and RabbitMQ instance on the same machine, with the Sim-Server instances running on their own machines, ensure the network setup allows the Sim-Servers to access the RabbitMQ instance. Running multiple Sim-Server instances on a single machine can help with availability, however ensure there is enough compute to drive all instances, the compute limit is the main reason to distribute the system.
+
+The architecture used can change across organisations, using Docker (Swarm), Kubernetes, Cloud Compute or just building and running on multiple servers. The main requirement is that all Sim-Server instances can talk to RabbitMQ, and the Api-Server can talk to RabbitMQ, serve it's content and support websocket connections. By default RabbitMQ uses port 5672 and Spring uses port 8080.
+
+You may also want to setup an on-prem DNS record to point to the Api-Server for ease of user access, along with generating and setting up SSL certs to allow for https and wss connections.
+
 ## User Guide
 
 ## Maintainance Guide
