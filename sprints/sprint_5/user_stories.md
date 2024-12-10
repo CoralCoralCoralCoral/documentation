@@ -2,14 +2,14 @@
 
 ## New User Stories
 
-### 15 (v1)
+### 16 (v1)
 As a user I want to see how testing affects the outbreak so that I can learn about the importance of testing
 
 #### Acceptance criteria
 
 Is there is addition information options for testing.
 
-### 16 (v1)
+### 17 (v1)
 
 As a user I want to see how intervention affects the outbreak so that I can learn about the importance of intervention
 
@@ -18,7 +18,7 @@ As a user I want to see how intervention affects the outbreak so that I can lear
 Is there is addition information options for intervention.
 
 
-### 17 (v1)
+### 18 (v1)
 
 As a user I want to see how research affects the outbreak so that I can learn about the importance of reserach
 
@@ -28,7 +28,7 @@ As a user I want to see how research affects the outbreak so that I can learn ab
 Is there is addition information options for research.
 
 
-### 18 (v1)
+### 19 (v1)
 
 As a user I want to load a save file so that I can restart playing from that point.
 
@@ -48,7 +48,25 @@ As a user I want to save my game state so that I can start and stop playing when
 Is there a mechanism for the user to save a game?
 
 ## Final Set
-
+-   1 (v1)
+-   2 (v1)
+-   3 (v1)
+-   4 (v1)
+-   5 (v2)
+-   6 (v1)
+-   7 (v1)
+-   8 (v1)
+-   9 (v2)
+-   10 (v1)
+-   11 (v1)
+-   12 (v1)
+-   13 (v1)
+-   14 (v1)
+-   15 (v1)
+-   16 (v1)
+-   17 (v1)
+-   18 (v1)
+-   19 (v1)
 
 
 ## Summary of Changes
