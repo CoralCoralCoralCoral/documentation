@@ -219,7 +219,7 @@ Key Decisions
 ## Product Documents
 
 ### Customer Meeting and Analysis
-•	Concerns were raised over how many members of the group were missing. This was dealt with later, and explanations were made for those group members missing.
+•	Concerns were raised over how many members of the group were missing. This was dealt with later, and explanations were made for those group members missing. Group members had communicated about abscenses over the previous Sprint, a couple illnesses meant there was less members available for the Customer meeting.
 
 •	The group explained that they chose to work on the epidemic response game rather than the de-escalation training game.
 
