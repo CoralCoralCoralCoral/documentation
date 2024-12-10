@@ -113,7 +113,7 @@ docker run --detach --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.
 
 Then the Api Server:
 ```bash
-docker run --detach --rm --name api-server -p 8080:8080 -e SPRING_RABBITMQ_HOST=host.docker.internal api-server
+docker run --detach --rm --name api-server -p 8080:8080 --env SPRING_RABBITMQ_HOST=host.docker.internal api-server
 ```
 
 Then the sim engine, ensuring to pass in the RabbitMQ connection details.
