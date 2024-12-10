@@ -21,13 +21,3 @@
 ## Product Documents
 
 ### Customer Meeting and Analysis
-
-### User Stories
-
-[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_4/user_stories.md)
-
-
-### User Cases
-
-[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_4/use_cases.md)
-
