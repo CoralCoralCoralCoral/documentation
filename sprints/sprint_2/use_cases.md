@@ -1,6 +1,6 @@
 
 # Use Cases
-## 5 (v1) [[User story 8 V1]](user_stories.md)
+## 5 (v1) [[User story 8 v1]](user_stories.md)
 
 ### 1. Title -- Implement Actions Within a Geographic Scope
 
@@ -31,7 +31,7 @@
 
 
 
-## 6 (v1) [[User story 6 V1]](user_stories.md)
+## 6 (v1) [[User story 6 v1]](user_stories.md)
 
 ### 1. Title -- Implement Actions Within a Geographic Scope
 
@@ -61,7 +61,7 @@
 
 
 
-## 7 (v1) [[User story 7 V1]](user_stories.md)
+## 7 (v1) [[User story 7 v1]](user_stories.md)
 
 ### 1. Title -- Manage Resources for Realistic and Challenging Gameplay 
 
