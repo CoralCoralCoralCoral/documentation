@@ -1,6 +1,6 @@
 # Use Cases
 
-## 1 (v1) [[User story 1 V1]](user_stories.md)
+## 1 (v1) [[User story 1 v1]](user_stories.md)
 
 ### 1. Title -- UI
 
@@ -34,7 +34,7 @@
 
 
 
-## 2 (v1) [[User story 2 V1]](user_stories.md)
+## 2 (v1) [[User story 2 v1]](user_stories.md)
 
 ### 1. Title -- Enable Interactive Gameplay 
 
@@ -62,7 +62,7 @@
 
 
 
-## 3 (v1) [[User story 3 V1]](user_stories.md)
+## 3 (v1) [[User story 3 v1]](user_stories.md)
 
 ### 1. Title -- Simulate Epidemic Scenarios 
 
@@ -92,7 +92,7 @@
 
 
 
-## 4 (v1) [[User story 4 V1]](user_stories.md)
+## 4 (v1) [[User story 4 v1]](user_stories.md)
 
 ### 1. Title -- Use Multiple Strategies for Realistic Gameplay
 
