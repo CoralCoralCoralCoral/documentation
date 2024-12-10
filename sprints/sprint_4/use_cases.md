@@ -1,6 +1,6 @@
 # Use Cases
 
-## 12 (v1)
+## 9 (v1) [[User story 5 V2]](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_4/user_stories.md)
 
 ### 1. **Title** –- Oracle giving suggestions for intervention.
 
@@ -32,7 +32,9 @@
 
 ### 8. **Postcondition** -- The game will be paused and the user can start playing at any point.
 
-## 13 (v1)
+
+
+## 10 (v1) [[User story 5 V2]](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_4/user_stories.md)
 
 ### 1. **Title** –- Oracle giving suggestions for surveillance.
 
@@ -64,7 +66,9 @@
 
 ### 8. **Postcondition** -- The game will be paused and the user can start playing at any point.
 
-## 14 (v1)
+
+
+## 11 (v1) [[User story 5 V2]](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_4/user_stories.md)
 
 ### 1. **Title** –- Oracle giving suggestions for research.
 
@@ -96,7 +100,9 @@
 
 ### 8. **Postcondition** -- The game will be paused and the user can start playing at any point.
 
-## 15 (v1)
+
+
+## 12 (v1) [[User story 12 V1]](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_4/user_stories.md)
 
 ### 1. **Title** –- Surveillance actions in healthcare spaces.
 
