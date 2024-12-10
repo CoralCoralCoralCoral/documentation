@@ -1,6 +1,6 @@
 # Use Cases
 
-## 7 (v1) [[User story 8 V1]](user_stories.md)
+## 8 (v1) [[User story 8 V1]](user_stories.md)
 
 ### 1. Title -- Pause and Resume the Game
 
@@ -32,7 +32,7 @@
 
 
 
-## 8 (v1) [[User story 10 V1]](user_stories.md)
+## 9 (v1) [[User story 10 V1]](user_stories.md)
 
 ### 1. Title -- Metrics Graphs
 
