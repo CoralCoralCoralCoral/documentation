@@ -4,7 +4,7 @@
 
 ### 1. Title -- UI
 
-### 2. Purpose -- Have a good visualisation of the information for the user
+### 2. Purpose -- Have a good visualisation of the information for the user.
 
 ### 3. Associated User Stories -- 1 (v1)
 
@@ -18,20 +18,33 @@
 
 #### Step 2 - The system has a functional simulation engine ready to display data with these key functions: 
 
-##### A map showing affected areas. 
-
-##### Graphs showing infection trends. 
-
-##### A panel with simulation controls (start, pause, reset). 
+- A map showing affected areas. 
+- Graphs showing infection trends. 
+- A panel with simulation controls (start, pause, reset). 
 
 #### Step 3 - The user observes how data changes over time. 
 
 ### 7. Alternative Flow -- exceptions to main flow
 
-#### Exception 1 - If the user interface fails to load, the system displays an error message and provides troubleshooting steps. 
+#### Exception - If the user interface fails to load, the system displays an error message and provides troubleshooting steps. 
 
 ### 8. Postcondition -- The user has access to an intuitive and visually appealing interface to monitor the simulation. 
 
+### 9. Tests
+
+#### Test 1 (Start game UI)
+- Step 1: In the test suite navigate to the start up screen of the game. If start up screen does not load FAIL.
+- Step 2: Check if there is a button to start the game. If button does not exist FAIL.
+
+#### Test 2 (In-game UI)
+- Step 1: Check if the map has loaded. If not FAIL.
+- Step 2: Check if graphs have loaded. If not FAIL.
+- Step 3: Check if contral panel has loaded. If not FAIL.
+
+#### Test 3 (In-game UI Updates)
+- Step 1: Check if the UI is connected to a simulation instance. If not FAIL.
+- Step 2: Check if the UI recieves data from simulation instance at the expected frequency (demermined while running test). If not FAIL.
+- Step 3: Check if UI displays the game state changes. If not FAIL.
 
 
 ## 2 (v1) [[User story 2 v1]](user_stories.md)
@@ -56,9 +69,17 @@
 
 ### 7. Alternative Flow -- exceptions to main flow
 
-#### Exception 1 - If input is invalid (e.g., exceeding resource limits), the system displays a warning and suggests corrections. 
+#### Exception - If input is invalid (e.g., exceeding resource limits), the system displays a warning and suggests corrections. 
 
 ### 8. Postcondition -- The user can seamlessly interact with the game to influence the simulation. 
+
+### 9. Tests
+
+#### Test 1 (UI interaction)
+- Step 1: For each interaction:
+  - dispatch interaction when the action would be deemed invalid. If UI does not reject with an "invalid action" message FAIL.
+  - dispatch interaction when the action would be deemed valid. If UI does not accept the action FAIL.
+    - The UI sends a command message to the API server. If the message fails to be sent FAIL.
 
 
 
