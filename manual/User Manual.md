@@ -157,7 +157,7 @@ Finally there is some number of simulation server instances, each simulation/gam
 
 Running multiple copies of the simulation service can be beneficial, both for availability - if one instance on a host happens to crash there is still another running, and for distribution of load - having instances on multiple machines can ease the per machine compute workload.
 
-#### Api Server - [Repo Link](https://github.com/CoralCoralCoralCoral/api-server)
+### Api Server - [Repo Link](https://github.com/CoralCoralCoralCoral/api-server)
 The Api Server is a Java Springboot application and follows generic Springboot standards and uses Gradle as a build tool. It's main function is to sit between a client and a Simulation engine instance, many Sim instances can be connected to many Clients via a single API Server instance. 
 
 It can also be adapted to add further features such as using Spring's authorisation features to limit client's access and setup logins/user profiles for different individuals. The code gives a basic server without these extra features which can be applied as needed for different deployments.
