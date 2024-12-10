@@ -102,7 +102,7 @@
 
 
 
-## 13 (v1) [[User story 13 v1]]user_stories.md)
+## 13 (v1) [[User story 13 v1]](user_stories.md)
 
 ### 1. **Title** –- Surveillance actions in healthcare spaces.
 
