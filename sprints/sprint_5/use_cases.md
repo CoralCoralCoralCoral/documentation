@@ -1,6 +1,6 @@
 # Use Cases
 
-## 13 (v1) [[User story 14 V1]](../sprint_4/user_stories.md) [[User story 11 V1]](../sprint_3/user_stories.md)
+## 14 (v1) [[User story 14 V1]](../sprint_4/user_stories.md) [[User story 11 V1]](../sprint_3/user_stories.md)
 
 ### 1. Title -- Accuracy Changes by Area 
 
@@ -40,7 +40,7 @@
 
 
 
-## 14 (v1) [[User story 13 V1]](../sprint_4/user_stories.md)
+## 15 (v1) [[User story 13 V1]](../sprint_4/user_stories.md)
 
 ### 1. Title -- Prioritize Testing for High-Risk Groups  
 
@@ -69,7 +69,7 @@
 #### -- If prioritization delays testing for others, the system provides a warning.
 
 
-## 15 (v1) [[User story 15 V1]](user_stories.md)
+## 16 (v1) [[User story 15 V1]](user_stories.md)
 
 ### 1. Title -- See How Delayed Testing Affects the Outbreak  
 
@@ -97,7 +97,7 @@
 
 
 
-## 16 (v1) [[User story 9 V2]](user_stories.md)
+## 17 (v1) [[User story 9 V2]](user_stories.md)
 
 ### 1. Title -- Save Games
 
@@ -125,7 +125,7 @@
 
 
 
-## 17 (v1) [[User story 18 V1]](user_stories.md)
+## 18 (v1) [[User story 18 V1]](user_stories.md)
 
 ### 1. Title -- Load Games
 
