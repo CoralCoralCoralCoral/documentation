@@ -1,28 +1,28 @@
 
 # Use Cases
 
-## 1 (v1)
+## 1 (v1) [[User story 1 v1]](user_stories.md)
 
-### 1. Title
+### 1. Title -- Map modes
 
-### 2. Purpose -- a short description of the goal to be achieved
+### 2. Purpose -- As a user, I want to be able to apply different map modes so that I can .
 
-### 3. Associated User Stories
+### 3. Associated User Stories -- 1 (v1)
 
-### 4. Actors -- the actors involvedin the flow
+### 4. Actors -- The User.
 
-### 5. Preconditions -- the state before the flow begins
+### 5. Preconditions -- The user press a button to see a different map mode.
 
 ### 6. Main Flow -- regular flow of activities
 
-#### Step 1
+#### Step 1 - The user can select from a list of different options for which data they want to see visualized on the map.
 
-#### Step 2
+#### Step 2 - The user presses on one of them and the game will change what data is visualized on the map,
 
-### 7. Alternative Flow #number -- exceptions to main flow
+#### Step 3 - The UI map will change to show the needed data and the user can continue playing the game
 
-#### Exception 1
+### 7. Alternative Flow -- exceptions to main flow
 
-#### Exception 2
+### 8. Postcondition -- The game successfully shows the updated map.
 
-### 8. Postcondition -- what you expect the state to be once the flow is complete
+### 8. Tests - Does the map update when the button has been pressed by the player?

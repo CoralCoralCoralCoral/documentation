@@ -1,12 +1,12 @@
 # Use Cases
 
-## 13 (v1) [[User story 14 V1]](../sprint_4/user_stories.md) [[User story 11 V1]](../sprint_3/user_stories.md)
+## 14 (v1) [[User story 15 v1]](../sprint_4/user_stories.md) [[User story 12 v1]](../sprint_3/user_stories.md)
 
 ### 1. Title -- Accuracy Changes by Area 
 
 ### 2. Purpose -- As a public health official, I want to know how testing accuracy varies by area so I can allocate resources more effectively.
 
-### 3. Associated User Stories -- 14 (v1), 11 (v1)
+### 3. Associated User Stories -- 15 (v1), 12 (v1)
 
 ### 4. Actors -- The User
 
@@ -40,13 +40,13 @@
 
 
 
-## 14 (v1) [[User story 13 V1]](../sprint_4/user_stories.md)
+## 15 (v1) [[User story 14 v1]](../sprint_4/user_stories.md)
 
 ### 1. Title -- Prioritize Testing for High-Risk Groups  
 
 ### 2. Purpose -- High-risk groups are identified based on available data (e.g., elderly or those with pre-existing conditions). Actions are taken to help them.
 
-### 3. Associated User Stories -- 13 (v1)
+### 3. Associated User Stories -- 14 (v1)
 
 ### 4. Actors -- The User
 
@@ -69,13 +69,13 @@
 #### -- If prioritization delays testing for others, the system provides a warning.
 
 
-## 15 (v1) [[User story 15 V1]](user_stories.md)
+## 16 (v1) [[User story 16 v1]](user_stories.md)
 
 ### 1. Title -- See How Delayed Testing Affects the Outbreak  
 
 ### 2. Purpose --  As a public health official, I want to understand how delays in testing affect the spread of the disease so I can make better plans to reduce these delays
 
-### 3. Associated User Stories -- 15 (v1)
+### 3. Associated User Stories -- 16 (v1)
 
 ### 4. Actors -- The User
 
@@ -97,13 +97,13 @@
 
 
 
-## 16 (v1) [[User story 9 V2]](user_stories.md)
+## 17 (v1) [[User story 10 v2]](user_stories.md)
 
 ### 1. Title -- Save Games
 
 ### 2. Purpose -- As a user, I want to save my game so that I can stop playing and come back later.
 
-### 3. Associated User Stories -- 9 (v2)
+### 3. Associated User Stories -- 10 (v2)
 
 ### 4. Actors -- The User.
 
@@ -125,13 +125,13 @@
 
 
 
-## 17 (v1) [[User story 18 V1]](user_stories.md)
+## 18 (v1) [[User story 19 v1]](user_stories.md)
 
 ### 1. Title -- Load Games
 
 ### 2. Purpose -- As a user, I want to save and load my save so that I can stop playing and come back later.
 
-### 3. Associated User Stories -- 18 (v1)
+### 3. Associated User Stories -- 19 (v1)
 
 ### 4. Actors -- The User.
 

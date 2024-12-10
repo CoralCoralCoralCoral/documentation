@@ -1,12 +1,12 @@
 # Use Cases
 
-## 9 (v1) [[User story 5 V2]](user_stories.md)
+## 10 (v1) [[User story 5 v2]](user_stories.md)
 
 ### 1. **Title** –- Oracle giving suggestions for intervention.
 
 ### 2. **Purpose** -- The Oracle should give advice upon meeting certain thresholds.
 
-### 3. **Associated User Stories** -- User story 5 (V2)
+### 3. **Associated User Stories** -- User story 5 (v2)
 
 ### 4. **Actors** -- The user and the Oracle.
 
@@ -34,13 +34,13 @@
 
 
 
-## 10 (v1) [[User story 5 V2]](user_stories.md)
+## 11 (v1) [[User story 5 v2]](user_stories.md)
 
 ### 1. **Title** –- Oracle giving suggestions for surveillance.
 
 ### 2. **Purpose** -- The Oracle should give advice upon meeting certain thresholds.
 
-### 3. **Associated User Stories** -- User story 5 (V2)
+### 3. **Associated User Stories** -- User story 5 (v2)
 
 ### 4. **Actors** -- The user and the Oracle.
 
@@ -68,13 +68,13 @@
 
 
 
-## 11 (v1) [[User story 5 V2]](user_stories.md)
+## 12 (v1) [[User story 5 v2]](user_stories.md)
 
 ### 1. **Title** –- Oracle giving suggestions for research.
 
 ### 2. **Purpose** -- The Oracle should give advice upon meeting certain thresholds.
 
-### 3. **Associated User Stories** -- User story 5 (V2)
+### 3. **Associated User Stories** -- User story 5 (v2)
 
 ### 4. **Actors** -- The user and the Oracle.
 
@@ -102,13 +102,13 @@
 
 
 
-## 12 (v1) [[User story 12 V1]]user_stories.md)
+## 13 (v1) [[User story 13 v1]](user_stories.md)
 
 ### 1. **Title** –- Surveillance actions in healthcare spaces.
 
 ### 2. **Purpose** -- The User should be able to take action to increase their surveillance so that they can get better data.
 
-### 3. **Associated User Stories** -- User story 12 (V1)
+### 3. **Associated User Stories** -- User story 13 (v1)
 
 ### 4. **Actors** -- The User.
 

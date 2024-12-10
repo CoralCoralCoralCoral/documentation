@@ -1,12 +1,12 @@
 # Use Cases
 
-## 7 (v1) [[User story 8 V1]](user_stories.md)
+## 8 (v1) [[User story 9 v1]](user_stories.md)
 
 ### 1. Title -- Pause and Resume the Game
 
 ### 2. Purpose -- As a user, I want to pause and resume the game so that I can take breaks to strategize and think.
 
-### 3. Associated User Stories -- 8 (v1)
+### 3. Associated User Stories -- 9 (v1)
 
 ### 4. Actors -- The User.
 
@@ -32,28 +32,28 @@
 
 
 
-## 8 (v1) [[User story 10 V1]](user_stories.md)
+## 9 (v1) [[User story 11 v1]](user_stories.md)
 
-### 1. Title -- Map modes
+### 1. Title -- Metrics Graphs
 
-### 2. Purpose -- As a user, I want to be able to apply different map modes so that I can .
+### 2. Purpose -- As a user, I want to be able to see a specfic metrics plot for a given jurisdiction.
 
-### 3. Associated User Stories -- 10 (v1)
+### 3. Associated User Stories -- 11 (v1)
 
-### 4. Actors -- The User.
+### 4. Actors -- The System, the User.
 
-### 5. Preconditions -- The user press a button to see a different map mode.
+### 5. Preconditions --  A jurisdiction is selected. [Reference Use Case 5 (v1)](../sprint_2/use_cases.md)
 
 ### 6. Main Flow -- regular flow of activities
 
-#### Step 1 - The user can select from a list of different options for which data they want to see visualized on the map.
+#### Step 1 - User selects a metric to view.
 
-#### Step 2 - The user presses on one of them and the game will change what data is visualized on the map,
+#### Step 2 - System retrives the data for the specified metrics for the selceted jurisdiction.
 
-#### Step 3 - The UI map will change to show the needed data and the user can continue playing the game
+#### Step 3 - The system will contruct a plot for the retrived data and display it in the user interface.
 
 ### 7. Alternative Flow -- exceptions to main flow
 
-### 8. Postcondition -- The game successfully shows the updated map.
+### 8. Postcondition -- The game continues playing.
 
-### 8. Tests - Does the map update when the button has been pressed by the player?
+### 9. Tests - Does the map update when the button has been pressed by the player?
