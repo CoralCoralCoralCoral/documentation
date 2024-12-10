@@ -101,7 +101,7 @@
 
 #### Step 2 - The system runs the simulation, showing the spread of the disease over time. 
 
-#### Step 3 - The user can pause mid-simulation and rewind post-simulation to explore different outcomes. 
+#### Step 3 - The user can pause mid-simulation and restart to take time to think and plan. 
 
 ### 7. Alternative Flow -- exceptions to main flow
 
@@ -110,6 +110,15 @@
 #### Exception 2 - If the simulation engine encounters issues, the system provides debug options or loads a default scenario. 
 
 ### 8. Postcondition -- The simulation run functionally.
+
+### 9. Tests
+
+#### Test 1 (Simulation functionality)
+- Step 1: Initalize the simulation. If the simulations does not start FAIL.
+- Step 2: Let the simulation run. Check if virus successfully spread in realistic manner with no intervention. If not FAIL.
+- Step 3: Pause the simulation. Check if simulation successfully pauses. If not FAIL.
+- Step 4: Restart the simulation. Check if simulation successfully starts. If not FAIL.
+
 
 
 
