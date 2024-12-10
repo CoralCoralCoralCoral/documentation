@@ -1,6 +1,6 @@
 # Use Cases
 
-## 9 (v1) [[User story 5 V2]](user_stories.md)
+## 10 (v1) [[User story 5 V2]](user_stories.md)
 
 ### 1. **Title** –- Oracle giving suggestions for intervention.
 
@@ -34,7 +34,7 @@
 
 
 
-## 10 (v1) [[User story 5 V2]](user_stories.md)
+## 11 (v1) [[User story 5 V2]](user_stories.md)
 
 ### 1. **Title** –- Oracle giving suggestions for surveillance.
 
@@ -68,7 +68,7 @@
 
 
 
-## 11 (v1) [[User story 5 V2]](user_stories.md)
+## 12 (v1) [[User story 5 V2]](user_stories.md)
 
 ### 1. **Title** –- Oracle giving suggestions for research.
 
@@ -102,7 +102,7 @@
 
 
 
-## 12 (v1) [[User story 12 V1]]user_stories.md)
+## 13 (v1) [[User story 12 V1]]user_stories.md)
 
 ### 1. **Title** –- Surveillance actions in healthcare spaces.
 
