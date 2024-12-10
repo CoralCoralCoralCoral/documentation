@@ -1,6 +1,6 @@
 # Use Cases
 
-## 13 (v1) [[User story 14 V1]](/sprint_5/user_stories.md)
+## 13 (v1) [[User story 14 V1]](user_stories.md)
 
 ### 1. Title -- Accuracy Changes by Area 
 
