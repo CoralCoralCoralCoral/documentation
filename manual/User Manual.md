@@ -69,6 +69,62 @@ When you want to **stop** the app:
 1. Open a terminal/console in the same folder as the compose file
 2. Run the following command: `docker compose -f docker-compose.yml down`
 
+### Using Docker (not compose)
+
+If you want to use docker but avoid using compose, maybe you have a distributed use case, you can build the app with docker but without compose.
+
+Firstly you will of course need Docker installed, refer to the previous section for install assistance. Then you will want to install Git, more info [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+Open a terminal/console.
+
+You will now want to clone the Sim-Server repository, enter the folder, and use Docker to build the image locally with the name 'sim-engine':
+```bash
+git clone https://github.com/CoralCoralCoralCoral/simulation-engine.git
+cd simulation-engine
+docker buildx build . -t sim-engine
+```
+Then leave the build folder:
+```bash
+cd ..
+```
+Next you can clone the Api-Server repository, enter the folder, and use Docker to build the image locally with the name 'api-server':
+```bash
+git clone https://github.com/CoralCoralCoralCoral/api-server.git
+cd api-server
+docker buildx build . -t api-server 
+```
+
+**Note: If you are using your own MapBox Api Key you will need to build the Docker image using the below instead**
+
+Ensure the Api key is set as an environment variable, this only needs to be set for the build step, named 'mapbox_api_key'. On Windows using Powershell you can do `$mapbox_api_key=SECRET_KEY`, on MacOS and Linux you can use `mapbox_api_key=SECRET_KEY`.
+```bash
+docker buildx build . -t api-server --secret type=env,id=mapbox_api_key
+```
+
+See [Docker Buildx Secrets](https://docs.docker.com/reference/cli/docker/buildx/build/#secret) docs if you have any issues.
+
+You can then run the Images indiviually, ensuring you start the RabbitMQ instance first.
+```bash
+docker run --detach --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0-management 
+```
+
+Then the Api Server:
+```bash
+docker run --detach --rm --name api-server --network host api-server
+```
+
+Then the sim engine, ensuring to pass in the RabbitMQ connection details.
+```bash
+docker run --detach --rm --name sim-engine --network host --env RMQ_URI=amqp://guest:guest@127.0.0.1:5672/ sim-engine
+```
+
+The easiest way to stop these running is the same as before, using the Docker Desktop app, and stopping the containers with the names set (rabbitmq, api-server, sim-engine).
+
+Alternatively you can use:
+```bash
+docker kill rabbitmq api-server sim-engine
+```
+
 ### Organisation Guide
 
 As an organisation looking to serve the app to multiple users you can either follow the basic steps for a single user, installing the whole stack on a single device or have a more distributed setup based on your architecture.
