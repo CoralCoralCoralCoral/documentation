@@ -1,7 +1,7 @@
 
 # Use Cases
 
-## 1 (v1)
+## 5 (v1) [[User story 6 V1]](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_2/user_stories.md)
 
 ### 1. Title -- Implement Actions Within a Geographic Scope
 
@@ -31,7 +31,7 @@
 
 
 
-## 2 (v1)
+## 6 (v1) [[User story 7 V1]](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_2/user_stories.md)
 
 ### 1. Title -- Manage Resources for Realistic and Challenging Gameplay 
 
