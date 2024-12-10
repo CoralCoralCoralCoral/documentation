@@ -83,22 +83,25 @@ git clone https://github.com/CoralCoralCoralCoral/simulation-engine.git
 cd simulation-engine
 docker buildx build . -t sim-engine
 ```
-Then leave the build folder:
+Then leave the build folder, clone the Api-Server repository, and enter the folder,:
 ```bash
 cd ..
-```
-Next you can clone the Api-Server repository, enter the folder, and use Docker to build the image locally with the name 'api-server':
-```bash
 git clone https://github.com/CoralCoralCoralCoral/api-server.git
 cd api-server
-docker buildx build . -t api-server 
 ```
 
-**Note: If you are using your own MapBox Api Key you will need to build the Docker image using the below instead**
+Ensure the MapBox Api key is set as an environment variable, this only needs to be set for the build step, named 'mapbox_api_key'. On Windows using Powershell you can do `$mapbox_api_key=SECRET_KEY`, on MacOS and Linux you can use `mapbox_api_key=SECRET_KEY`
 
-Ensure the Api key is set as an environment variable, this only needs to be set for the build step, named 'mapbox_api_key'. On Windows using Powershell you can do `$mapbox_api_key=SECRET_KEY`, on MacOS and Linux you can use `mapbox_api_key=SECRET_KEY`.
+Then use Docker to build the image locally with the name 'api-server'.:
+
 ```bash
 docker buildx build . -t api-server --secret type=env,id=mapbox_api_key
+```
+
+**Note: If you do not have a MapBox API key you can use the below instead, no default key is provided**
+
+```bash
+docker buildx build . -t api-server 
 ```
 
 See [Docker Buildx Secrets](https://docs.docker.com/reference/cli/docker/buildx/build/#secret) docs if you have any issues.
