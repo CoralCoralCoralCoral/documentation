@@ -1,6 +1,6 @@
 # Use Cases
 
-## 1 (v1) [{User story 1 V1}]https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_1/user_stories.md)
+## 1 (v1) [User story 1 V1]https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_1/user_stories.md)
 
 ### 1. Title -- UI
 
