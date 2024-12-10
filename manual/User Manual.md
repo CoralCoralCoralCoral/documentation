@@ -106,7 +106,7 @@ docker buildx build . -t api-server
 
 See [Docker Buildx Secrets](https://docs.docker.com/reference/cli/docker/buildx/build/#secret) docs if you have any issues.
 
-You can then run the Images indiviually, ensuring you start the RabbitMQ instance first.
+You can then run the Images indiviually, ensuring you start the RabbitMQ instance first, wait 30 seconds - 1 minute for the Rabbit image to fuly start up, the other parts of the app require Rabbit is functional to successfully start. If you are not sure, open Docker Desktop and click on the RabbitMQ container, if the logs are still moving then wait for them to stop.
 ```bash
 docker run --detach --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0-management 
 ```
