@@ -1,6 +1,6 @@
 # Use Cases
 
-## 1 (v1)
+## 7 (v1) [[User story 8 V1]](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_3/user_stories.md)
 
 ### 1. Title -- Pause and Resume the Game
 
@@ -30,7 +30,7 @@
 
 ### 8. Postcondition -- The game successfully runs with any changes made implemented.
 
-## 2 (v1)
+## 8 (v1) [[User story 10 V1]](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_3/user_stories.md)
 
 ### 1. Title -- Map modes
 
