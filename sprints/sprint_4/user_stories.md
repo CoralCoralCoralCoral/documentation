@@ -2,7 +2,7 @@
 
 ## New User Stories
 
-### 12 (v1)
+### 13 (v1)
 
 As a **user** I want to **take actions that improve the accuracy and breadth of information i receive** so that **I can optimize my actions**
 
@@ -10,7 +10,7 @@ As a **user** I want to **take actions that improve the accuracy and breadth of 
 
 Are there a set of actions that improve the accuracy and breadth of information revealed to the user?
 
-### 13 (v1)
+### 14 (v1)
 
 As a **user** I want to **take intervening actions** so that **I can control the spread of the pathogen**
 
@@ -18,7 +18,7 @@ As a **user** I want to **take intervening actions** so that **I can control the
 
 Are there a set of actions that allows the user to intervene in the spread of the pathogen?
 
-### 14 (v1)
+### 15 (v1)
 
 As a **user** I want to **take actions that expand my knowledge of the disease** so that **I can improve the effectiveness of my interventions**
 
@@ -52,7 +52,8 @@ Does the user receive feedback when their performance drops below a set threshol
 -   11 (v1)
 -   12 (v1)
 -   13 (v1)
--   14 (v1)  
+-   14 (v1)
+-   15 (v1) 
 
 ## Summary of Changes
 
