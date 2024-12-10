@@ -37,11 +37,3 @@
 
 •	Overall feedback was to start with a simple model to begin with and if we have time to expand upon that simple model.
 
-### User Stories
-
-[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_2/user_stories.md)
-
-
-### User Cases
-
-[goto user stories](https://github.com/CoralCoralCoralCoral/documentation/blob/Use-Cases/sprints/sprint_2/use_cases.md)
