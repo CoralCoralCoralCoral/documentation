@@ -23,11 +23,16 @@ This is the simplest list of steps to run the app, if you need more information 
 5. Run the following command: `docker compose -f docker-compose.yml up -d`
 6. Open your browser and visit 'http://localhost:8080/'
 
-When you want to stop the app:
+When you want to **stop** the app:
 
 1. Open the Docker Desktop app
 2. Go to the 'Containers' section
 3. Press the stop button next to the top level container named 'Epidemic-Simulation'
+
+*Alternatively...*
+
+1. Open a terminal/console in the same folder as the compose file
+2. Run the following command: `docker compose -f docker-compose.yml down`
 
 ## Installation Guide
 
@@ -47,11 +52,22 @@ Docker also provides a guide for installing just the Docker Engine [here](https:
 
 Once you have the Docker preqrequisite installed you can run the full stack by opening a command prompt (cmd/powershell on Windows, Terminal on MacOS/Linux) and run the following command
 
-```.bash
+```bash
 docker compose -f docker-compose.yml up -d
 ```
 
 Open a browser and enter 'http://localhost:8080/', this will take you to the apps main page.
+
+When you want to **stop** the app:
+
+1. Open the Docker Desktop app
+2. Go to the 'Containers' section
+3. Press the stop button next to the top level container named 'Epidemic-Simulation'
+
+*Alternatively*
+
+1. Open a terminal/console in the same folder as the compose file
+2. Run the following command: `docker compose -f docker-compose.yml down`
 
 ## User Guide
 
