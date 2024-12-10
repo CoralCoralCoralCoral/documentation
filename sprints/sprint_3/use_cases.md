@@ -1,12 +1,12 @@
 # Use Cases
 
-## 8 (v1) [[User story 8 V1]](user_stories.md)
+## 8 (v1) [[User story 9 v1]](user_stories.md)
 
 ### 1. Title -- Pause and Resume the Game
 
 ### 2. Purpose -- As a user, I want to pause and resume the game so that I can take breaks to strategize and think.
 
-### 3. Associated User Stories -- 8 (v1)
+### 3. Associated User Stories -- 9 (v1)
 
 ### 4. Actors -- The User.
 
@@ -32,13 +32,13 @@
 
 
 
-## 9 (v1) [[User story 10 V1]](user_stories.md)
+## 9 (v1) [[User story 11 v1]](user_stories.md)
 
 ### 1. Title -- Metrics Graphs
 
 ### 2. Purpose -- As a user, I want to be able to see a specfic metrics plot for a given jurisdiction.
 
-### 3. Associated User Stories -- 10 (v1)
+### 3. Associated User Stories -- 11 (v1)
 
 ### 4. Actors -- The System, the User.
 
