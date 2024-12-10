@@ -26,6 +26,14 @@ As a **user** I want to **to manage resources** so that **the simulation is real
 
 Does the game have a way for the user to strategically use resources?
 
+### 8 (v1)
+
+As a **user** I want **to see jurisdictions geographically** so that **I can visualize the epidemic by region**
+
+#### Acceptance criteria
+
+Is there a way for the user to receive relevant advice from an oracle that helps them?
+
 ## Revised User Stories
 
 None
@@ -39,6 +47,7 @@ None
 -   5 (v1)
 -   6 (v1)
 -   7 (v1)
+-   8(v1)
 
 ## Summary of Changes
 
