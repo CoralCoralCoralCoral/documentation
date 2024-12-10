@@ -110,12 +110,12 @@ docker run --detach --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.
 
 Then the Api Server:
 ```bash
-docker run --detach --rm --name api-server --network host api-server
+docker run --detach --rm --name api-server -p 8080:8080 -e SPRING_RABBITMQ_HOST=host.docker.internal api-server
 ```
 
 Then the sim engine, ensuring to pass in the RabbitMQ connection details.
 ```bash
-docker run --detach --rm --name sim-engine --network host --env RMQ_URI=amqp://guest:guest@127.0.0.1:5672/ sim-engine
+docker run --detach --rm --name sim-engine --env RMQ_URI=amqp://guest:guest@host.docker.internal:5672/ sim-engine
 ```
 
 The easiest way to stop these running is the same as before, using the Docker Desktop app, and stopping the containers with the names set (rabbitmq, api-server, sim-engine).
@@ -139,7 +139,7 @@ You may also want to setup an on-prem DNS record to point to the Api-Server for 
 
 ## User Guide
 
-## Maintainance Guide
+## Maintenance Guide
 
 ### Tech Stack
 
@@ -156,3 +156,18 @@ The [RabbitMQ](https://www.rabbitmq.com/) instance handles the messaging between
 Finally there is some number of simulation server instances, each simulation/game is contained by a single instance though one instance can run many simulations concurrently. The simulation server is responsible for doing the actual simulation work that is sent back to the client through Rabbit and the Api Server.
 
 Running multiple copies of the simulation service can be beneficial, both for availability - if one instance on a host happens to crash there is still another running, and for distribution of load - having instances on multiple machines can ease the per machine compute workload.
+
+#### Api Server - [Repo Link](https://github.com/CoralCoralCoralCoral/api-server)
+The Api Server is a Java Springboot application and follows generic Springboot standards and uses Gradle as a build tool. It's main function is to sit between a client and a Simulation engine instance, many Sim instances can be connected to many Clients via a single API Server instance. 
+
+It can also be adapted to add further features such as using Spring's authorisation features to limit client's access and setup logins/user profiles for different individuals. The code gives a basic server without these extra features which can be applied as needed for different deployments.
+
+The Configuration Classes in the Configuration Package (folder) control things like the auto-defined RabbitMQ Queues, Exchanges, Bindings etc, the CORS config for the app and the WebSocket/MessageBroker settings. In this case we use STOMP.
+
+We have two Controller classes, again in an aptly named Package. The base Controller contains a simple root redirect to the static html of the UI, and a messaging endpoint to recieve the Game COmmand messages via STOMP. These commands are then forwarded over Rabbit. The other Controller Class contains the game creation endpoint, it creates a generic setup and attemps to serialise and send the appropriate data over Rabbit to a simulation engine instance and back as a response to the POST request to the client.
+
+The Repository Package contains several Records used simply as skeletons for (de)serialising messages, either from Rabbit or from STOMP.
+
+The final Package is Services, which contains a single service currently which is responsible for listening to a given RabbitMQ queue (game-metrics in this case) and do some processing, here it simply serialises the Metrics Map and forwards the data to the appropriate client using STOMP.
+
+There are no static resources stored in the Api-Server repository, as all frontend development is done in the UI repo. This is then built and exported as a set of static resources which can be placed in the Api Server's static folder and built into the jar for serving to clients.
