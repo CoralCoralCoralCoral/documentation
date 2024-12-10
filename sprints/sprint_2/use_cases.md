@@ -1,12 +1,12 @@
 
 # Use Cases
-## 5 (v1) [[User story 6 V1]](user_stories.md)
+## 5 (v1) [[User story 8 V1]](user_stories.md)
 
 ### 1. Title -- Implement Actions Within a Geographic Scope
 
 ### 2. Purpose -- As a user, I want to implement actions within a given geographic scope so that I can use resources efficiently
 
-### 3. Associated User Stories -- 6 (v1)
+### 3. Associated User Stories -- 8 (v1)
 
 ### 4. Actors -- The User
 
