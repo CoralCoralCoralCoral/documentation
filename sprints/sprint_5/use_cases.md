@@ -38,7 +38,9 @@
 
 ### 8. Postcondition -- The game will continue to play after the user is finished. Any changes made by the user are done by the system.
 
-## 2 (v1)
+
+
+## 14 (v1) [[User story 13 V1]](../sprint_4/user_stories.md)
 
 ### 1. Title -- Prioritize Testing for High-Risk Groups  
 
@@ -66,7 +68,8 @@
 
 #### -- If prioritization delays testing for others, the system provides a warning.
 
-## 3 (v1)
+
+## 15 (v1) [[User story 15 V1]](user_stories.md)
 
 ### 1. Title -- See How Delayed Testing Affects the Outbreak  
 
@@ -92,7 +95,9 @@
 
 ### 8. Postcondition -- The simulation reflects the real-world consequences of delays, allowing the player to refine their plans.
 
-## 4 (v1)
+
+
+## 16 (v1) [[User story 9 V2]](user_stories.md)
 
 ### 1. Title -- Save Games
 
@@ -118,7 +123,9 @@
 
 ### 8. Postcondition -- The game successfully runs.
 
-## 5 (v1)
+
+
+## 17 (v1) [[User story 18 V1]](user_stories.md)
 
 ### 1. Title -- Load Games
 
