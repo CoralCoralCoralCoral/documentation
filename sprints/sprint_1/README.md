@@ -164,7 +164,7 @@ The details of the simulation model was also discussed. From this we decided on 
 For simplcity we assumed airborn transmission as the only infection vector.
 
 We wanted to simulate transmissions based on the [Wells-Riley model](https://en.wikipedia.org/wiki/Wells-Riley_model) of airborne transmission. 
-(https://en.wikipedia.org/wiki/Wells-Riley_model)
+
 We decided that agents would transition through infections states as laid out in the [SEIRS model](https://www.nature.com/articles/s41592-020-0856-2).
 
 ## Backlog
