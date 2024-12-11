@@ -156,12 +156,16 @@ This meeting was to decide on the intial prototype.
 
 Key Points:
 Intial UI mockups were discused. This would involve an interactive map that users could navigate to visulize the epedimic's state.
-Basic user actions such as; lockdown, mask mandates, testing and infrastructure investment were considered.
-The details of the simulation model was also discussed. From this we decided on an agent based model, with spaces that agents would travel between. Spaces would come in three varieties; households, offices and social spaces.
-For simplcity we assumed airborn transmission as the only infection vector.
-We wanted to simulate transmissions based on the Wells-Riley model of airborne transmission. [Link for model here](https://en.wikipedia.org/wiki/Wells-Riley_model)
-We decided that agents would transition through infections states as laid out in the SEIRS model. [Link for model here](https://www.nature.com/articles/s41592-020-0856-2) 
 
+Basic user actions such as; lockdown, mask mandates, testing and infrastructure investment were considered.
+
+The details of the simulation model was also discussed. From this we decided on an agent based model, with spaces that agents would travel between. Spaces would come in three varieties; households, offices and social spaces.
+
+For simplcity we assumed airborn transmission as the only infection vector.
+
+We wanted to simulate transmissions based on the [Wells-Riley model](https://en.wikipedia.org/wiki/Wells-Riley_model) of airborne transmission. 
+(https://en.wikipedia.org/wiki/Wells-Riley_model)
+We decided that agents would transition through infections states as laid out in the [SEIRS model](https://www.nature.com/articles/s41592-020-0856-2).
 
 ## Backlog
 
