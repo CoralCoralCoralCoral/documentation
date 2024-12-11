@@ -22,7 +22,9 @@ N/A
 
 ## Meeting Minutes
 
-### Meeting 1 (Wednesday 2024-10-30, Workshop) (Sprint Planning)
+### Meeting 1 (Sprint Planning)
+Date: 2024-10-30
+Place: Workshop (5.13 CB)
 
 Objective: Plan and discuss the development of a serious game.
 
@@ -77,10 +79,9 @@ Discussion Points
   .Use a mix of online and in-person sessions for effective teamwork.
   
 
-### Meeting 2 (Saturday 2024-11-02, Teams)
-    Date: 02-November-2024
-     Time: 14:00
-     Platform: Teams
+### Meeting 2 
+Date: 2024-11-02
+Place: Teams
 
 
 Agenda:
@@ -145,7 +146,22 @@ Agenda:
 
 
 
-### Meeting 3 (Sunday 2024-11-03, Virgil Building)
+### Meeting 3 
+Date: 2024-11-03
+Place: Virgil Building
+Participants: Koray Cooper and Umran Hussain
+
+Meeting goals:
+This meeting was to decide on the intial prototype.
+
+Key Points:
+Intial UI mockups were discused. This would involve an interactive map that users could navigate to visulize the epedimic's state.
+Basic user actions such as; lockdown, mask mandates, testing and infrastructure investment were considered.
+The details of the simulation model was also discussed. From this we decided on an agent based model, with spaces that agents would travel between. Spaces would come in three varieties; households, offices and social spaces.
+For simplcity we assumed airborn transmission as the only infection vector.
+We wanted to simulate transmissions based on the Wells-Riley model of airborne transmission. [Link for model here](https://en.wikipedia.org/wiki/Wells-Riley_model)
+We decided that agents would transition through infections states as laid out in the SEIRS model. [Link for model here](https://www.nature.com/articles/s41592-020-0856-2) 
+
 
 ## Backlog
 
