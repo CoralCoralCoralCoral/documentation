@@ -3,7 +3,7 @@
 ## Sprint Goal
 The goal of this sprint is to create a first prototype for the game.
 
-## Overview
+## Sprint Overview
 We decided that we would go foward with the epdidemic prevention game.
 
 We decided to work on prototypes for the MVP.
@@ -22,9 +22,8 @@ N/A
 
 ## Meeting Minutes
 
-### Meeting 1 (Wednesday 2024-10-30, Workshop)
-// Team Name: Coral
-Date: 30-10-2024
+### Meeting 1 (Wednesday 2024-10-30, Workshop) (Sprint Planning)
+
 Objective: Plan and discuss the development of a serious game.
 
 Discussion Points
@@ -32,14 +31,14 @@ Discussion Points
 1. Minimum Variable Product(MVP) and Sprint Goals
   
    . Deliverables by Next Week:
-   .Develop a Minumum Variable product|(MVP), featuring a basic UI to demonstrate functionality.
-   .|Ensure the MVP includes foundational elements such as a functional game UI connected to a local or server-side backend.
+   . Develop a Minumum Variable product|(MVP), featuring a basic UI to demonstrate functionality.
+   . Ensure the MVP includes foundational elements such as a functional game UI connected to a local or server-side backend.
    . Create a sprint documentation template.
 
-.Key feathures for the MVP:
- .Browser-based game for accesssibility and simpilicity
- .Local development preferred initially using HTTP servers or similar local setups
- .Simple UIs with graphical elements, even if the backend is not fully operational
+. Key feathures for the MVP:
+ . Browser-based game for accesssibility and simpilicity
+ . Local development preferred initially using HTTP servers or similar local setups
+ . Simple UIs with graphical elements, even if the backend is not fully operational
 
 2. Technical Decisions
  .Archictecture:
