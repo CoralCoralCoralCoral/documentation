@@ -6,8 +6,7 @@
 
 ## Meeting Minutes
 
-### Meeting 1 (2024-11-09, Teams)
-Participants: Team Coral
+### Meeting 1 (2024-11-09, Teams) (Sprint Planning)
 Platform : Teams
 
 Discussion Points
