@@ -1,14 +1,23 @@
 # Sprint 2: 2024-11-6 to 2024-11-12
 
 ## Sprint Goal
-The goal for this sprint was to develop a simple UI and a simple simulation backend.
+The goal for this sprint was to visualize a basic simulation.
 
-## Overview
+## Sprint Overview
+We wanted to create a basic UI showing a map for the game.
 
-## Review
+We wanted to create a basic model of a simulation.
+
+## Sprint Review
+A mockup of the UI was done. Actual implementation was left for next sprint.
+
+An functional agent based simulation model was built.
+
+## Sprint Retrospective
+Due to some team mates missing without prior warning. We ended up in a situation where only one was present at the customer meeting. We came to the understanding that notice where possible should be given.
 
 ## Exception Handling
-
+Issue of missing customer meeting was raised. We decided that better team coordination was required and that this was a one-off due to a mix of planned absences coinsiding with illness.
 
 ## Meeting Minutes
 
