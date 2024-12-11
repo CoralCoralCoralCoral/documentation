@@ -1,8 +1,14 @@
 # Sprint 2: 2024-11-6 to 2024-11-12
 
+## Sprint Goal
+The goal for this sprint was to develop a simple UI and a simple simulation backend.
+
 ## Overview
 
 ## Review
+
+## Exception Handling
+
 
 ## Meeting Minutes
 
@@ -50,7 +56,6 @@ Conclusion
  The team  took the customer's advice on board by focusing on simplicity and making improvements as the game development advances, and discussed different ways to collaborate to ensure team is on track with a clear roadmap for next sprint. 
 
 ### Meeting 2 (2024-11-11, School of Management)
-Participants: Team Coral
 
 Sprint Meeting Agenda
 
@@ -208,14 +213,6 @@ Key Decisions
 -   Implement basic user interface
 -   Implement basic epidemic simulation
 -   Implement basic http api server
-
-### Complete Backlog Tasks
-
-### New Backlog Tasks
-
-## Exception Handling
-
-## Product Documents
 
 ### Customer Meeting and Analysis
 •	Concerns were raised over how many members of the group were missing. This was dealt with later, and explanations were made for those group members missing. Group members had communicated about abscenses over the previous Sprint, a couple illnesses meant there was less members available for the Customer meeting.
