@@ -1,5 +1,8 @@
 # Sprint 1: 2024-10-30 to 2024-11-05
 
+## Sprint Goal
+The goal of this sprint is to create a first prototype for the game.
+
 ## Overview
 We decided that we would go foward with the epdidemic prevention game.
 
@@ -13,6 +16,9 @@ We decided that we should standardize our user stories.
 We needed further work on the prototypes.
 
 We needed to start working on use cases.
+
+## Exception Handling
+N/A
 
 ## Meeting Minutes
 
@@ -161,9 +167,6 @@ Agenda:
 
 -   Develop prototype
 
-## Exception Handling
-
-## Product Documents
 
 ### Customer Meeting and Analysis
 
@@ -232,5 +235,4 @@ General Meeting Feedback from Customer and Next steps
  Most promising concepts were both Epidemic Response Simulator and De-Escalation Training Simulator, due to their allignment with serious games and their potenetial impacts. 
  Customer adviced that ideas are furtehr evaluated and narrow down choices by next meeting. 
  
-
  
