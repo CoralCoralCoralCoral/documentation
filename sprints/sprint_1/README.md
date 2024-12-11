@@ -10,7 +10,7 @@ We decided to work on prototypes for the MVP.
 
 We started to create initial User Stories.
 
-## Review
+## Sprint Review
 We decided that we should standardize our user stories.
 
 We needed further work on the prototypes.
