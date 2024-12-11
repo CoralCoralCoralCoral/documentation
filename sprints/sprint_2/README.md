@@ -21,8 +21,9 @@ Issue of missing customer meeting was raised. We decided that better team coordi
 
 ## Meeting Minutes
 
-### Meeting 1 (2024-11-09, Teams) (Sprint Planning)
-Platform : Teams
+### Meeting 1 (Sprint Planning)
+Date: 2024-11-09
+Place : Teams
 
 Discussion Points
  Meeting started by referencing feedback from customer. Key suggestions from customer include:
@@ -64,7 +65,9 @@ Team Agenda
 Conclusion
  The team  took the customer's advice on board by focusing on simplicity and making improvements as the game development advances, and discussed different ways to collaborate to ensure team is on track with a clear roadmap for next sprint. 
 
-### Meeting 2 (2024-11-11, School of Management)
+### Meeting 2 
+Date: 2024-11-11
+Place: School of Management
 
 Sprint Meeting Agenda
 
