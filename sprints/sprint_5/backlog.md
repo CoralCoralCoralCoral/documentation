@@ -22,20 +22,6 @@
 -   Update statistics page every day
 -   Create component to navigate between jurisdictions
 
-## Completed Backlog Tasks
--  Make user stories for sprint 5
--  Make uses case for user stories in sprint 5
--  Create CI pipeline (simulation-engine)	
--  Create CI pipeline (api-server)	
--  Update statistics page every day	
--  Create a process to simulate testing of agents in health care spaces	
--  Create component to navigate between jurisdictions	
--  Create a transmitter that will publish daily data yielded by surveillance processes to the metrics-exchange	
--  Add websocket creation and connection capability	
--  Add tests for use cases in week 4
--  Add tests for use cases in week 5
--  Produce aggregate metrics per jurisdiction	
-
 ## New Backlog Tasks
 -  Add tests for use cases in week 1
 -  Add tests for use cases in week 2
@@ -53,3 +39,17 @@
 -  Produce aggregate metrics per jurisdiction
 -  Create component to start new game
 -  Create policy editor component
+
+## Completed Backlog Tasks
+-  Make user stories for sprint 5
+-  Make uses case for user stories in sprint 5
+-  Create CI pipeline (simulation-engine)	
+-  Create CI pipeline (api-server)	
+-  Update statistics page every day	
+-  Create a process to simulate testing of agents in health care spaces	
+-  Create component to navigate between jurisdictions	
+-  Create a transmitter that will publish daily data yielded by surveillance processes to the metrics-exchange	
+-  Add websocket creation and connection capability	
+-  Add tests for use cases in week 4
+-  Add tests for use cases in week 5
+-  Produce aggregate metrics per jurisdiction	
