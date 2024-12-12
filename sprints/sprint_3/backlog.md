@@ -8,6 +8,7 @@
 -   Instrument simulation engine to collect all event data
 -   Setup unit tests
 -   Create CI pipeline (simulation-engine)
+-   Create CI pipeline (api-server)	
 -   Come up with a scaling strategy
 -   Specify a bidirectional communication protocol between api server and simulation engine
 -   Make user stories for sprint 3
