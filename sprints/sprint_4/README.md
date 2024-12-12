@@ -6,9 +6,10 @@
 
 ## Sprint Review
 
-## Meeting Minutes
-
 ## Exception Handling
+
+
+## Meeting Minutes
 
 ### Meeting 1 (Sprint Planning)
 Date: 20/11/2024
