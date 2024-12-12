@@ -16,6 +16,8 @@ An functional agent based simulation model was built.
 ## Sprint Retrospective
 Due to some team mates missing without prior warning. We ended up in a situation where only one was present at the customer meeting. We came to the understanding that notice where possible should be given.
 
+We had decieded on which tools and languages that we were going to use moving forward. The initial simulation model was built in Go, and it seemed like a good fit for the purpose, thus team members decided to stick with it going forward. One implication of this decision was that we would have to maintian a separate repository for the simulation model, hereafter refered to as simulation-engine. Since Go is not necessarily the best langauge for UI development, we also decided to create a seperate repositary for the UI, which would be built using React.
+
 ## Exception Handling
 Issue of missing customer meeting was raised. We decided that better team coordination was required and that this was a one-off due to a mix of planned absences coinsiding with illness.
 
