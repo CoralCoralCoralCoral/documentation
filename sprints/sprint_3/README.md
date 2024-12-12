@@ -17,6 +17,9 @@ We created an API server that would sit inbetween the client and the simulation 
 
 We have a intial design specification for the oracle. 
 
+## Sprint Retrospective
+Since we were dealing with a lot more integration task (having the UI stream updated from the simulation engine for example). We did pair programming between team members that were primarily responsible for different aspects of the code (e.g. UI devs worked with simulation engine devs).
+
 ## Exception Handling
 Simulation engine produces too much data to be stored on the clientside, if we decided to send updates on every tick. So we decided to aggregate simulation metrics per ingame day, before sending it to the client. This lead to design of an entrire module dedicated to metrics.
 
