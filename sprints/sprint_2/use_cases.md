@@ -63,7 +63,15 @@
 
 #### Exception 1 - If the user tries to apply actions to an unselected region, the system provides a prompt to select a scope first. 
 
-### 8. Postcondition -- Actions are successfully applied within the specified geographic scope, optimizing resource use. 
+### 8. Postcondition -- Actions are successfully applied within the specified geographic scope, optimizing resource use.
+
+### 9. Tests
+
+#### Test 1
+- Step 1: Select a region on the map.
+  - Does the region get highlighted. If not FAIL.
+  - Does the region's metrics get shown on the sidebar. If not FAIL.
+- Step 2: Implement a policy. Does the sidebar show that the policy is active. If not FAIL
 
 
 
