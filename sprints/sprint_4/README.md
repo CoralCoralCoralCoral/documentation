@@ -1,10 +1,31 @@
 # Sprint 4: 2024-11-20 to 2024-11-26
 
 ## Sprint Goal
+Work on the simulation-engine so that we would imporve the realism of the simuation and further development of the UI to include a interactive map.
 
 ## Sprint Overview
+We wanted to introduce surveillance actions, such as testing in healthcare spaces as well as testing kits, where agents could test themselves in their households. On top of this, we wanted to introduce waste water testing as well.
+
+We wanted to introduce intervention actions, such as masks mandates and lockdowns.
+
+We wanted to introduce research actions that the user could take to unlock more effective interventions and surveillance.
+
+We wanted to introduce the concept of jurisdictions, so that players could selectively apply polices to specific geographic locations.
+
+We wanted to allow users to interact with the simualtion-engine throught the UI.
 
 ## Sprint Review
+We created the concept of jurisidictions by modeling them after Local Authority Districts and the MSOAs within them. We used government cencus data for this.
+
+We extended angent states to represent hospitalisation and death.
+
+We modified the simulation model to have each space (households, offices, social, healthcare) allocated to a jurisdiction based on population density data taken from the census. 
+
+We created a new type of space called the healthcare space. This was done so that we could later introduce surveliance processes and also model hospitalisations.
+
+We created intervention actions, such as mask mandates and lockdowns, which could be applied at the jurisdiction level.
+
+We made progress towards connected the UI and the simulation-engine, but this would need further work in the next sprint.
 
 ## Exception Handling
 
