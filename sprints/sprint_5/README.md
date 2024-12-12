@@ -1,15 +1,20 @@
 # Sprint 5: 2024-11-27 to 2024-12-03
 
-## Overview
+## Sprint Goal
 
-## Review
+## Sprint Overview
+
+## Sprint Review
+
+## Exception Handling
+
 
 ## Meeting Minutes
 
 ### Meeting 1
 Date: 2024-11-27
 Participants: Team Coral
-Venue: University of Bath
+Place: University of Bath
 
 Sprint Meeting Agenda
 
@@ -154,7 +159,7 @@ Next Steps
 ### Meeting 2
 Date: 2024-11-30
 Participants: Team Coral
-Platform: Online/In-person
+Place: Online/In-person
 
 
 Meeting Summary
@@ -314,16 +319,6 @@ Finalize UI-API integration UI Team Next Meeting Ongoing.
 Refine CRC cards Documentation Team Next Sprint Pending.
 
 Complete installation guide Documentation Team By Sprint End In Progress.
-
-## Backlog
-
-### Complete Backlog Tasks
-
-### New Backlog Tasks
-
-## Exception Handling
-
-## Product Documents
 
 ### Customer Meeting and Analysis
 
