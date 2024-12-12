@@ -17,6 +17,9 @@ We needed further work on the prototypes.
 
 We needed to start working on use cases.
 
+## Sprint Retrospective
+We had an intial idea of each team members strengths and areas of expertise. We realised that there was a large diversity of experience between team members in terms of tools used and familiarity with programming languages. Therefore, we had serval options in terms of the software stack, as team members decieded not to impose a specific set of tools or programming languages on the team. This gave us fredom to explore the most appropriate tooling and languages for the task at hand.
+
 ## Exception Handling
 N/A
 
