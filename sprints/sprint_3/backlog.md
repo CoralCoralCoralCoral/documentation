@@ -12,6 +12,7 @@
 -   Specify a bidirectional communication protocol between api server and simulation engine
 -   Make user stories for sprint 3
 -   Refine user stories
+-   Define user actions
 
 ## Completed Backlog Tasks
 -  Implement basic HTTP API server	
