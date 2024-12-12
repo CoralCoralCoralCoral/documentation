@@ -5,6 +5,8 @@
 -   Setup unit tests
 -   Create CI pipeline (simulation-engine)
 -   Come up with a scaling strategy
+-   Complete Sprint 2 Meeting notes
+-   Complete Sprint 3 Meeting notes	
 -   Make user stories for sprint 4
 -   Make uses case for user stories in sprint 1
 -   Make uses case for user stories in sprit 2
