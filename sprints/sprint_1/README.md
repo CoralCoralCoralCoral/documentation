@@ -1,125 +1,135 @@
 # Sprint 1: 2024-10-30 to 2024-11-05
 
 ## Overview
-We decided that we would go foward with the epdidemic prevention game.
 
-We decided to work on prototypes for the MVP.
-
-We started to create initial User Stories.
+We decided:
+  - we to go foward with the epdidemic prevention game.
+  - start working on prototypes for the MVP.
+  - start creating initial User Stories.
 
 ## Review
-We decided that we should standardize our user stories.
 
-We needed further work on the prototypes.
-
-We needed to start working on use cases.
+We decided:
+  - we need to standardise a layout for our user stories.
+  - further work is needed on the prototypes.
+  - to start developing Use Cases.
 
 ## Meeting Minutes
 
 ### Meeting 1 (Wednesday 2024-10-30, Workshop)
-// Team Name: Coral
 Date: 30-10-2024
 Objective: Plan and discuss the development of a serious game.
 
-Discussion Points
+# Discussion Points
 
 1. Minimum Variable Product(MVP) and Sprint Goals
-  
-   . Deliverables by Next Week:
-   .Develop a Minumum Variable product|(MVP), featuring a basic UI to demonstrate functionality.
-   .|Ensure the MVP includes foundational elements such as a functional game UI connected to a local or server-side backend.
-   . Create a sprint documentation template.
 
-.Key feathures for the MVP:
- .Browser-based game for accesssibility and simpilicity
- .Local development preferred initially using HTTP servers or similar local setups
- .Simple UIs with graphical elements, even if the backend is not fully operational
+   Deliverables by Sprint 2:
+   - Develop a Minumum Variable product|(MVP), featuring a basic UI to demonstrate functionality.
+   - Ensure the MVP includes foundational elements such as a functional game UI connected to a local or server-side backend.
+   - Create a sprint documentation template.
 
-2. Technical Decisions
- .Archictecture:
-  .Client-server model was considered, with potential use of Websocket.
-  .We explored local developments versus server-based execution.
- .Platforms:
-  .Preference for cross-platform solutions but we leaned toward prioritising Windows for testing simplicity.
- .Languages and Tools:
-  .Options discused include the use of Java, C++ and other lightweight frameworks for web development.
-  .Latex was preferred for documentation. 
+  Key features for the MVP:
+  - Browser-based game for accessibility and simpilicity.
+  - Local development preferred initially using HTTP servers or similar local setups.
+  - Simple UIs with graphical elements, even if the backend is not fully operational.
 
-3. Repository Management
- . Version Control:
-  .Main branches of repositories to be protected against direct push
-  . Require pull request with at least one approval before merging into main branch
- .Visibility
-  .Repositories may be made public for simpilicity and easy access.
+3. Technical Decisions
 
-4. Tasks for the Team
- 1. Research Technologies
-  . Each member to research relevenat technologies/tools (e.g. game engines, UI libaries) by next meeting.
-  . Group discussion and decision-making  for next meeting.
- 2. UI Design
-  . Create a simple mockup.
-  . Iterate on the design to align with MVP goals.
- 3. Documentation
-  .Draft and refine sprint templates and project documentation.
- 4. Sprint Workflow:
-   . Implement pair programming sessions for learning and development.
-   .Arrange optional in-person sessions for collarborative work.
+   Architecture:
+   - Client-server model was considered, with potential use of Websocket.
+   - We explored local developments versus server-based execution.
+     
+   Platforms:
+   - Preference for cross-platform solutions but we leaned toward prioritising Windows for testing simplicity.
+     
+   Languages and Tools:
+   - Language options discussed include the use of Java, C++ and JavaScript.
+   - Frameworks such as LWGJGL, React and NextJS were discussed.
+   - Latex was preferred for documentation. 
 
-5. Meeting Schedule
-  .Date: Saturday[02-11-2024]
-  . Agenda: Finalise technology decisions, UI mockups, and distribute sprint tasks.
- .Ongoing Collaboration:
-  .Use a mix of online and in-person sessions for effective teamwork.
+5. Repository Management
+
+   Version Control:
+   - Main branches of repositories to be protected against direct push.
+   - Require pull request with at least one approval from another team member before merging into main branch.
+     
+   Visibility:
+   - Repositories may be made public for simpilicity and easy access.
+
+7. Tasks for the Team
+
+   A. Research Technologies
+   - Each member to research relevenat technologies/tools (e.g. game engines, UI libaries) by next meeting.
+   - Group discussion and decision-making  for next meeting.
+     
+   B. UI Design
+   - Create a simple mockup.
+   - Iterate on the design to align with MVP goals.
+
+   C. Documentation
+   - Draft and refine sprint templates and project documentation.
+
+   D. Sprint Workflow:
+   - Implement pair programming sessions for learning and development.
+   - Arrange optional in-person sessions for collarborative work.
+
+   E. Meeting Schedule
+   Date: 02-11-2024
+   Agenda: Finalise technology decisions, UI mockups, and distribute sprint tasks.
+   Ongoing Collaboration: Use a mix of online and in-person sessions for effective teamwork.
   
 
 ### Meeting 2 (Saturday 2024-11-02, Teams)
-    Date: 02-November-2024
-     Time: 14:00
-     Platform: Teams
+Date: 02-November-2024
+Time: 14:00
+Platform: Teams
+Objective: ---
 
 
 Agenda:
  
- 1. Feedback Review and Next steps for Prjoect develpment
+ 1. Feedback review and next steps for project development.
 
- 2. Simulation prototypying and Framework stepup
+ 2. Simulation prototyping and framework set up.
 
- 3. Sprint Documentation and Workflow
+ 3. Sprint documentation and workflow design.
 
- 4. Schedule for Next meeting
+ 4. Schedule for next meeting.
 
 
  Key Discussions
-  1.Feedback Reviews and Recommendations:
+ 
+ 1.Feedback Reviews and Recommendations:
    We were adviced by the customer to keep the initial prototype simple to ensure correctness, and incrementally add complexities as we design the project.
+   
   Proposed Approach:
-   .Begin with a grid model where each square represents a value( e.g., density) impacting infection rates.
-   . Each agent should have one basic trait for simplicity.
-   .Test and refine the system iteratively.
+   - Begin with a grid model where each square represents a value (e.g. density) impacting infection rates.
+   - Each agent should have one basic trait for simplicity.
+   - Test and refine the system iteratively.
 
-   2. Simulation and Technical Setup:
+2. Simulation and Technical Setup:
+    Development Tools:
+     - Backend -- Spring Boots suggested for scaffolding; Rust can be used if necessary.
+     - Frontend -- React recommended for UI development.
+     - Map integration -- Plan to overlay a grid on a map using Mapbox.
 
-     . Development Tools:
-      .Backend: Spring Boots suggested for scaffolding; Rust can be used if necessary.
-      .Frontend: React recommended for UI development.
-      .Map integration: Plan to overlay a grid on a map using Mapbox.
     Action Design for the prototype:
-     .Build a simple working model to simulate infection.
-     . Develp a basic UI with grid and map for next week's review.
+     - Build a simple working model to simulate infection.
+     - Develop a basic UI with grid and map for next week's review.
 
+3. Workflow and Sprint Documentation:
+    Next Action Plan:
+     - Use the provided TA documentation as a guideline for sprint tracking.
+     - Create initial tickets on Github.
+     - Establish a project repository for collaboration
 
-   3. Workflow and Sprint Documentation:
-    . Next Action plan
-     . Use the provided TA documentation as a baseline for sprint tracking.
-     .Create initial tickets on Github.
-     .Establish a project repository for collarboration
-
-   4. Schedule Planning for Next Meeting:
-    . Date and Time:04-November-2024
-    . Location: On Campus
-    .Focus Areas
-     .Finalise Spring Boot setup and UI framework.
-     . Review backlog items and documentation.
+4. Schedule Planning for Next Meeting:
+    Date and Time: 04-November-2024
+    Location: On Campus
+    Focus Areas:
+     - Finalise Spring Boot setup and UI framework.
+     - Review backlog items and documentation.
 
 
 
