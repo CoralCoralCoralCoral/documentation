@@ -27,8 +27,13 @@ We created intervention actions, such as mask mandates and lockdowns, which coul
 
 We made progress towards connected the UI and the simulation-engine, but this would need further work in the next sprint.
 
-## Exception Handling
+## Sprint Retrospective
+We started to become more comfortable with each other and our existing work flow and were happy to carry on without major changes.
 
+We did not have a fully integrated playable game at this point. Therfore, the focus of the team became about delivering a playable game as soon as possible.
+
+## Exception Handling
+N/A
 
 ## Meeting Minutes
 
