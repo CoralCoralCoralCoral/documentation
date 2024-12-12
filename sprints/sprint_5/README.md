@@ -4,11 +4,35 @@
 The goal of this sprint was to put together a playable game.
 
 ## Sprint Overview
+We wanted to have the UI talking to the simulation-engine. 
+
+We wanted to be able to display the real-time metrics on the UI.
+
+We wanted to be able to geogphracily visualize the epedicmic's state on the map.
+
+We wanted to the user to be able to take surveillance and intervention actions by interacting with the UI.
+
+We wanted to implement the oracle. This was a lower priority for this sprint.
 
 ## Sprint Review
+We implemented a "start game" button in the UI which would intiate a new game, by sending a message to the simulation-engine.
+
+The UI able to recieve metrics aggregated by jurisdiction from the simulation-engine.
+
+The UI map was able to visulize the epedemic's state based on the metrics recieved from the simulation-engine.
+
+The UI was able to generate and display graphs based on the metrics recieved from the simulation-engine.
+
+Although the simulation engine was setup to recieve and handle surveillance and intervention actions, due to a de-serialisation bug in the messaging layer, the UI was not able to send these message.
+
+The oracle was not implemented in this sprint, thus was left for the next sprint.
+
+
+## Sprint Retrospective
+Althoguth we were able to integrate most aspects of the ui and simulation-engine, the bug that prevented user actions from being sent to the simulation-engine prevented the game from being in a playable state. This was a huge disappointment for the team and we recognized that discovering these types of bugs at the last minute is not ideal. In order to prevent bugs of this class in the future, we decided to write automated unit tests for all serialization and deserialization logic.
 
 ## Exception Handling
-
+We discovered a bug in the deserialization of "command" messages sent from the UI to the simulation-engine, which resulted in these messages being ignored by the simulation-engine. This prevented us from achieving the goal of enabling bi-directional communication between the ui and simulation-engine. This issue was caught during manual integration testing at the very last minute before the demo. This bug would eventually be fixed in the next sprint.
 
 ## Meeting Minutes
 
