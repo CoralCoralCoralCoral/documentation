@@ -4,6 +4,7 @@
 -   Create a basic simulation of an epidemic using agent based modelling
 -   Setup unit tests
 -   Create CI pipeline (simulation-engine)
+-   Create CI pipeline (api-server)	
 -   Come up with a scaling strategy
 -   Complete Sprint 3 Meeting notes
 -   Complete Sprint 4 Meeting notes
