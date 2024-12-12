@@ -1,14 +1,17 @@
 # Sprint 4: 2024-11-20 to 2024-11-26
 
-## Overview
+## Sprint Goal
 
-## Review
+## Sprint Overview
+
+## Sprint Review
 
 ## Meeting Minutes
 
-### Meeting 1
-ate: 20/11/2024
+## Exception Handling
 
+### Meeting 1 (Sprint Planning)
+Date: 20/11/2024
 Attendees: Team Coral
 
 Key Discussion Points
@@ -37,11 +40,9 @@ ensure ongoing task are properly documented and tracked.
 
 
 ### Meeting 2
-Teams meeting 
-
+Place: Teams 
 Date: 23/11/2024
-
-Attendees: Team Coral Via Teams Platform
+Attendees: Team Coral 
 
 Agenda
 
@@ -114,22 +115,10 @@ Next Step
 
 .Prepare healthcare worker modelling for next sprint.
 
-
-## Backlog
-
-### Complete Backlog Tasks
-
-### New Backlog Tasks
-
-## Exception Handling
-
-## Product Documents
-
 ### Customer Meeting and Analysis
 Customer meeting 4
 
 Date:20/11/2024
-
 Attendees: Customer and Team Coral
 
 Agenda
