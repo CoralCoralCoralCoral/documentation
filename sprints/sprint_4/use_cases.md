@@ -32,6 +32,13 @@
 
 ### 8. **Postcondition** -- The game will be paused and the user can start playing at any point.
 
+### 9. Tests
+
+#### Test 1
+- Step 1: Start game and make sure that the game is in a state that would require the oracle to pop up.
+- Step 2: Check to see if oracle pops up when preconditions limit is met. If not FAIL.
+- Step 3: Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
+
 
 
 ## 11 (v1) [[User story 5 v2]](user_stories.md)
@@ -66,6 +73,12 @@
 
 ### 8. **Postcondition** -- The game will be paused and the user can start playing at any point.
 
+### 9. Tests
+
+#### Test 1
+- Step 1: Start game and make sure that the game is in a state that would require the oracle to pop up.
+- Step 2: Check to see if oracle pops up when preconditions limit is met. If not FAIL.
+- Step 3: Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
 
 
 ## 12 (v1) [[User story 5 v2]](user_stories.md)
@@ -100,6 +113,13 @@
 
 ### 8. **Postcondition** -- The game will be paused and the user can start playing at any point.
 
+### 9. Tests
+
+#### Test 1
+- Step 1: Start game and make sure that the game is in a state that would require the oracle to pop up.
+- Step 2: Check to see if oracle pops up when preconditions limit is met. If not FAIL.
+- Step 3: Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
+
 
 
 ## 13 (v1) [[User story 13 v1]](user_stories.md)
@@ -118,7 +138,7 @@
 
 #### **Step 1** -- The game will show the actions the user can take.
 
-#### **Step 2** -- The User will select one of the surveillance actions that are currently available. If the user wants to select an action they have not unlocked the go to alternative flow 1.
+#### **Step 2** -- The User will select one of the surveillance actions that are currently available. If the user wants to select an action they have not unlocked then go to alternative flow 1.
 
 #### **Step 3** -- The User can enable this action.
 
@@ -133,3 +153,9 @@
 #### **Step 3** -- The User continues playing.
 
 ### 8. **Postcondition** -- The action is applied and a pop up informing the user of the change is given.
+
+### 9. Test
+
+#### Test 1
+- Step 1: Select the testing strategy button.
+- Step 2: Select a different testing strategy. Check if it is implemented correctly. If not FAIL.
