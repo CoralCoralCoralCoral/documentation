@@ -1,14 +1,31 @@
 # Sprint 2: 2024-11-6 to 2024-11-12
 
-## Overview
+## Sprint Goal
+The goal for this sprint was to visualize a basic simulation.
 
-## Review
+## Sprint Overview
+We wanted to create a basic UI showing a map for the game.
+
+We wanted to create a basic model of a simulation.
+
+## Sprint Review
+A mockup of the UI was done. Actual implementation was left for next sprint.
+
+An functional agent based simulation model was built.
+
+## Sprint Retrospective
+Due to some team mates missing without prior warning. We ended up in a situation where only one was present at the customer meeting. We came to the understanding that notice where possible should be given.
+
+We had decieded on which tools and languages that we were going to use moving forward. The initial simulation model was built in Go, and it seemed like a good fit for the purpose, thus team members decided to stick with it going forward. One implication of this decision was that we would have to maintian a separate repository for the simulation model, hereafter refered to as simulation-engine. Since Go is not necessarily the best langauge for UI development, we also decided to create a seperate repositary for the UI, which would be built using React.
+
+## Exception Handling
+Issue of missing customer meeting was raised. We decided that better team coordination was required and that this was a one-off due to a mix of planned absences coinsiding with illness.
 
 ## Meeting Minutes
 
-### Meeting 1 (2024-11-09, Teams)
-Participants: Team Coral
-Platform : Teams
+### Meeting 1 (Sprint Planning)
+Date: 2024-11-09
+Place : Teams
 
 Discussion Points
  Meeting started by referencing feedback from customer. Key suggestions from customer include:
@@ -50,8 +67,9 @@ Team Agenda
 Conclusion
  The team  took the customer's advice on board by focusing on simplicity and making improvements as the game development advances, and discussed different ways to collaborate to ensure team is on track with a clear roadmap for next sprint. 
 
-### Meeting 2 (2024-11-11, School of Management)
-Participants: Team Coral
+### Meeting 2 
+Date: 2024-11-11
+Place: School of Management
 
 Sprint Meeting Agenda
 
@@ -209,14 +227,6 @@ Key Decisions
 -   Implement basic user interface
 -   Implement basic epidemic simulation
 -   Implement basic http api server
-
-### Complete Backlog Tasks
-
-### New Backlog Tasks
-
-## Exception Handling
-
-## Product Documents
 
 ### Customer Meeting and Analysis
 •	Concerns were raised over how many members of the group were missing. This was dealt with later, and explanations were made for those group members missing. Group members had communicated about abscenses over the previous Sprint, a couple illnesses meant there was less members available for the Customer meeting.

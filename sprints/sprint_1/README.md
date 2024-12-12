@@ -1,24 +1,34 @@
 # Sprint 1: 2024-10-30 to 2024-11-05
 
-## Overview
+## Sprint Goal
+The goal of this sprint is to create a first prototype for the game.
+
+## Sprint Overview
 We decided that we would go foward with the epdidemic prevention game.
 
 We decided to work on prototypes for the MVP.
 
 We started to create initial User Stories.
 
-## Review
+## Sprint Review
 We decided that we should standardize our user stories.
 
 We needed further work on the prototypes.
 
 We needed to start working on use cases.
 
+## Sprint Retrospective
+We had an intial idea of each team members strengths and areas of expertise. We realised that there was a large diversity of experience between team members in terms of tools used and familiarity with programming languages. Therefore, we had serval options in terms of the software stack, as team members decieded not to impose a specific set of tools or programming languages on the team. This gave us fredom to explore the most appropriate tooling and languages for the task at hand.
+
+## Exception Handling
+N/A
+
 ## Meeting Minutes
 
-### Meeting 1 (Wednesday 2024-10-30, Workshop)
-// Team Name: Coral
-Date: 30-10-2024
+### Meeting 1 (Sprint Planning)
+Date: 2024-10-30
+Place: Workshop (5.13 CB)
+
 Objective: Plan and discuss the development of a serious game.
 
 Discussion Points
@@ -26,14 +36,14 @@ Discussion Points
 1. Minimum Variable Product(MVP) and Sprint Goals
   
    . Deliverables by Next Week:
-   .Develop a Minumum Variable product|(MVP), featuring a basic UI to demonstrate functionality.
-   .|Ensure the MVP includes foundational elements such as a functional game UI connected to a local or server-side backend.
+   . Develop a Minumum Variable product|(MVP), featuring a basic UI to demonstrate functionality.
+   . Ensure the MVP includes foundational elements such as a functional game UI connected to a local or server-side backend.
    . Create a sprint documentation template.
 
-.Key feathures for the MVP:
- .Browser-based game for accesssibility and simpilicity
- .Local development preferred initially using HTTP servers or similar local setups
- .Simple UIs with graphical elements, even if the backend is not fully operational
+. Key feathures for the MVP:
+ . Browser-based game for accesssibility and simpilicity
+ . Local development preferred initially using HTTP servers or similar local setups
+ . Simple UIs with graphical elements, even if the backend is not fully operational
 
 2. Technical Decisions
  .Archictecture:
@@ -72,10 +82,9 @@ Discussion Points
   .Use a mix of online and in-person sessions for effective teamwork.
   
 
-### Meeting 2 (Saturday 2024-11-02, Teams)
-    Date: 02-November-2024
-     Time: 14:00
-     Platform: Teams
+### Meeting 2 
+Date: 2024-11-02
+Place: Teams
 
 
 Agenda:
@@ -140,7 +149,26 @@ Agenda:
 
 
 
-### Meeting 3 (Sunday 2024-11-03, Virgil Building)
+### Meeting 3 
+Date: 2024-11-03
+Place: Virgil Building
+Participants: Koray Cooper and Umran Hussain
+
+Meeting goals:
+This meeting was to decide on the intial prototype.
+
+Key Points:
+Intial UI mockups were discused. This would involve an interactive map that users could navigate to visulize the epedimic's state.
+
+Basic user actions such as; lockdown, mask mandates, testing and infrastructure investment were considered.
+
+The details of the simulation model was also discussed. From this we decided on an agent based model, with spaces that agents would travel between. Spaces would come in three varieties; households, offices and social spaces.
+
+For simplcity we assumed airborn transmission as the only infection vector.
+
+We proposed to simulate transmissions based on the [Wells-Riley model](https://en.wikipedia.org/wiki/Wells-Riley_model) of airborne transmission. 
+
+We proposed that agents would transition through infections states as laid out in the [SEIRS model](https://www.nature.com/articles/s41592-020-0856-2).
 
 ## Backlog
 
@@ -161,9 +189,6 @@ Agenda:
 
 -   Develop prototype
 
-## Exception Handling
-
-## Product Documents
 
 ### Customer Meeting and Analysis
 
@@ -232,5 +257,4 @@ General Meeting Feedback from Customer and Next steps
  Most promising concepts were both Epidemic Response Simulator and De-Escalation Training Simulator, due to their allignment with serious games and their potenetial impacts. 
  Customer adviced that ideas are furtehr evaluated and narrow down choices by next meeting. 
  
-
  
