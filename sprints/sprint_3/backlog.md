@@ -15,6 +15,11 @@
 -   Refine user stories
 -   Define user actions
 
+## New Backlog Tasks
+- Make uses case for user stories in sprint 1
+- Make uses case for user stories in sprit 2
+- Make uses case for user stories in sprint 3 
+
 ## Completed Backlog Tasks
 -  Implement basic HTTP API server	
 -  Refine user stories
@@ -24,9 +29,3 @@
 -  Define user actions	
 -  Develop prototype	
 -  Instrument simulation engine to collect all event data	
-
-## New Backlog Tasks
-- Make uses case for user stories in sprint 1
-- Make uses case for user stories in sprit 2
-- Make uses case for user stories in sprint 3 
-
