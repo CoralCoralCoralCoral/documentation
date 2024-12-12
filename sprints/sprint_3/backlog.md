@@ -15,10 +15,7 @@
 ## Completed Backlog Tasks
 -  Implement basic HTTP API server	
 -  Refine user stories	
--  Complete Sprint 2 User Stories	
--  Implement basic user interface	
--  Complete Sprint 2 Meeting notes	
--  Complete Sprint 1 Meeting notes	
+-  Implement basic user interface
 -  Develop a strategy to associate user story snapshots to relevant sprint documentation	
 -  Specify a bidirectional communication protocol between api server and simulation engine	
 -  Compile user stories and use cases for sprint 1 and sprint 2 under the respective sprint folders	
