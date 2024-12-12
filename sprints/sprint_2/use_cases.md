@@ -101,3 +101,16 @@
 
 ### 8. Postcondition -- The resource management system adds depth to the gameplay, making it both realistic and challenging. 
 
+### 9. Tests
+
+#### Test 1 (On Action Costs)
+- Step 1: Check to see if resources are visable on UI. If not FAIL.
+- Step 2: Check if actions have visable resource cost. If not FAIL.
+- Step 3: Implement an action. Check to see if resources are deducted by expected amount. If not FAIL.
+
+#### Test 2 (Running Costs)
+- Step 1: Run game.
+- Step 2: Implement testing.
+- Step 3: Check to see if resources are deducted regularly by expected amount. If not FAIL.
+  
+
