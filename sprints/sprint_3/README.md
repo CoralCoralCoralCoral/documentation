@@ -18,7 +18,10 @@ We created an API server that would sit inbetween the client and the simulation 
 We have a intial design specification for the oracle. 
 
 ## Sprint Retrospective
-Since we were dealing with a lot more integration task (having the UI stream updated from the simulation engine for example). We did pair programming between team members that were primarily responsible for different aspects of the code (e.g. UI devs worked with simulation engine devs).
+Since our client is built in React (browser based) the most idiomatic way to stream real-time data from the simulation-engine to the UI was via web-sockets. However, as Go does not offer a very straightforward way to setup a websocket service, and also due to the fact that we wanted to keep a separation of concerns, we decieded to create an an additional service written in Java using the Spring framework to sit inbetween the UI and simulation-engine, hereafter referred to as api-server.
+
+Since we were dealing with a lot more integration tasks (having the UI stream updated from the simulation engine for example). We did pair programming between team members that were primarily responsible for different aspects of the code (e.g. UI devs worked with simulation engine devs, and simulation-engine devs worked with api-server devs).
+
 
 ## Exception Handling
 Simulation engine produces too much data to be stored on the clientside, if we decided to send updates on every tick. So we decided to aggregate simulation metrics per ingame day, before sending it to the client. This lead to design of an entrire module dedicated to metrics.
