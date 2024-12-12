@@ -1,6 +1,7 @@
 # Sprint 5: 2024-11-27 to 2024-12-03
 
 ## Sprint Goal
+The goal of this sprint was to put together a playable game.
 
 ## Sprint Overview
 
