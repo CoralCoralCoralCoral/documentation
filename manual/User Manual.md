@@ -297,7 +297,7 @@ The final Package is Services, which contains a single service currently which i
 
 There are no static resources stored in the Api-Server repository, as all frontend development is done in the UI repo. This is then built and exported as a set of static resources which can be placed in the Api Server's static folder and built into the jar for serving to clients.
 
-### Simulation Engine
+### Simulation Engine - [Repo Link](https://github.com/CoralCoralCoralCoral/simulation-engine)
 You can run the Simulation engine during development by following the instructions to build the Sim Engine, and use the below command instead of the build command.
 ```bash
 go run main.go
@@ -308,7 +308,7 @@ go run main.go --dev
 ```
 Currently the only change to using this flag is sourcing the RabbitMQ URI from the .env file instead of an environment variable, this flag will cause the program to crash if the file is not present or the URI is incorrect, in the same way not setting or incorrectly setting the RMQ_URI environment variable would. 
 
-### UI
+### UI - [Repo Link](https://github.com/CoralCoralCoralCoral/ui)
 To run the UI in development mode you can follow the instructions to build the UI from source but replace the final `npm run build` command with `npm run dev` which will host the UI at http://localhost:3000/.
 The Api Server is setup so CORS should not block requests from this development server meaning you do not have to fully rebuild the UI into static content and bundle it into the Api Server to run or build just to test a UI change.
 
