@@ -8,7 +8,7 @@ As a **user** I want to **pause and resume** the game so that **I can take break
 
 #### Acceptance criteria
 
-Is there a mechanism that allows the user to pause and resume the simulation?
+There a mechanism that allows the user to pause and resume the simulation.
 
 ### 10 (v1)
 
@@ -16,7 +16,7 @@ As a **user** I want to **create and quit games** so that **I can start and stop
 
 #### Acceptance criteria
 
-Is there a mechanism for the user to initialize a game?
+There a mechanism for the user to initialize a game.
 
 ### 11 (v1)
 
@@ -24,7 +24,7 @@ As a **user** I want to **visualize information that is revealed to me** so that
 
 #### Acceptance criteria
 
-Does the game display information that is revealed to the user?
+The game display information that is revealed to the user.
 
 ### 12 (v1)
 
@@ -32,7 +32,7 @@ As a **user** I want to **query information temporally and geographically** so t
 
 #### Acceptance criteria
 
-Does the game allow the user to query information useng temporal and geo filters?
+The game allow the user to query information useng temporal and geo filters.
 
 ## Revised User Stories
 
