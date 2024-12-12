@@ -2,6 +2,7 @@
 
 ## Intial Backlog Tasks
 -   Implement basic user interface
+-   Develop prototype
 -   Implement basic HTTP API server
 -   Create a basic simulation of an epidemic using agent based modelling
 -   Instrument simulation engine to collect all event data
@@ -18,7 +19,6 @@
 -  Make user stories for sprint 3	
 -  Implement basic user interface
 -  Specify a bidirectional communication protocol between api server and simulation engine	
--  Compile user stories and use cases for sprint 1 and sprint 2 under the respective sprint folders	
 -  Define user actions	
 -  Develop prototype	
 -  Instrument simulation engine to collect all event data	
