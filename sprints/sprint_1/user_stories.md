@@ -8,7 +8,7 @@ As a **user** I want to **see a user interface** so that **I can visualize the s
 
 #### Acceptance criteria
 
-Is there a user interface that allows the user to visualize the simulation?
+There a user interface that allows the user to visualize the simulation.
 
 ### 2 (v1)
 
@@ -16,7 +16,7 @@ As a **user** I want to **interact with the user interface** so that **I can pla
 
 #### Acceptance criteria
 
-Is there an interactive interface that allows the user to interact with the game?
+There an interactive interface that allows the user to interact with the game.
 
 ### 3 (v1)
 
@@ -24,7 +24,7 @@ As a **user** I want to **run a simulation of an epidemic** so that **I can lear
 
 #### Acceptance criteria
 
-Is there a process that runs a simulation of an epidemic?
+There a process that runs a simulation of an epidemic.
 
 ### 4 (v1)
 
@@ -32,7 +32,7 @@ As a **user** I want to **be able to use a number of strategies** so that **the 
 
 #### Acceptance criteria
 
-Do different user actions result in different game outcomes?
+Different user actions result in different game outcomes.
 
 ## Revised User Stories
 
