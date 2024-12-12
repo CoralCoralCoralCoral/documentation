@@ -16,7 +16,6 @@
 -  Implement basic HTTP API server	
 -  Refine user stories	
 -  Implement basic user interface
--  Develop a strategy to associate user story snapshots to relevant sprint documentation	
 -  Specify a bidirectional communication protocol between api server and simulation engine	
 -  Compile user stories and use cases for sprint 1 and sprint 2 under the respective sprint folders	
 -  Define user actions	
