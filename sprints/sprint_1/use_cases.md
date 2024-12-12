@@ -149,3 +149,10 @@
 #### Exception 2 - If conflicting strategies are chosen (e.g., simultaneous lockdown and mass gatherings), the system provides a warning and requests clarification. 
 
 ### 8. Postcondition -- The user experiences diverse gameplay with realistic outcomes based on strategic decisions. 
+
+### 9. Tests
+
+#### Test 1
+- Step 1: Is there a way for a user to select a strategy (policy). If not FAIL.
+- Step 2: Is that successfully implemeted by the system. If not FAIL.
+- Step 3: Can you see the impact of your decision. If not FAIL.
