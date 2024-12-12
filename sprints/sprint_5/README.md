@@ -4,6 +4,8 @@
 The goal of this sprint was to put together a playable game.
 
 ## Sprint Overview
+We wanted to implement surveillance processes in the simulation-engine.
+
 We wanted to have the UI talking to the simulation-engine. 
 
 We wanted to be able to display the real-time metrics on the UI.
@@ -15,6 +17,8 @@ We wanted to the user to be able to take surveillance and intervention actions b
 We wanted to implement the oracle. This was a lower priority for this sprint.
 
 ## Sprint Review
+We sucessfully implemented the simulation of  healthcare space based testing, which produces surveillance metrics.
+
 We implemented a "start game" button in the UI which would intiate a new game, by sending a message to the simulation-engine.
 
 The UI able to recieve metrics aggregated by jurisdiction from the simulation-engine.
