@@ -17,14 +17,15 @@
 ## Completed Backlog Tasks
 -  Create POST endpoint to start a new game	
 -  Model jurisdictions for spaces	
--  Complete Sprint 2 Meeting notes	
+-  Complete Sprint 2 Meeting notes
+-   Make uses case for user stories in sprint 1
+-   Make uses case for user stories in sprit 2
+-   Make uses case for user stories in sprint 3
+-   Make uses case for user stories in sprint 4	
 -  Develop a strategy to associate user story snapshots to relevant sprint documentation	
--  Make uses case for user stories 5	
--  Make uses case for user stories 12	
 -  Forward init game request to simulation engine via init-game (round-robin) exchange	
 -  Create a space to represent health care facilities	
 -  Create agent states representing hospitalization and death	
--  Make uses case for user stories 15
 -  Create the three user action pages	
 -  Generate spaces with geocoordinates sampled from the target simulation area	
 -  Create a process to simulate lockdowns
