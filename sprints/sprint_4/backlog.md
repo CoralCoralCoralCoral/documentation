@@ -15,24 +15,6 @@
 -   Make uses case for user stories in sprint 3
 -   Make uses case for user stories in sprint 4
 
-## Completed Backlog Tasks
--  Create POST endpoint to start a new game	
--  Model jurisdictions for spaces	
--  Complete Sprint 2 Meeting notes
--   Make uses case for user stories in sprint 1
--   Make uses case for user stories in sprit 2
--   Make uses case for user stories in sprint 3
--   Make uses case for user stories in sprint 4	
--  Develop a strategy to associate user story snapshots to relevant sprint documentation	
--  Forward init game request to simulation engine via init-game (round-robin) exchange	
--  Create a space to represent health care facilities	
--  Create agent states representing hospitalization and death	
--  Create the three user action pages	
--  Generate spaces with geocoordinates sampled from the target simulation area	
--  Create a process to simulate lockdowns
--  Create a process to simulate mask mandates
--  Make user stories for sprint 4
-
 ## New Backlog Tasks
 -   Generate spaces with geocoordinates sampled from the target simulation area
 -   Create a process to simulate testing of agents in health care spaces
@@ -53,3 +35,22 @@
 -   Create component to navigate between jurisdictions
 -   Create POST endpoint to start a new game
 -   Forward init game request to simulation engine via init-game (round-robin) exchange
+
+
+## Completed Backlog Tasks
+-  Create POST endpoint to start a new game	
+-  Model jurisdictions for spaces	
+-  Complete Sprint 2 Meeting notes
+-   Make uses case for user stories in sprint 1
+-   Make uses case for user stories in sprit 2
+-   Make uses case for user stories in sprint 3
+-   Make uses case for user stories in sprint 4	
+-  Develop a strategy to associate user story snapshots to relevant sprint documentation	
+-  Forward init game request to simulation engine via init-game (round-robin) exchange	
+-  Create a space to represent health care facilities	
+-  Create agent states representing hospitalization and death	
+-  Create the three user action pages	
+-  Generate spaces with geocoordinates sampled from the target simulation area	
+-  Create a process to simulate lockdowns
+-  Create a process to simulate mask mandates
+-  Make user stories for sprint 4
