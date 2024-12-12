@@ -1,6 +1,10 @@
 # Backlog
 
 ## Intial Backlog Tasks
+N/A
+
+## New Backlog Tasks
+-   Develop prototype
 -   Set up sprint documentation format
 -   Set up documentation repository
 -   Set up sprints and kanban board
@@ -18,6 +22,3 @@
 -  Set up documentation repository	
 -  Develop initial customer stories	
 
-## New Backlog Tasks
-
--   Develop prototype
