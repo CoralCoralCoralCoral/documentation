@@ -697,6 +697,8 @@ From there you can view the setup Exchanges, which queues are defined, where the
 
 ## Appendix
 
+### Docker Compose File That Runs The Game
+
 ```yaml
 name: Epidemic-Simulation
 
