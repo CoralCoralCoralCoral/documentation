@@ -1,6 +1,6 @@
 # Design Use Cases
 
-## D1 (v1) [[User Story 3 (v1)]](../sprint_1/use_cases.md)
+## D1 (v1) [User Story 3 (v1)]
 
 1. **Title**: Main simulation loop
 2. **Purpose**: To simulate a model in which agents move between spaces over time
