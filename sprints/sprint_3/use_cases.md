@@ -51,7 +51,7 @@
 - System
 - User  
 
-**Preconditions:** A jurisdiction is selected. [Reference Use Case 5 (v1)](../sprint_2/use_cases.md)
+**Preconditions:** A jurisdiction is selected. [Reference Use Case 5 (v1)]
 
 **Main Flow:** Regular flow of activities.
 
