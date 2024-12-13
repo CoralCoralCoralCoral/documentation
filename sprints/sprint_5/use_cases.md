@@ -1,152 +1,157 @@
 # Use Cases
 
-## 14 (v1) [[User story 15 v1]](../sprint_4/user_stories.md) [[User story 12 v1]](../sprint_3/user_stories.md)
+### 14 (v1) [[User story 15 v1]](../sprint_4/user_stories.md) [[User story 12 v1]](../sprint_3/user_stories.md)
 
-### 1. Title -- Accuracy Changes by Area 
+**Title:** Accuracy Changes by Area
 
-### 2. Purpose -- As a public health official, I want to know how testing accuracy varies by area so I can allocate resources more effectively.
+**Purpose:** As a public health official, I want to know how testing accuracy varies by area so I can allocate resources more effectively.
 
-### 3. Associated User Stories -- 15 (v1), 12 (v1)
+**Associated User Stories:** 15 (v1), 12 (v1) 
 
-### 4. Actors -- The User
+**Actors:** User  
 
-### 5. Preconditions -- The game is running correctly.
+**Preconditions:** The game is running correctly.
 
-### 6. Main Flow -- regular flow of activities
+**Main Flow:** Regular flow of activities.
 
-#### Step 1 - The User selects a specific area on the map.
+- **Step 1** - The user selects a specific area on the map.  
 
-#### Step 2 - The system displays the testing accuracy in that area (e.g., false positive and negative rates).
+- **Step 2** - The system displays the testing accuracy in that area (e.g., false positive and negative rates).  
 
-#### Step 3 - The User decides whether to change the testing method or improve existing strategies. Go to alternative flow 1.
+- **Step 3** - The user decides whether to change the testing method or improve existing strategies. Go to Alternative Flow 1.  
 
-#### Step 4 - The system updates and shows the rates of infection and other improtant statistics.
+- **Step 4** - The system updates and shows the rates of infection and other important statistics.  
 
-### 7. Alternative Flow #1 -- exceptions to main flow
+**Alternative Flow 1:** Exceptions to main flow.
 
-#### Step 1 - The UI will show all available and unavailable testing methods, as well as which testing method/s are currently being used.
+- **Step 1** - The UI shows all available and unavailable testing methods, as well as the testing method(s) currently in use.  
 
-#### Step 2 - The user can select one of the available testing methods to implement or to spend more on a current method. If the user tries to select an unavalibale method go to alternative flow 2.
+- **Step 2** - The user selects one of the available testing methods to implement or spends more on improving the current method. If the user tries to select an unavailable method, go to Alternative Flow 2.  
 
-#### Step 3 - The system updates and shows the effects of the changes.
+- **Step 3** - The system updates and shows the effects of the changes.  
 
-### 7. Alternative Flow #2 -- exceptions to main flow
+**Alternative Flow 2:** Exceptions to main flow.
 
-#### Step 1 - After the user clicks the locked testing method they will be told how they can unlock it and it's benefits bellow.
+- **Step 1** - After clicking a locked testing method, the user is informed of how to unlock it and its benefits, displayed below.  
 
-#### Step 2 - The user continues playing the game.
+- **Step 2** - The user continues playing the game.  
 
-### 8. Postcondition -- The game will continue to play after the user is finished. Any changes made by the user are done by the system.
+**Postcondition:** The game continues after the user completes their changes, which are implemented by the system.
 
+**Test:**
+- **Step 1:** Select a specific jurisdiction. Check to see if metrics shown are from that jurisdiction chosen. If not FAIL.
+- **Step 2:** Increase testing investment. Check if this has the correct impact on test metrics shown. If not FAIL.
 
+---
 
-## 15 (v1) [[User story 14 v1]](../sprint_4/user_stories.md)
+### 15 (v1) [[User story 14 v1]](../sprint_4/user_stories.md)
 
-### 1. Title -- Prioritize Testing for High-Risk Groups  
+**Title:** Prioritize Testing for High-Risk Groups  
 
-### 2. Purpose -- High-risk groups are identified based on available data (e.g., elderly or those with pre-existing conditions). Actions are taken to help them.
+**Purpose:** High-risk groups are identified based on available data (e.g. elderly or those with pre-existing conditions). Actions are taken to help them.  
 
-### 3. Associated User Stories -- 14 (v1)
+**Associated User Stories:** 14 (v1)  
 
-### 4. Actors -- The User
+**Actors:** User  
 
-### 5. Preconditions -- The game is running correctly.
+**Preconditions:** The game is running correctly.  
 
-### 6. Main Flow -- regular flow of activities
+**Main Flow:** Regular flow of activities.  
+- **Step 1** - The player selects high-risk groups for testing.  
+- **Step 2** - The system allocates resources to prioritize these groups.  
+- **Step 3** - The simulation updates to show testing results for high-risk populations.  
 
-#### Step 1 - The player selects high-risk groups for testing.
+**Alternative Flow:** Exceptions to main flow.  
 
-#### Step 2 - The system allocates resources to prioritize these groups.
+**Postconditions:**  
+- **Postcondition 1** - High-risk groups are tested, influencing the progression of the epidemic in the simulation.  
+- **Postcondition 2** - If prioritization delays testing for others, the system provides a warning.  
 
-#### Step 3 - The simulation updates to show testing results for high-risk populations.
+**Test:**  
+- **Step 1** - Select a specific jurisdiction. Check to see if metrics shown are from that jurisdiction chosen. If not, FAIL.  
+- **Step 2** - Increase testing investment. Check if this has the correct impact on test metrics shown. If not, FAIL.  
 
-### 7. Alternative Flow -- exceptions to main flow
+---
 
-### 8. Postconditions
+### 16 (v1) [[User story 16 v1]](user_stories.md)
 
-#### -- High-risk groups are tested, influencing the progression of the epidemic in the simulation.
+**Title:** See How Delayed Testing Affects the Outbreak  
 
-#### -- If prioritization delays testing for others, the system provides a warning.
+**Purpose:** As a public health official, I want to understand how delays in testing affect the spread of the disease so I can make better plans to reduce these delays.  
 
+**Associated User Stories:** 16 (v1)  
 
-## 16 (v1) [[User story 16 v1]](user_stories.md)
+**Actors:** The User  
 
-### 1. Title -- See How Delayed Testing Affects the Outbreak  
+**Preconditions:** The game is running correctly.  
 
-### 2. Purpose --  As a public health official, I want to understand how delays in testing affect the spread of the disease so I can make better plans to reduce these delays
+**Main Flow:** Regular flow of activities.  
+- **Step 1** - The user deploys a testing strategy and sets its start date.  
+- **Step 2** - The system calculates delays based on available resources and logistics.  
+- **Step 3** - The simulation shows how delays impact infection rates and the epidemic’s spread.  
+- **Step 4** - The player adjusts interventions (e.g., adding more labs or improving logistics) to reduce delays.  
 
-### 3. Associated User Stories -- 16 (v1)
+**Alternative Flow:** Exceptions to main flow.  
 
-### 4. Actors -- The User
+**Postcondition:** The simulation reflects the real-world consequences of delays, allowing the player to refine their plans.  
 
-### 5. Preconditions -- The game is running correctly.
+**Test:**  
+- **Step 1** - Select a specific jurisdiction. Check to see if metrics shown are from that jurisdiction chosen. If not, FAIL.  
+- **Step 2** - Increase testing investment. Check if this has the correct impact on test metrics shown. If not, FAIL.  
 
-### 6. Main Flow -- regular flow of activities
+---
 
-#### Step 1 - the user deploys a testing strategy and sets its start date.
+### 17 (v1) [[User story 10 v2]](user_stories.md)
 
-#### Step 2 - The system calculates delays based on available resources and logistics
+**Title:** Save Games  
 
-#### Step 3 - The simulation shows how delays impact infection rates and the epidemic’s spread.
+**Purpose:** As a user, I want to save my game so that I can stop playing and come back later.  
 
-#### Step 4 - The player adjusts interventions (e.g., adding more labs or improving logistics) to reduce delays.
+**Associated User Stories:** 10 (v2)  
 
-### 7. Alternative Flow -- exceptions to main flow
+**Actors:** The User  
 
-### 8. Postcondition -- The simulation reflects the real-world consequences of delays, allowing the player to refine their plans.
+**Preconditions:** The game has a functioning save system.  
 
+**Main Flow:** Regular flow of activities.  
+- **Step 1** - The user goes to the main menu and presses the save button.  
+- **Step 2** - The system generates a JSON file with relevant data and sends this to the user. If the message fails, go to the alternative flow.  
+- **Step 3** - The user can download the save file and continue playing.  
 
+**Alternative Flow:** Exceptions to main flow.
 
-## 17 (v1) [[User story 10 v2]](user_stories.md)
+**Exception:** Error message is sent to the user or system that the save file has not been sent.  
 
-### 1. Title -- Save Games
+**Postcondition:** The game successfully runs.  
 
-### 2. Purpose -- As a user, I want to save my game so that I can stop playing and come back later.
+**Test:**  
+- **Step 1** - Press the save game button. Check to see if save file is received. If not, FAIL.  
+- **Step 2** - Start game using received save file. Check to see if the game continues from where you left off. If not, FAIL.  
 
-### 3. Associated User Stories -- 10 (v2)
+---
 
-### 4. Actors -- The User.
+### 18 (v1) [[User story 19 v1]](user_stories.md)
 
-### 5. Preconditions -- The game has a functioning save systme.
+**Title:** Load Games  
 
-### 6. Main Flow -- regular flow of activities
+**Purpose:** As a user, I want to save and load my save so that I can stop playing and come back later.  
 
-#### Step 1 - The user goes to the main menu and presses the save button.
+**Associated User Stories:** 19 (v1)  
 
-#### Step 2 - The system generates a json file with relavent data in it and sends this to the user. If the message fails go to alternative flow
+**Actors:** User  
 
-#### Step 3 - The user can download the save file and continue playing.
+**Preconditions:** The user goes to the main webpage of the game.  
 
-### 7. Alternative Flow -- exceptions to main flow
+**Main Flow:** Regular flow of activities.  
+- **Step 1** - The user presses the load game button on the main menu page.  
+- **Step 2** - The user selects a file to upload as their save. If the save file is invalid, go to the alternative flow.  
+- **Step 3** - The user can start playing the game from the game state found in the save.  
 
-#### Exception 1 - Error message is sent to user or system that the save file has not been sent.
+**Alternative Flow:** Exceptions to main flow.  
 
-### 8. Postcondition -- The game successfully runs.
+**Exception:**  Error message is sent to the user or system that the save file is not valid.  
 
+**Postcondition:** The game successfully runs from the point of the save.  
 
+**Test:** Start game using received save file. Check to see if the game continues from where you left off. If not, FAIL.  
 
-## 18 (v1) [[User story 19 v1]](user_stories.md)
-
-### 1. Title -- Load Games
-
-### 2. Purpose -- As a user, I want to save and load my save so that I can stop playing and come back later.
-
-### 3. Associated User Stories -- 19 (v1)
-
-### 4. Actors -- The User.
-
-### 5. Preconditions -- The user goes to the main webpage of the game.
-
-### 6. Main Flow -- regular flow of activities
-
-#### Step 1 - The user presses the load game button on the main menu page.
-
-#### Step 2 - The user selects a file to upload as their save. If save file is invalid go to alternative flow
-
-#### Step 3 - The user can start playing the game from the game state found in the save.
-
-### 7. Alternative Flow -- exceptions to main flow
-
-#### Exception 1 - Error message is sent to user or system that the save file is not valid.
-
-### 8. Postcondition -- The game successfully runs from the point of the save.

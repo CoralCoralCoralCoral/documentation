@@ -7,7 +7,7 @@ As a user I want to see how testing affects the outbreak so that I can learn abo
 
 #### Acceptance criteria
 
-Is there is addition information options for testing.
+There is an addition information options for testing.
 
 ### 17 (v1)
 
@@ -15,7 +15,7 @@ As a user I want to see how intervention affects the outbreak so that I can lear
 
 #### Acceptance criteria
 
-Is there is addition information options for intervention.
+There is an addition information options for intervention.
 
 
 ### 18 (v1)
@@ -25,7 +25,7 @@ As a user I want to see how research affects the outbreak so that I can learn ab
 
 #### Acceptance criteria
 
-Is there is addition information options for research.
+There is an addition information options for research.
 
 
 ### 19 (v1)
@@ -34,7 +34,7 @@ As a user I want to load a save file so that I can restart playing from that poi
 
 #### Acceptance criteria
 
-Is there a mechanism for the user to load a save?
+There is a mechanism for the user to load a save.
 
 ## Revised User Stories
 
@@ -45,7 +45,7 @@ As a user I want to save my game state so that I can start and stop playing when
 
 #### Acceptance criteria
 
-Is there a mechanism for the user to save a game?
+There is a mechanism for the user to save a game.
 
 ## Final Set
 -   1 (v1)

@@ -4,516 +4,353 @@
 The goal of this sprint was to put together a playable game.
 
 ## Sprint Overview
-We wanted to implement surveillance processes in the simulation-engine.
-
-We wanted to have the UI talking to the simulation-engine. 
-
-We wanted to be able to display the real-time metrics on the UI.
-
-We wanted to be able to geogphracily visualize the epedicmic's state on the map.
-
-We wanted to the user to be able to take surveillance and intervention actions by interacting with the UI.
-
-We wanted to implement the oracle. This was a lower priority for this sprint.
+We wanted to:
+- Implement surveillance processes in the simulation-engine.
+- Have the UI talking to the simulation-engine. 
+- Be able to display the real-time metrics on the UI.
+- Be able to geographically visualize the epidemic's state on the map.
+- Have the user be able to take surveillance and intervention actions by interacting with the UI.
+- We wanted to implement the oracle. This was a lower priority for this sprint.
 
 ## Sprint Review
-We sucessfully implemented the simulation of  healthcare space based testing, which produces surveillance metrics.
-
-We implemented a "start game" button in the UI which would intiate a new game, by sending a message to the simulation-engine.
-
-The UI able to recieve metrics aggregated by jurisdiction from the simulation-engine.
-
-The UI map was able to visulize the epedemic's state based on the metrics recieved from the simulation-engine.
-
-The UI was able to generate and display graphs based on the metrics recieved from the simulation-engine.
-
-Although the simulation engine was setup to recieve and handle surveillance and intervention actions, due to a de-serialisation bug in the messaging layer, the UI was not able to send these message.
-
-The oracle was not implemented in this sprint, thus was left for the next sprint.
+- Sucessfully implemented the simulation of healthcare space based testing, which produces surveillance metrics.
+- Implemented a "start game" button in the UI which would intiate a new game, by sending a message to the simulation-engine.
+- The UI able to recieve metrics aggregated by jurisdiction from the simulation-engine.
+- UI map is able to visualise the epidemic's state based on the metrics received from the simulation-engine.
+- UI is now able to generate and display graphs based on the metrics received from the simulation-engine.
+- Although the simulation engine was setup to recieve and handle surveillance and intervention actions, due to a de-serialisation bug in the messaging layer, the UI was not able to send these message.
+- The Oracle was not implemented in this sprint, thus was left for the next sprint.
 
 
 ## Sprint Retrospective
-Althoguth we were able to integrate most aspects of the ui and simulation-engine, the bug that prevented user actions from being sent to the simulation-engine prevented the game from being in a playable state. This was a huge disappointment for the team and we recognized that discovering these types of bugs at the last minute is not ideal. In order to prevent bugs of this class in the future, we decided to write automated unit tests for all serialization and deserialization logic.
+Although we were able to integrate most aspects of the UI and simulation-engine, the bug that prevented user actions from being sent to the simulation-engine prevented the game from being in a playable state. This was a huge disappointment for the team and we recognised that discovering these types of bugs at the last minute is not ideal. In order to prevent bugs of this class in the future, we decided to write automated unit tests for all serialisation and deserialisation logic.
 
 ## Exception Handling
-We discovered a bug in the deserialization of "command" messages sent from the UI to the simulation-engine, which resulted in these messages being ignored by the simulation-engine. This prevented us from achieving the goal of enabling bi-directional communication between the ui and simulation-engine. This issue was caught during manual integration testing at the very last minute before the demo. This bug would eventually be fixed in the next sprint.
+We discovered a bug in the deserialisation of "command" messages sent from the UI to the simulation-engine, which resulted in these messages being ignored by the simulation-engine. This prevented us from achieving the goal of enabling bi-directional communication between the UI and simulation-engine. This issue was caught during manual integration testing at the very last minute before the demo. This bug would eventually be fixed in the next sprint.
+
+---
 
 ## Meeting Minutes
 
 ### Meeting 1
-Date: 2024-11-27
-Participants: Team Coral
-Place: University of Bath
+**Date:** 2024-11-27
+**Participants:** Team Coral
+**Location:** University of Bath
 
-Sprint Meeting Agenda
+#### Agenda
 
 1. Review of simulation flow and gameplay mechanics.
-
 2. Updates on jurisdictions, space allocation, and healthcare modeling.
-
 3. Discussion of metrics and debugging for the simulation.
-
 4. Documentation and deliverables.
 
+#### Discussion Summary
 
+##### Simulation Flow and Gameplay Mechanics
 
-Discussion Summary
+- **Gameplay Flow:**
+    - The simulation should balance decision-making pauses with fast-forward gameplay for efficiency.
+    - Users are expected to pause gameplay for deliberation and decision-making, followed by simulation resumption to observe outcomes.
+    - The team discussed adding a feature to simulate and store decisions for predefined periods (e.g. two weeks) to improve user experience.
 
+- **Decision on Pausing:**
+    - Pausing allows users to review statistics and decide on actions without affecting gameplay consistency.
+    - Pre-simulating events during pauses could be an option but requires careful alignment with decision-making logic.
 
 
-1. Simulation Flow and Gameplay Mechanics
+##### Updates on Jurisdictions and Space Allocation
 
-• Gameplay Flow:
+- **Jurisdiction-Based Modeling:**
+    - Jurisdictions are defined based on MSOAs (Middle Super Output Areas), with parent-child relationships mapped for scalability.
+    - Spaces (e.g., houses, offices, healthcare facilities) are distributed within jurisdictions based on population density and census data.
 
-• The simulation should balance decision-making pauses with fast-forward gameplay for efficiency.
+- **Space Characteristics:**
+    - Population weights for allocation.
 
-• Users are expected to pause gameplay for deliberation and decision-making, followed by simulation resumption to observe outcomes.
+    - Categories such as households, offices, and shops.
 
-• The team discussed adding a feature to simulate and store decisions for predefined periods (e.g., two weeks) to improve user experience.
+    - Healthcare facilities with bed capacities derived from averages (e.g. 5 beds per 1,000 people for the UK).
 
-• Decision on Pausing:
+    - Potential to refine space allocation using geographic coordinates or more detailed census data.
 
-• Pausing allows users to review statistics and decide on actions without affecting gameplay consistency.
+- **Healthcare Facilities:**
+    - Healthcare spaces modeled with variance in capacity for realism.
+    - Limited modeling of healthcare facilities in the current simulation for London.
 
-• Pre-simulating events during pauses could be an option but requires careful alignment with decision-making logic.
 
 
+##### Metrics and Debugging
 
-2. Updates on Jurisdictions and Space Allocation
+- **Metrics Captured:**
 
-• Jurisdiction-Based Modeling:
+    - New infections, hospitalizations, recoveries, deaths.
 
-• Jurisdictions are defined based on MSOAs (Middle Super Output Areas), with parent-child relationships mapped for scalability.
+    - Current states (infected, infectious, hospitalized, deceased).
 
-• Spaces (e.g., houses, offices, healthcare facilities) are distributed within jurisdictions based on population density and census data.
+- **Simulation Functionality:**
 
-• Space Characteristics:
+    - Jurisdictions, space allocation, and agent movement have been tested.
 
-• Spaces include attributes like:
+    - Debugging focused on memory and latency issues, particularly when scaling up agent numbers.
 
-• Population weights for allocation.
+- **Simulation Adjustments:**
 
-• Categories such as households, offices, and shops.
+    -  Introducing probabilities for hospitalization and fatalities to reflect real-life disease progression.
 
-• Healthcare facilities with bed capacities derived from averages (e.g., 5 beds per 1,000 people for the UK).
+    - Adding relationships between agents (e.g. household or social connections) to simulate realistic behaviors, such as visiting hospitalized individuals.
 
-• Potential to refine space allocation using geographic coordinates or more detailed census data.
+##### Documentation and Deliverables
 
-• Healthcare Facilities:
+-  **Focus on Documentation:**
+    - Team highlighted the need for comprehensive sprint documentation to capture internal meetings and outcomes.
+    - Ensure alignment with official coursework requirements by clarifying expectations with the supervisor.
 
-• Healthcare spaces modeled with variance in capacity for realism.
+- **Tools for Documentation:**
+    - Utilise GitHub and shared repositories to manage and version-control simulation-related documents and code.
 
-• Limited modeling of healthcare facilities in the current simulation for London.
 
 
+##### Challenges and Solutions
 
-3. Metrics and Debugging
+- **Challenges:**
 
-• Metrics Captured:
+    -  Balancing simulation complexity with ease of debugging.
 
-• New infections, hospitalizations, recoveries, deaths.
+    - Incorporating realistic healthcare and spatial dynamics without overwhelming computational resources.
 
-• Current states (infected, infectious, hospitalized, deceased).
+    - Defining gameplay flow that is engaging and aligns with user expectations.
 
-• Simulation Functionality:
+- **Proposed Solutions:**
 
-• Jurisdictions, space allocation, and agent movement have been tested.
+    - Incremental implementation: Start with simplified models and add complexity step-by-step.
 
-• Debugging focused on memory and latency issues, particularly when scaling up agent numbers.
+    - Optimise memory usage to support larger agent populations.
 
-• Simulation Adjustments:
+    - Focus on visualizing key metrics for decision-making while streamlining background computations.
 
-• Introducing probabilities for hospitalization and fatalities to reflect real-life disease progression.
 
-• Adding relationships between agents (e.g., household or social connections) to simulate realistic behaviors, such as visiting hospitalized individuals.
 
+##### Next Steps
 
+**1. Refine Simulation:**
 
-4. Documentation and Deliverables
+- Enhance jurisdiction-based space allocation.
 
-• Focus on Documentation:
+- Improve agent movement logic and metrics collection.
 
-• Team highlighted the need for comprehensive sprint documentation to capture internal meetings and outcomes.
+- Optimise performance for larger populations.
 
-• Ensure alignment with official coursework requirements by clarifying expectations with the supervisor.
+**2. Develop Gameplay Features:**
 
-• Tools for Documentation:
+- Implement real-time decision-making and pausing logic.
 
-• Utilize GitHub and shared repositories to manage and version-control simulation-related documents and code.
+- Add predictive features to allow users to pre-simulate outcomes.
 
+**3. Documentation and Communication:**
 
+- Finalise sprint documentation and ensure alignment with coursework guidelines.
 
-Challenges and Solutions
+- Share progress updates with supervisors and obtain feedback for adjustments.
 
-• Challenges:
-
-• Balancing simulation complexity with ease of debugging.
-
-• Incorporating realistic healthcare and spatial dynamics without overwhelming computational resources.
-
-• Defining gameplay flow that is engaging and aligns with user expectations.
-
-• Proposed Solutions:
-
-• Incremental implementation: Start with simplified models and add complexity step-by-step.
-
-• Optimize memory usage to support larger agent populations.
-
-• Focus on visualizing key metrics for decision-making while streamlining background computations.
-
-
-
-Next Steps
-
-1. Refine Simulation:
-
-• Enhance jurisdiction-based space allocation.
-
-• Improve agent movement logic and metrics collection.
-
-• Optimize performance for larger populations.
-
-2. Develop Gameplay Features:
-
-• Implement real-time decision-making and pausing logic.
-
-• Add predictive features to allow users to pre-simulate outcomes.
-
-3. Documentation and Communication:
-
-• Finalize sprint documentation and ensure alignment with coursework guidelines.
-
-• Share progress updates with supervisors and obtain feedback for adjustments.
+---
 
 ### Meeting 2
-Date: 2024-11-30
-Participants: Team Coral
-Place: Online/In-person
+**Date:** 2024-11-30
+**Participants:** Team Coral
+**Place:** Online/In-person
 
-
-Meeting Summary
-
-
-
-Agenda:
+#### Agenda:
 
 1. Testing procedures and structure.
-
-2. Finalizing backlog actions.
-
+2. Finalising backlog actions.
 3. UI development and API server integration.
-
 4. Documentation updates and formatting.
 
+#### Discussion Points
 
+##### Testing for Use Cases:
+- A test will be created for each use case, focusing on verifying the expected outcomes for varied inputs.
+- Tests are designed to ensure the flow and implementation correctness by validating preconditions and postconditions.
 
-Key Points Discussed
+##### Testing Documentation:
+- A new section, “Testing Procedures,” will be added to the sprint documentation.
+- This section will outline test cases for each use case, highlighting different branches and scenarios.
 
+##### Approach to Testing:
+- Not every step of a use case will be individually tested; instead, tests will focus on key user interactions and outcomes.
+- Tests will evaluate different variable inputs and ensure consistent behaviour across scenarios.
 
+#### Sprint Backlog and Progress
 
-1. Testing Procedures
+##### Backlog Prioritisation: 
 
-• Testing for Use Cases:
+- Basic actions are prioritised for early completion in the sprint to allow more focus on advanced features later.
 
-• A test will be created for each use case, focusing on verifying the expected outcomes for varied inputs.
+- Simulation changes will be restricted to necessary adjustments, with a focus on locking down existing functionalities.
 
-• Tests are designed to ensure the flow and implementation correctness by validating preconditions and postconditions.
+##### Key Deliverables:
 
-• Testing Documentation:
+- Finalising UI components and integrating them with the API server.
 
-• A new section, “Testing Procedures,” will be added to the sprint documentation.
+- Refining CRC (Class Responsibility Collaborator) cards to document system interactions and dependencies.
 
-• This section will outline test cases for each use case, highlighting different branches and scenarios.
+- Creating documentation for installation and user manuals.
 
-• Approach to Testing:
+#### UI and API Server Integration
+##### UI Development:
 
-• Not every step of a use case will be individually tested; instead, tests will focus on key user interactions and outcomes.
+- The primary sprint focus is on making the UI functional and interactive.
 
-• Tests will evaluate different variable inputs and ensure consistent behaviour across scenarios.
+- The UI will be integrated with the API server to display metrics and manage global state (e.g., selected jurisdiction, received metrics).
 
+##### State Management:
 
+- State management (e.g., using Redux or similar) will be implemented to track and update metrics without race conditions.
 
-2. Sprint Backlog and Progress
+- UI elements will update daily based on data received from the simulation service.
 
-• Backlog Prioritization:
+##### Collaborative Efforts:
 
-• Basic actions are prioritized for early completion in the sprint to allow more focus on advanced features later.
+-  Team members expressed interest in contributing to UI development, particularly in creating and managing game configurations.
 
-• Simulation changes will be restricted to necessary adjustments, with a focus on locking down existing functionalities.
+#### Documentation Updates
 
-• Key Deliverables:
+##### Documentation Status:
 
-• Finalizing UI components and integrating them with the API server.
+- Documentation for previous sprints (especially Sprint 1) is being reviewed and refined to ensure consistency.
 
-• Refining CRC (Class Responsibility Collaborator) cards to document system interactions and dependencies.
+-  Retrospective use cases and user stories from earlier sprints are being integrated into the correct sections.
 
-• Creating documentation for installation and user manuals.
+##### Installation and User Manuals:
 
+- A simplified installation guide will focus on Docker-based setup instructions:
+    -  Download the necessary files.
+    -  Run Docker.
+    -  Access the application via a browser.
+    -  The user manual will detail key parameters, configuration steps, and basic gameplay instructions.
 
+##### Linking Documents:
+- References to user stories and use cases will be linked within the documentation for easy navigation.
+- Markdown syntax will be used to create clean, accessible links.
 
-3. UI and API Server Integration
+#### Decisions and Next Steps
+##### Decisions:
 
-• UI Development:
+- **Testing:** A structured yet flexible approach to testing will be documented and implemented.
 
-• The primary sprint focus is on making the UI functional and interactive.
+- **Backlog:** Lock down simulation features and shift focus to UI and documentation.
 
-• The UI will be integrated with the API server to display metrics and manage global state (e.g., selected jurisdiction, received metrics).
+##### Next Steps:
 
-• State Management:
+1. **Testing Procedures:** Document test cases for all use cases in the “Testing Procedures” section.
 
-• State management (e.g., using Redux or similar) will be implemented to track and update metrics without race conditions.
+2. **UI Development:** Complete UI functionality and integrate with the API server.
 
-• UI elements will update daily based on data received from the simulation service.
+3. **Documentation:** Finalise and merge all pending documentation, including user manuals and sprint-specific updates.
 
-• Collaborative Efforts:
+4. **Collaboration:** Team members to meet on Saturday to finalise deliverables and align on sprint objectives.
 
-• Team members expressed interest in contributing to UI development, particularly in creating and managing game configurations.
 
 
+#### Action plan for next Sprint
 
-4. Documentation Updates
+- Tasks Assigned To Deadline Status.
+- Document test cases for use cases Team Member(s) by Sprint End In Progress.
+- Finalise UI-API integration UI Team Next Meeting Ongoing.
+- Refine CRC cards Documentation Team Next Sprint Pending.
+- Complete installation guide Documentation Team by Sprint End In Progress.
 
-• Documentation Status:
-
-• Documentation for previous sprints (especially Sprint 1) is being reviewed and refined to ensure consistency.
-
-• Retrospective use cases and user stories from earlier sprints are being integrated into the correct sections.
-
-• Installation and User Manuals:
-
-• A simplified installation guide will focus on Docker-based setup instructions:
-
-• Download the necessary files.
-
-• Run Docker.
-
-• Access the application via a browser.
-
-• The user manual will detail key parameters, configuration steps, and basic gameplay instructions.
-
-• Linking Documents:
-
-• References to user stories and use cases will be linked within the documentation for easy navigation.
-
-• Markdown syntax will be used to create clean, accessible links.
-
-
-
-Decisions and Next Steps
-
-
-
-Decisions:
-
-• Testing:
-
-• A structured yet flexible approach to testing will be documented and implemented.
-
-• Backlog:
-
-• Lock down simulation features and shift focus to UI and documentation.
-
-
-
-Next Steps:
-
-1. Testing Procedures:
-
-• Document test cases for all use cases in the “Testing Procedures” section.
-
-2. UI Development:
-
-• Complete UI functionality and integrate with the API server.
-
-3. Documentation:
-
-• Finalize and merge all pending documentation, including user manuals and sprint-specific updates.
-
-4. Collaboration:
-
-• Team members to meet on Saturday to finalize deliverables and align on sprint objectives.
-
-
-
-Action Agenda
-
-
-
-Task Assigned To Deadline Status.
-
-Document test cases for use cases Team Member(s) By Sprint End In Progress.
-
-Finalize UI-API integration UI Team Next Meeting Ongoing.
-
-Refine CRC cards Documentation Team Next Sprint Pending.
-
-Complete installation guide Documentation Team By Sprint End In Progress.
+---
 
 ### Customer Meeting and Analysis
+**Date:** 2024-11-27
+**Attendees:** Customer and Team Coral
 
-Customer meeting 5
-Date: 27/11/2024
-Attendees: Customer and Team Coral
+#### Sprint Goals:
+- Share progress on the game project.
+- Discuss challenges related to data accuracy and performance.
+- Identify the next steps for front-end and back-end integration.
 
-
-
-
- 1. Sprint Goals:
-
-
-
-• Share progress on the game project.
-
-• Discuss challenges related to data accuracy and performance.
-
-• Identify the next steps for front-end and back-end integration.
-
-
-
-2. Key Discussion Points:
-
-
-
-A. General Updates:
-
-
-
-• Project Purpose:
-
+#### Key Discussion Points
+##### Project Purpose:
 The primary objective of the meeting was to showcase the progress made in game mechanics, including a functional UI.
 
-• Progress Achievements:
+##### Progress Achievements:
+- Successfully integrated data from the Office for National Statistics (ONS) for population density.
+- Focused on London’s data for initial implementation.
+- UI improvements are in progress.
 
-• Successfully integrated data from the Office for National Statistics (ONS) for population density.
+##### Data Integration:
+- Utilized ONS census data to determine population densities and local authority districts (LADs).
+- Implementation goes as fine-grained as output areas but avoids individual postcodes for efficiency.
 
-• Focused on London’s data for initial implementation.
+##### Population Density and Space Allocation:
+- Spaces (residences, offices & social areas) are allocated based on population density:
+- More dense areas → More spaces.
+- Less dense areas → Fewer spaces.
+- Plans to aggregate metrics at LAD and Middle Layer Super Output Area (MSOA) levels.
 
-• UI improvements are in progress.
+##### Simulation Challenges:
 
+- Running simulations with 1 million agents causes delays (8 seconds for a game day).
+- Computational load is significant, especially for large populations.
 
+##### Proposed Solutions:
+- Adjusting the simulation time step (from 15 minutes to 1 hour) to reduce load.
+- Optimising simulations for high-performance environments or cloud services.
+- Introducing representative agents (one agent representing multiple people).
 
-B. Technical Details:
 
 
+#### Architecture Overview:
 
-1. Data Integration:
+##### Simulation Service:
 
-• Utilized ONS census data to determine population densities and local authority districts (LADs).
+- Separate from the front end.
 
-• Implementation goes as fine-grained as output areas but avoids individual postcodes for efficiency.
+- Can be run on high-performance servers or laptops, depending on the user’s resources.
 
-2. Population Density and Space Allocation:
+- Designed for scalability and university-level usage.
 
-• Spaces (residences, offices, social areas) are allocated based on population density:
+##### Front-End/Back-End Integration:
+- **Current Status:**
+    - Core back-end functionalities are in place.
+    - Front-end integration is ongoing.
 
-• More dense areas → More spaces.
+- **Next Steps:**
+    - Complete integration to allow user actions in the UI.
+    - Focus on making the UI more interactive in the next sprint.
 
-• Less dense areas → Fewer spaces.
 
-• Plans to aggregate metrics at LAD and Middle Layer Super Output Area (MSOA) levels.
 
-3. Simulation Challenges:
+#### Challenges and Action Items:
 
-• Current Issues:
+##### Challenges Identified:
+- Scalability and performance optimization.
+- Ensuring accurate simulations while reducing computational load.
+- UI and back-end communication delays due to mapping tasks.
 
-• Running simulations with 1 million agents causes delays (8 seconds for a game day).
+##### Action Items for the Next Sprint:
 
-• Computational load is significant, especially for large populations.
+- **UI Focus:** Complete integration of user actions into the front end.
 
-• Proposed Solutions:
+- **Optimisation:** Explore cloud deployment and representative agent strategies.
 
-• Adjusting the simulation time step (from 15 minutes to 1 hour) to reduce load.
+- **Testing:** Conduct small-group tests for potential deployment options.
 
-• Optimizing simulations for high-performance environments or cloud services.
+- **Documentation:** Improve internal documentation to streamline development processes.
 
-• Introducing representative agents (one agent representing multiple people).
+##### Next Steps and Review Plan:
 
+- **Short-Term:** 
+    -   Focus on UI interactivity and system optimisation.
+    -  Address scalability issues with high-density simulations.
 
+- **Long-Term:**
+    - Continue testing and refining simulations.
+    - Document progress thoroughly to enhance team collaboration.
 
-3. Architecture Overview:
+##### Meeting Conclusion:
 
-
-
-• Simulation Service:
-
-• Separate from the front end.
-
-• Can be run on high-performance servers or laptops, depending on the user’s resources.
-
-• Designed for scalability and university-level usage.
-
-• Front-End/Back-End Integration:
-
-• Current Status:
-
-• Core back-end functionalities are in place.
-
-• Front-end integration is ongoing.
-
-• Next Steps:
-
-• Complete integration to allow user actions in the UI.
-
-• Focus on making the UI more interactive in the next sprint.
-
-
-
-4. Challenges and Action Items:
-
-
-
-1. Challenges Identified:
-
-• Scalability and performance optimization.
-
-• Ensuring accurate simulations while reducing computational load.
-
-• UI and back-end communication delays due to mapping tasks.
-
-2. Action Items for the Next Sprint:
-
-• UI Focus:
-
-Complete integration of user actions into the front end.
-
-• Optimization:
-
-Explore cloud deployment and representative agent strategies.
-
-• Testing:
-
-Conduct small-group tests for potential deployment options.
-
-• Documentation:
-
-Improve internal documentation to streamline development processes.
-
-
-
-5. Next Steps and Review Plan:
-
-
-
-• Short-Term:
-
-• Focus on UI interactivity and system optimization.
-
-• Address scalability issues with high-density simulations.
-
-• Long-Term:
-
-• Continue testing and refining simulations.
-
-• Document progress thoroughly to enhance team collaboration.
-
-
-
-Meeting Conclusion:
-
-
-
-• The team acknowledged current challenges and outlined clear steps to address them.
-
-• Progress will be reviewed in the next sprint, focusing on integration, testing, and optimization.
-
-
+-  The team acknowledged current challenges and outlined clear steps to address them.
+-  Progress will be reviewed in the next sprint, focusing on integration, testing, and optimisation.
