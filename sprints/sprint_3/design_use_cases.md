@@ -166,7 +166,7 @@
     - assert message is sent to appropriate Rabbit queue
 
 
-## D3 (v2) [[Updated from D3 (v1)]](../sprint_2/design_use_cases.md)
+## D3 (v2) [Updated from D3 (v1)]
 
 1. **Title**: Agent infection state update subroutine
 2. **Purpose**: To simulate an agent's infection state transition within a single time step of the simulation
@@ -211,7 +211,7 @@
     - assert that agent state transitioned to new expected state
     - repeat above for every possible state transition
 
-## D4 (v2) [[Updated from D4 (v1)]](../sprint_2/design_use_cases.md)
+## D4 (v2) [Updated from D4 (v1)]
 
 1. **Title**: Agent location update subroutine
 2. **Purpose**: To simulate movement of an agent within a single timestep of the simulation
