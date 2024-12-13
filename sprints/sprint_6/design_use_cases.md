@@ -1,6 +1,6 @@
 # Design Use Cases
 
-## D7 (v2) [[Updated from D7 (v1)]](../sprint_3)
+## D7 (v2) [Updated from D7 (v1)]
 
 **Title:** Init Receiver (InitRx)
 **Purpose:** To allow a remote endpoint to start a new simulation
@@ -30,7 +30,7 @@
 
 ---
 
-### D11 (v2) [[Updated from D11 (v2)]](../sprint_3)
+### D11 (v2) [Updated from D11 (v2)]
 
 1. **Title**: Manage game messages
 2. **Purpose**: Connect a Sim engine instance to the UI displayed to a User
