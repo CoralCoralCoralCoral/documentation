@@ -8,7 +8,7 @@ As a **user** I want to **take actions that improve the accuracy and breadth of 
 
 #### Acceptance criteria
 
-Are there a set of actions that improve the accuracy and breadth of information revealed to the user?
+There is a set of actions that improve the accuracy and breadth of information revealed to the user.
 
 ### 14 (v1)
 
@@ -16,7 +16,7 @@ As a **user** I want to **take intervening actions** so that **I can control the
 
 #### Acceptance criteria
 
-Are there a set of actions that allows the user to intervene in the spread of the pathogen?
+There is a set of actions that allows the user to intervene in the spread of the pathogen.
 
 ### 15 (v1)
 
@@ -24,7 +24,7 @@ As a **user** I want to **take actions that expand my knowledge of the disease**
 
 #### Acceptance criteria
 
-Are there a set of actions that allow the user to improve the effectiveness of their interventions?
+There is a set of actions that allow the user to improve the effectiveness of their interventions.
 
 ## Revised User Stories
 
@@ -34,7 +34,7 @@ As a **user** I want to **be given feedback when my performance drops below some
 
 #### Acceptance criteria
 
-Does the user receive feedback when their performance drops below a set threshold?
+The user can receive feedback when their performance drops below a set threshold.
 
 
 ## Final Set
