@@ -396,6 +396,8 @@ The current behaviour of the Oracle is the following:
 
 New triggers can be implemented for the Oracle by following the reference implementation.
 
+### RabbitMQ
+
 We use RabbitMQ as a messaging service between the API Server and any number of Simulation Engine instances. 
 
 #### Topology
