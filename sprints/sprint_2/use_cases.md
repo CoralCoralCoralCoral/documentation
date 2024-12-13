@@ -1,6 +1,8 @@
 
 # Use Cases
 
+## 5 (v1) [User Story 6 v1]
+
 **Title:** Geo Visualisation of Jurisdiction
 
 **Purpose:** Display the Local Authority Districts and MSOA contained within them, visualised on a map.
@@ -36,7 +38,7 @@
 
 ---
 
-## 6 (v1) [[User story 6 v1]](user_stories.md)
+## 6 (v1) [User story 6 v1]
 
 **Title:** Implement Actions Within a Geographic Scope
 
@@ -71,7 +73,7 @@
 
 ---
 
-### 7 (v1) [[User story 7 v1]](user_stories.md)
+### 7 (v1) [User story 7 v1]
 
 **Title:** Manage Resources for Realistic and Challenging Gameplay
 
