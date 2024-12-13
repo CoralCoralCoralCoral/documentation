@@ -325,3 +325,5 @@ You can also set the MapBox API key in a file, using the same syntax as setting 
 You have been informed that a disease has broken out in your country and the government has chosen you to lead the epidemic response team. Your goal is to stop the spread of the disease, while limiting the damage the disease does, both economically and by number of dead. You have to manage your resources wisely to best combat the epidemic. Be warned the infection rates you are aware of are not necessarily the real infection rates. To better understand the disease, you must invest in testing. If you manage to stop the disease from spreading you have completed your task and have won the game, but at what cost? You can see after the game the rate of spread, the number of dead and the GDP impact of the epidemic as well as how your actions impacted these. Learn from your mistakes and successes to improve your strategies for next time you play.
 
 ## Controls
+![image](Screenshot 1.png)
+![image](Screenshot 2.png)
