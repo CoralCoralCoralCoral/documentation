@@ -18,7 +18,7 @@ This is the simplest list of steps to run the app, if you need more information 
 
 1. Install [Docker Desktop](https://docs.docker.com/desktop/)
 2. Open the Docker Desktop app (or otherwise start the docker services)
-3. Download the 'docker-compose.yml' file in this folder
+3. Download the 'docker-compose.yml' file from this link: https://github.com/CoralCoralCoralCoral/documentation/blob/main/manual/docker-compose.yml
 4. Open a terminal/console in the same folder as the compose file
 5. Run the following command: `docker compose -f docker-compose.yml up -d`
 6. Open your browser and visit 'http://localhost:8080/'
@@ -693,3 +693,40 @@ The RabbitMQ docs are very informative, with examples in many popular languages,
 A helpful tool when developing or debugging the project is the RabbitMQ management portal. When you run the appropriate Rabbit version (which we use in the Docker Compose file), you can access the management portal at http://localhost:15672/ using the set username and password, by default those are 'guest' and 'guest'.
 
 From there you can view the setup Exchanges, which queues are defined, where they are attached and with which routing keys. You can also view message statistics and manually dispatch messages to a queue or exchange. More infomation regarding this is available [here](https://www.rabbitmq.com/docs/management).
+
+
+## Appendix
+
+```yaml
+name: Epidemic-Simulation
+
+services:
+  rabbitmq:
+    image: "rabbitmq:4-management"
+    environment:
+      - "RABBITMQ_DEFAULT_PASS=guest"
+      - "RABBITMQ_DEFAULT_USER=guest"
+    expose:
+      - "5672"
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  sim-server:
+    image: ghcr.io/coralcoralcoralcoral/simulation-engine:main
+    environment:
+      - "RMQ_URI=amqp://guest:guest@rabbitmq:5672/"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+  api-server:
+    image: ghcr.io/coralcoralcoralcoral/api-server:main
+    environment:
+      - "SPRING_RABBITMQ_HOST=rabbitmq"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - 8080:8080
+```
