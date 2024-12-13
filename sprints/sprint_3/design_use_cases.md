@@ -16,6 +16,14 @@
 7. **Postcondition**:
     - There are no side-effects (as far as the simulation is concerned) from either of these flows
 
+### Tests
+
+1. Test that Logger receives and publishes events correctly
+
+    - add new logger subscriber, with a closured callback listening to expected messages
+    - log expected messages to the logger
+    - inside the listener callback, assert that expected messages arrive in the correct order
+
 ## D7 (v1)
 
 1. **Title**: Init Receiver (InitRx)
@@ -36,6 +44,15 @@
 7. **Postcondition**:
     - A new simulation instance is running
 
+### Tests
+
+1. Test that InitRx receives init messages from remote endpoint
+
+    - create new InitRx
+    - attach closured callback function to the receiver by calling the OnReceive method
+    - send an init message to the queue init receiver is listening on
+    - assert that the closured callback function receives the init message as expected
+
 ## D8 (v1)
 
 1. **Title**: Command Receiver (CommandRx)
@@ -54,7 +71,17 @@
     - the remote endpoint publishes an invalid command message
     - the simulation engine silently drops the message and continues
 7. **Postcondition**:
+
     - Some side-effects may have been applied as a result of the simulation processing the `Command`
+
+### Tests
+
+1. Test that CommandRx receives command messages from remote endpoint
+
+    - create new CommandRx
+    - attach closured callback function to the receiver by calling the OnReceive method
+    - send an command message to the queue command receiver is listening on
+    - assert that the closured callback function receives the command message as expected
 
 ## D9 (v1)
 
@@ -72,12 +99,21 @@
 6. **Postcondition**:
     - There are no side-effects from this flow
 
+### Tests
+
+1. Test that MetricsTx transmits command messages to remote endpoint
+
+    - create new MetrixTx bound to a test queue
+    - create a mock remote endpoint that consumes from a test queue that metrics tx will publish to
+    - send a metrics message to the test queue
+    - assert that the mock remote endpoint receives the metrics message as expected
+
 ## D3 (v2) [[Updated from D3 (v1)]](../sprint_2/design_use_cases.md)
 
 1. **Title**: Agent infection state update subroutine
 2. **Purpose**: To simulate an agent's infection state transition within a single time step of the simulation
-3. **Associated User Stories**: [3](../sprint_1/user_stories.md)
-4. **Associated Use Cases**: D2
+3. **Associated User Stories**:
+4. **Associated Use Cases**: D2 (v1)
 5. **Actors**: Simulation Engine
 6. **Preconditions**:
     - The main simulation loop is running
@@ -108,12 +144,21 @@
     - the agent's infection state has potentially been updated
     - _if the agent's infection state has changed, log an `AgentStateUpdate` event_
 
+### Tests
+
+1. Test that agent state updates correctly
+
+    - initialize agent in a known state with a known transition duration
+    - call agent state update with mock simulator instance, each time advancing the epoch until known duration is reached
+    - assert that agent state transitioned to new expected state
+    - repeat above for every possible state transition
+
 ## D4 (v2) [[Updated from D4 (v1)]](../sprint_2/design_use_cases.md)
 
 1. **Title**: Agent location update subroutine
 2. **Purpose**: To simulate movement of an agent within a single timestep of the simulation
 3. **Associated User Stories**:
-4. **Associated Use Cases**: D2
+4. **Associated Use Cases**: D2 (v1)
 5. **Actors**: Simulation Engine
 6. **Preconditions**:
     - The main simulation loop is running
@@ -138,3 +183,11 @@
 11. **Post Condition**:
     - the agent's location has potentially been updated
     - _if the agent's location has changed, log an `AgentLocationUpdate` event_
+
+### Tests
+
+1. Test that agent location updates correctly
+
+    - initialize agent in a known location with a known next_move_epoch
+    - call agent state update with mock simulator instance, each time advancing the epoch until known next_move_epoch is reached
+    - assert that agent location transitioned to new expected location (this is not deterministic, as next location is determined randomly, but maybe can be tested using a seeded RNG)

@@ -1,6 +1,6 @@
 # Design Use Cases
 
-## D7 (v2) [[Uodated from D7 (v1)]](../sprint_3)
+## D7 (v2) [[Updated from D7 (v1)]](../sprint_3)
 
 1. **Title**: Init Receiver (InitRx)
 2. **Purpose**: To allow a remote endpoint to start a new simulation
@@ -21,6 +21,15 @@
 7. **Postcondition**:
     - A new simulation instance is running
 
+### Tests
+
+1. Test that InitRx receives init messages from remote endpoint
+
+    - create new InitRx
+    - attach closured callback function to the receiver by calling the OnReceive method
+    - send an init message to the queue init receiver is listening on
+    - assert that the closured callback function receives the init message as expected
+
 ## D12 (v1)
 
 1. **Title**: Event Transmitter (EventTx)
@@ -36,3 +45,12 @@
     - the remote endpoint receives feedback events
 6. **Postcondition**:
     - There are no side-effects from this flow
+
+### Tests
+
+1. Test that EventTx transmits events to remote endpoint
+
+    - create new EventTx bound to a test queue
+    - create a mock remote endpoint that consumes from a test queue that event tx will publish to
+    - send an event message to the test queue
+    - assert that the mock remote endpoint receives the event message as expected
