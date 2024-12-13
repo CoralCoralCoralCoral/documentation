@@ -27,7 +27,34 @@
 
 ---
 
-## D12 (v1)
+### D11 (v2) [[Updated from D11 (v2)]](../sprint_3)
+
+1. **Title**: Manage game messages
+2. **Purpose**: Connect a Sim engine instance to the UI displayed to a User
+3. **Actors**: Api Server
+4. **Preconditions**:
+    - A game has been created and UI is using STOMP via connected websocket
+    - RabbitMQ is running and connected to API Server
+5. **Main Flow**:
+    - API Server listens to the appropriate Rabbit Queue for game _notifications_ and when a message is received forward via a STOMP endpoint using the sim UUID
+    - API Server listens to game commands STOMP endpoint and forwards message to appropriate Rabbit Exchange using sim UUID
+6. **Postcondition**:
+    - Game _notification_ messages are forwarded to UI
+    - Game command messages are forwarded to Sim via Rabbit
+
+### Tests
+
+1. Test _Notification_ messages are consumed from Rabbit and sent to UI
+    - create required Rabbit structures (Exchanges/Queues)
+    - mock a _notification_ message in the appropriate queue
+    - assert message is consumed and received by UI
+
+2. Test Command messages are received and sent to Rabbit
+    - create required Rabbit structures (Exchanges/Queues)
+    - mock a command sent to command STOMP endpoint
+    - assert message is sent to appropriate Rabbit queue
+
+## D14 (v1)
 
 **Title:** Event Transmitter (EventTx)
 **Purpose:** To forward select events from a simulation's event log to remote endpoints to serve as feedback messages

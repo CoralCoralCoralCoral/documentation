@@ -108,6 +108,64 @@
     - send a metrics message to the test queue
     - assert that the mock remote endpoint receives the metrics message as expected
 
+## D10 (v1)
+
+1. **Title**: Create Game
+2. **Purpose**: Allow a User to create and start a new simulation
+3. **Actors**: Api Server, UI, User
+4. **Preconditions**:
+    - Rabbit is running and connected to API server
+    - API Server is running and served frontend UI to user
+5. **Main Flow**:
+    - User presses Start Game button
+    - UI provides simulation config options
+    - UI sends POST request to API Server with the config
+    - API Server generates Game UUID
+    - API Server receives Init Sim request and forwards to appropriate Rabbit queue along with generated UUID
+    - API Server responds to POST request with generated UUID
+    - UI initialises a websocket connection and listens to appropriate STOMP endpoints based on UUID
+6. **Postcondition**:
+    - The init game Rabbit Exchange has received a message to pass to an eligible Sim Engine instance
+    - The UI has received the simulation UUID
+    - The UI and Api Server are connected via Websocket and STOMP endpoint subscription setup
+
+### Tests
+
+1. Test API server correctly handles receives Create Game message
+    - create required Rabbit structures (Exchanges/Queues)
+    - Click (Mock) Start Game button
+    - API Server receives message
+    - Assert message is forwarded to Rabbit
+    - Assert response is sent to client
+
+## D11 (v1)
+
+1. **Title**: Manage game messages
+2. **Purpose**: Connect a Sim engine instance to the UI displayed to a User
+3. **Actors**: Api Server
+4. **Preconditions**:
+    - A game has been created and UI is using STOMP via connected websocket
+    - RabbitMQ is running and connected to API Server
+5. **Main Flow**:
+    - API Server listens to the appropriate Rabbit Queue for game metrics and when a message is received forward via a STOMP endpoint using the sim UUID
+    - API Server listens to game commands STOMP endpoint and forwards message to appropriate Rabbit Exchange using sim UUID
+6. **Postcondition**:
+    - Game metrics messages are forwarded to UI
+    - Game command messages are forwarded to Sim via Rabbit
+
+### Tests
+
+1. Test Metrics messages are consumed from Rabbit and sent to UI
+    - create required Rabbit structures (Exchanges/Queues)
+    - mock a metrics message in the appropriate queue
+    - assert message is consumed and received by UI
+
+2. Test Command messages are received and sent to Rabbit
+    - create required Rabbit structures (Exchanges/Queues)
+    - mock a command sent to command STOMP endpoint
+    - assert message is sent to appropriate Rabbit queue
+
+
 ## D3 (v2) [[Updated from D3 (v1)]](../sprint_2/design_use_cases.md)
 
 1. **Title**: Agent infection state update subroutine

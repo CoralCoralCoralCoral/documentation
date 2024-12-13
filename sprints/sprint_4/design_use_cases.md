@@ -1,6 +1,6 @@
 # Design Use Cases
 
-## D10 (v1) [[User Story 13 (v1)]](../sprint_4/use_cases.md)
+## D12 (v1) [[User Story 13 (v1)]](../sprint_4/use_cases.md)
 
 1. **Title**: Healthcare Space Surveillance
 2. **Purpose**: To simulate infectious disease surveillance in healthcare spaces
@@ -35,7 +35,7 @@
     - assert that test result read from queue is equal to expected test result
     - repeat test for different combinations of agent state and `TestStrategy`
 
-## D11 (v1) [[User Story 13 (v1)]](../sprint_4/use_cases.md) [[User Story 16 (v1)]](../sprint_5/use_cases.md)
+## D13 (v1) [[User Story 13 (v1)]](../sprint_4/use_cases.md) [[User Story 16 (v1)]](../sprint_5/use_cases.md)
 
 1. **Title**: Emulation of Test Backlog in Healthcare Spaces
 2. **Purpose**: To emulate a test backlog when a healthcare space's test capacity has been reached
