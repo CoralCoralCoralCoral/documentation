@@ -16,7 +16,7 @@ create-missing = false
 [output.html.search]
 limit-results = 15
 
-[output.typst]
+# [output.typst]
 
-[output.typst.output]
-format = "pdf"
+# [output.typst.output]
+# format = "pdf"
