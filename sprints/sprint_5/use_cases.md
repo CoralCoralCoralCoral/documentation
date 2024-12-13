@@ -126,7 +126,7 @@
 
 ### 4. Actors -- The User.
 
-### 5. Preconditions -- The game has a functioning save systme.
+### 5. Preconditions -- The game has a functioning save system.
 
 ### 6. Main Flow -- regular flow of activities
 
