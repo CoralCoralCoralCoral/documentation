@@ -42,6 +42,18 @@
     - Game _notification_ messages are forwarded to UI
     - Game command messages are forwarded to Sim via Rabbit
 
+### Tests
+
+1. Test _Notification_ messages are consumed from Rabbit and sent to UI
+    - create required Rabbit structures (Exchanges/Queues)
+    - mock a _notification_ message in the appropriate queue
+    - assert message is consumed and received by UI
+
+2. Test Command messages are received and sent to Rabbit
+    - create required Rabbit structures (Exchanges/Queues)
+    - mock a command sent to command STOMP endpoint
+    - assert message is sent to appropriate Rabbit queue
+
 ## D14 (v1)
 
 **Title:** Event Transmitter (EventTx)

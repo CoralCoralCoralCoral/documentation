@@ -129,6 +129,15 @@
     - The UI has received the simulation UUID
     - The UI and Api Server are connected via Websocket and STOMP endpoint subscription setup
 
+### Tests
+
+1. Test API server correctly handles receives Create Game message
+    - create required Rabbit structures (Exchanges/Queues)
+    - Click (Mock) Start Game button
+    - API Server receives message
+    - Assert message is forwarded to Rabbit
+    - Assert response is sent to client
+
 ## D11 (v1)
 
 1. **Title**: Manage game messages
@@ -143,6 +152,18 @@
 6. **Postcondition**:
     - Game metrics messages are forwarded to UI
     - Game command messages are forwarded to Sim via Rabbit
+
+### Tests
+
+1. Test Metrics messages are consumed from Rabbit and sent to UI
+    - create required Rabbit structures (Exchanges/Queues)
+    - mock a metrics message in the appropriate queue
+    - assert message is consumed and received by UI
+
+2. Test Command messages are received and sent to Rabbit
+    - create required Rabbit structures (Exchanges/Queues)
+    - mock a command sent to command STOMP endpoint
+    - assert message is sent to appropriate Rabbit queue
 
 
 ## D3 (v2) [[Updated from D3 (v1)]](../sprint_2/design_use_cases.md)
