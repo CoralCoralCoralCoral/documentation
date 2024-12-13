@@ -8,7 +8,7 @@ As a **user** I want **an oracle to give me advice** so that **I can learn and i
 
 #### Acceptance criteria
 
-Is there a way for the user to receive relevant advice from an oracle that helps them?
+There is a way for the user to receive relevant advice from an oracle that helps them.
 
 ### 6 (v1)
 
@@ -16,7 +16,7 @@ As a **user** I want to **implement actions within a given geographic scope** so
 
 #### Acceptance criteria
 
-Is there a way for the user to scope their actions to an area?
+There is a way for the user to scope their actions to an area.
 
 ### 7 (v1)
 
@@ -24,7 +24,15 @@ As a **user** I want to **to manage resources** so that **the simulation is real
 
 #### Acceptance criteria
 
-Does the game have a way for the user to strategically use resources?
+The game has a way for the user to strategically use resources.
+
+### 8 (v1)
+
+As a **user** I want **to see jurisdictions geographically** so that **I can visualize the epidemic by region**
+
+#### Acceptance criteria
+
+There is a way for the user to receive relevant advice from an oracle that helps them.
 
 ## Revised User Stories
 
@@ -39,6 +47,7 @@ None
 -   5 (v1)
 -   6 (v1)
 -   7 (v1)
+-   8 (v1)
 
 ## Summary of Changes
 
