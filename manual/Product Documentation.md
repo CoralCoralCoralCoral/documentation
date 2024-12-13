@@ -610,3 +610,29 @@ You can also set the MapBox API key in a file, using the same syntax as setting 
 **Note:** Be sure not to commit the file to any source control system.
 
 ### RabbitMQ
+
+We use RabbitMQ as a messaging service between the API Server and any number of Simulation Engine instances. 
+
+#### Topology
+
+It currently handles three main message types:
+
+- Init Game: Sent from the API Server to an Available Sim Engine instance
+  - The message contains config information for the simulation to run
+  - There is one Exchange in topic mode connected to one Queue, many Sim engine instances can subscribe to the same queue with message distribution being handled by Rabbit
+- Game Notifications: Sent from a Simulation running in a Sim engine instance to the API Server
+  - Messages can be of a few types, daily aggregate metrics about infections etc, policy applied on a juristiction, and a message to signify simulation initialisation is complete
+  - There is one Exchange in topic mode connected to a Queue, one API server is subscribed to the Queue, the routing key is the following (`API-UUID` being the API Server UUID) `API-UUID.*`
+- Game Commands: Sent from the API Server to a Simulation in a Sim engine
+  - Messages contain a command type and optional payload which contains extra data, i.e. a pause command would not contain a payload but a policy application would contain the policy type and the juristiction it is applied to
+  - There is one Exchange in topic mode connected to many Queues, each simulation will create a Queue it consumes from using the routing key in the following form (`SIM-UUID` being the Simulation UUID) `*.SIM-UUID`. One Sim engine instance may run many simulations with many attached Queues
+
+#### Online Docs
+
+The RabbitMQ docs are very informative, with examples in many popular languages, including Go and Java (the two used in this project that interact with RabbitMQ), click [here](https://www.rabbitmq.com/docs) to access the start of the RabbitMQ docs. A quick web search for "Rabbit x" will often be enough to find an example of what you want.
+
+#### Web Management console
+
+A helpful tool when developing or debugging the project is the RabbitMQ management portal. When you run the appropriate Rabbit version (which we use in the Docker Compose file), you can access the management portal at http://localhost:15672/ using the set username and password, by default those are 'guest' and 'guest'.
+
+From there you can view the setup Exchanges, which queues are defined, where they are attached and with which routing keys. You can also view message statistics and manually dispatch messages to a queue or exchange. More infomation regarding this is available [here](https://www.rabbitmq.com/docs/management).
