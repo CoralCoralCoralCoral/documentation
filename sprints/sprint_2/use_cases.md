@@ -73,7 +73,7 @@
 
 ---
 
-### 7 (v1) [User story 7 v1]
+## 7 (v1) [User story 7 v1]
 
 **Title:** Manage Resources for Realistic and Challenging Gameplay
 
