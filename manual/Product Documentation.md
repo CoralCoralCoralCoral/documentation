@@ -1,4 +1,4 @@
-# User Manual
+# Product Document
 
 ## Note
 
@@ -262,7 +262,31 @@ The architecture used can change across organisations, using Docker (Swarm), Kub
 
 You may also want to setup an on-prem DNS record to point to the Api-Server for ease of user access, along with generating and setting up SSL certs to allow for https and wss connections.
 
-## User Guide
+## User Maunal
+
+### Synopsis
+You have been informed that a disease has broken out in your country and the government has chosen you to lead the epidemic response team. Your goal is to stop the spread of the disease, while limiting the damage the disease does, both economically and by number of dead. You have to manage your resources wisely to best combat the epidemic. Be warned the infection rates you are aware of are not necessarily the real infection rates. To better understand the disease, you must invest in testing. If you manage to stop the disease from spreading you have completed your task and have won the game, but at what cost? You can see after the game the rate of spread, the number of dead and the GDP impact of the epidemic as well as how your actions impacted these. Learn from your mistakes and successes to improve your strategies for next time you play.
+
+### Controls
+![image](Screenshot1.png)
+![image](Screenshot2.png)
+![image](Screenshot3.png)
+
+1.	Start game button: Press to start the game
+2.	Social policy button: Not currently implemented
+3.	Upgrade infrastructure button: Not currently implemented
+4.	Apply mask mandate button: Applies mask mandate to selected jurisdiction. If no jurisdiction is selected mask mandate is applied everywhere. Mask mandate     reduces the emissions of infections vectors, thus lowering the risks of the disease spreading.
+5.	Lockdown button: Applies lockdown to selected jurisdiction. If no jurisdiction is selected lockdown is applied everywhere. Lockdown stops all movement, but it still allows agents to return to their homes.
+6.	Metrics: Different statistics you can check to see how the epidemic is progressing and how and some areas you might want to focus on.
+7.	Overviews: Different overviews for you to look through, currently only the map view is implemented.
+8.	Main Map: Shows the area that the game is taking place. The brighter red an area is the greater the number of infectioned there.
+9.	Pause/Play button: Press to pause the game and restart the game.
+10.	Quit game button: Press to exit current itteration of game.
+11.	Local Authority Districts (LADs): The middle layer jurisidiction.
+12.	Middle layer Super Output Areas (MSOAs): The lowest layer jurisdiction.
+13. Resources: This is the remaining budget you have. Be carful not to run out.
+14. Oracle: The Oracle will pop up to help you. You can dismiss it by pressing th button.
+
 
 ## Maintenance Guide
 
