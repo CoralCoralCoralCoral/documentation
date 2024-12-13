@@ -1,6 +1,6 @@
 # Design Use Cases
 
-## D7 (v2) [[Uodated from D7 (v1)]](../sprint_3)
+## D7 (v2) [[Updated from D7 (v1)]](../sprint_3)
 
 1. **Title**: Init Receiver (InitRx)
 2. **Purpose**: To allow a remote endpoint to start a new simulation
@@ -21,7 +21,22 @@
 7. **Postcondition**:
     - A new simulation instance is running
 
-## D12 (v1)
+### D11 (v2) [[Updated from D11 (v2)]](../sprint_3)
+
+1. **Title**: Manage game messages
+2. **Purpose**: Connect a Sim engine instance to the UI displayed to a User
+3. **Actors**: Api Server
+4. **Preconditions**:
+    - A game has been created and UI is using STOMP via connected websocket
+    - RabbitMQ is running and connected to API Server
+5. **Main Flow**:
+    - API Server listens to the appropriate Rabbit Queue for game _notifications_ and when a message is received forward via a STOMP endpoint using the sim UUID
+    - API Server listens to game commands STOMP endpoint and forwards message to appropriate Rabbit Exchange using sim UUID
+6. **Postcondition**:
+    - Game _notification_ messages are forwarded to UI
+    - Game command messages are forwarded to Sim via Rabbit
+
+## D14 (v1)
 
 1. **Title**: Event Transmitter (EventTx)
 2. **Purpose**: To forward select events from a simulation's event log to remote endpoints to serve as feedback messages

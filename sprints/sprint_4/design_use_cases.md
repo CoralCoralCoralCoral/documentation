@@ -1,6 +1,6 @@
 # Design Use Cases
 
-## D10 (v1)
+## D12 (v1)
 
 1. **Title**: Healthcare Space Surveillance
 2. **Purpose**: To simulate infectious disease surveillance in healthcare spaces
@@ -22,7 +22,7 @@
 10. **Post Condition**:
     - test results have been added to a queue
 
-## D11 (v1)
+## D13 (v1)
 
 1. **Title**: Emulation of Test Backlog in Healthcare Spaces
 2. **Purpose**: To emulate a test backlog when a healthcare space's test capacity has been reached

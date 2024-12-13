@@ -93,6 +93,21 @@
     - The UI has received the simulation UUID
     - The UI and Api Server are connected via Websocket and STOMP endpoint subscription setup
 
+## D11 (v1)
+
+1. **Title**: Manage game messages
+2. **Purpose**: Connect a Sim engine instance to the UI displayed to a User
+3. **Actors**: Api Server
+4. **Preconditions**:
+    - A game has been created and UI is using STOMP via connected websocket
+    - RabbitMQ is running and connected to API Server
+5. **Main Flow**:
+    - API Server listens to the appropriate Rabbit Queue for game metrics and when a message is received forward via a STOMP endpoint using the sim UUID
+    - API Server listens to game commands STOMP endpoint and forwards message to appropriate Rabbit Exchange using sim UUID
+6. **Postcondition**:
+    - Game metrics messages are forwarded to UI
+    - Game command messages are forwarded to Sim via Rabbit
+
 ## D3 (v2) [[Updated from D3 (v1)]](../sprint_2/design_use_cases.md)
 
 1. **Title**: Agent infection state update subroutine
