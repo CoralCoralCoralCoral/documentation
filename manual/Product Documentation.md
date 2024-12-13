@@ -327,3 +327,16 @@ You have been informed that a disease has broken out in your country and the gov
 ## Controls
 ![image](Screenshot1.png)
 ![image](Screenshot2.png)
+
+1.	Start game button: Press to start the game
+2.	Social policy button: Not currently implemented
+3.	Upgrade infrastructure button: Not currently implemented
+4.	Apply mask mandate button: Applies mask mandate to selected jurisdiction. If no jurisdiction is selected mask mandate is applied everywhere. Mask mandate     reduces the emissions of infections vectors, thus lowering the risks of the disease spreading.
+5.	Lockdown button: Applies lockdown to selected jurisdiction. If no jurisdiction is selected lockdown is applied everywhere. Lockdown stops all movement, but it still allows agents to return to their homes.
+6.	Metrics: Different statistics you can check to see how the epidemic is progressing and how and some areas you might want to focus on.
+7.	Overviews: Different overviews for you to look through, currently only the map view is implemented.
+8.	Main Map: Shows the area that the game is taking place. The brighter red an area is the greater the number of infectioned there.
+9.	Pause/Play button: Press to pause the game and restart the game.
+10.	Quit game button: Press to exit current itteration of game.
+11.	Local Authority Districts (LADs): The middle layer jurisidiction.
+12.	Middle layer Super Output Areas (MSOAs): The lowest layer jurisdiction.
