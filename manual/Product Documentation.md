@@ -327,6 +327,7 @@ You have been informed that a disease has broken out in your country and the gov
 ## Controls
 ![image](Screenshot1.png)
 ![image](Screenshot2.png)
+![image](Screenshot3.png)
 
 1.	Start game button: Press to start the game
 2.	Social policy button: Not currently implemented
@@ -340,3 +341,5 @@ You have been informed that a disease has broken out in your country and the gov
 10.	Quit game button: Press to exit current itteration of game.
 11.	Local Authority Districts (LADs): The middle layer jurisidiction.
 12.	Middle layer Super Output Areas (MSOAs): The lowest layer jurisdiction.
+13. Resources: This is the remaining budget you have. Be carful not to run out.
+14. Oracle: The Oracle will pop up to help you. You can dismiss it by pressing th button.
