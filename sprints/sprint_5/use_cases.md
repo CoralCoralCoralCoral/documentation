@@ -1,6 +1,6 @@
 # Use Cases
 
-### 14 (v1) [[User story 15 v1]](../sprint_4/user_stories.md) [[User story 12 v1]](../sprint_3/user_stories.md)
+### 14 (v1) [User story 15 v1]
 
 **Title:** Accuracy Changes by Area
 
@@ -44,7 +44,7 @@
 
 ---
 
-### 15 (v1) [[User story 14 v1]](../sprint_4/user_stories.md)
+### 15 (v1) [User story 14 v1]
 
 **Title:** Prioritize Testing for High-Risk Groups  
 
@@ -73,7 +73,7 @@
 
 ---
 
-### 16 (v1) [[User story 16 v1]](user_stories.md)
+### 16 (v1) [User story 16 v1]
 
 **Title:** See How Delayed Testing Affects the Outbreak  
 
@@ -101,7 +101,7 @@
 
 ---
 
-### 17 (v1) [[User story 10 v2]](user_stories.md)
+### 17 (v1) [User story 10 v2]
 
 **Title:** Save Games  
 
@@ -130,7 +130,7 @@
 
 ---
 
-### 18 (v1) [[User story 19 v1]](user_stories.md)
+### 18 (v1) [User story 19 v1]
 
 **Title:** Load Games  
 
