@@ -30,7 +30,7 @@
 
 **Postcondition:** The user has access to an intuitive and visually appealing interface to monitor the simulation.
 
-### 9. Tests
+### Tests
 
 #### Test 1 (Start game UI)
 - Step 1: In the test suite navigate to the start up screen of the game. If start up screen does not load FAIL.
@@ -76,7 +76,7 @@
 
 **Postcondition:** The user can seamlessly interact with the game to influence the simulation. 
 
-### 9. Tests
+### Tests
 
 #### Test 1 (UI interaction)
 - Step 1: For each interaction:
