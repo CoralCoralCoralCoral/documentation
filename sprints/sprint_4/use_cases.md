@@ -34,6 +34,13 @@
 
 **Postcondition:** The game is paused, and the user can resume playing at any time.
 
+### 9. Tests
+
+#### Test 1
+- Step 1: Start game and make sure that the game is in a state that would require the oracle to pop up.
+- Step 2: Check to see if oracle pops up when preconditions limit is met. If not FAIL.
+- Step 3: Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
+
 
 
 
@@ -69,7 +76,15 @@
 
 - **Step 3** - The user dismisses the Oracle and continues playing.  
 
+
 **Postcondition:** The game is paused, and the user can resume playing at any time.
+
+### 9. Tests
+
+#### Test 1
+- Step 1: Start game and make sure that the game is in a state that would require the oracle to pop up.
+- Step 2: Check to see if oracle pops up when preconditions limit is met. If not FAIL.
+- Step 3: Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
 
 
 
@@ -105,7 +120,16 @@
 
 - **Step 3** - The user dismisses the Oracle and continues playing.  
 
+
 **Postcondition:** The game is paused, and the user can resume playing at any time.
+
+### 9. Tests
+
+#### Test 1
+- Step 1: Start game and make sure that the game is in a state that would require the oracle to pop up.
+- Step 2: Check to see if oracle pops up when preconditions limit is met. If not FAIL.
+- Step 3: Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
+
 
 
 
@@ -125,7 +149,7 @@
 
 - **Step 1** - The game displays the actions the user can take.  
 
-- **Step 2** - The user selects one of the available surveillance actions. If the user attempts to select an action that is locked, go to Alternative Flow 1.  
+- **Step 2** - The User will select one of the surveillance actions that are currently available. If the user wants to select an action they have not unlocked then go to alternative flow 1.
 
 - **Step 3** - The user enables the selected action.  
 
@@ -140,3 +164,9 @@
 - **Step 3** - The user continues playing.  
 
 **Postcondition:** The action is applied, and a pop-up informs the user of the change.
+
+### 9. Test
+
+#### Test 1
+- Step 1: Select the testing strategy button.
+- Step 2: Select a different testing strategy. Check if it is implemented correctly. If not FAIL.

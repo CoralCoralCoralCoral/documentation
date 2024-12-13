@@ -28,8 +28,23 @@
 
 **Exception:** If the user interface fails to load, the system displays an error message and provides troubleshooting steps. 
 
-**Postcondition:** The user has access to an intuitive and visually appealing interface to monitor the simulation. 
+**Postcondition:** The user has access to an intuitive and visually appealing interface to monitor the simulation.
 
+### 9. Tests
+
+#### Test 1 (Start game UI)
+- Step 1: In the test suite navigate to the start up screen of the game. If start up screen does not load FAIL.
+- Step 2: Check if there is a button to start the game. If button does not exist FAIL.
+
+#### Test 2 (In-game UI)
+- Step 1: Check if the map has loaded. If not FAIL.
+- Step 2: Check if graphs have loaded. If not FAIL.
+- Step 3: Check if contral panel has loaded. If not FAIL.
+
+#### Test 3 (In-game UI Updates)
+- Step 1: Check if the UI is connected to a simulation instance. If not FAIL.
+- Step 2: Check if the UI recieves data from simulation instance at the expected frequency (demermined while running test). If not FAIL.
+- Step 3: Check if UI displays the game state changes. If not FAIL.
 
 
 ### 2 (v1) [[User story 2 v1]](user_stories.md)
@@ -59,6 +74,14 @@
 **Exception:** If input is invalid (e.g. exceeding resource limits), the system displays a warning and suggests corrections. 
 
 **Postcondition:** The user can seamlessly interact with the game to influence the simulation. 
+
+### 9. Tests
+
+#### Test 1 (UI interaction)
+- Step 1: For each interaction:
+  - dispatch interaction when the action would be deemed invalid. If UI does not reject with an "invalid action" message FAIL.
+  - dispatch interaction when the action would be deemed valid. If UI does not accept the action FAIL.
+    - The UI sends a command message to the API server. If the message fails to be sent FAIL.
 
 
 
@@ -91,6 +114,15 @@
 - If the simulation engine encounters issues, the system provides debug options or loads a default scenario. 
 
 **Postcondition:** The simulation runs functionally.
+
+### 9. Tests
+
+#### Test 1 (Simulation functionality)
+- Step 1: Initalize the simulation. If the simulations does not start FAIL.
+- Step 2: Let the simulation run. Check if virus successfully spread in realistic manner with no intervention. If not FAIL.
+- Step 3: Pause the simulation. Check if simulation successfully pauses. If not FAIL.
+- Step 4: Restart the simulation. Check if simulation successfully starts. If not FAIL.
+
 
 
 
@@ -125,3 +157,11 @@
 - If conflicting strategies are chosen (e.g., simultaneous lockdown and mass gatherings), the system provides a warning and requests clarification. 
 
 **Postcondition:** The user experiences diverse gameplay with realistic outcomes based on strategic decisions. 
+
+### 9. Tests
+
+#### Test 1
+- Step 1: Is there a way for a user to select a strategy (policy). If not FAIL.
+- Step 2: Is that successfully implemeted by the system. If not FAIL.
+- Step 3: Can you see the impact of your decision. If not FAIL.
+

@@ -38,6 +38,12 @@
 
 **Postcondition:** The game continues after the user completes their changes, which are implemented by the system.
 
+### 9. Tests
+
+#### Test 1
+- Step 1: Select a specific jurisdiction. Check to see if metrics shown are from that jurisdiction chosen. If not FAIL.
+- Step 2: Increase testing investment. Check if this has the correct impact on test metrics shown. If not FAIL.
+
 
 
 ## 15 (v1) [[User story 14 v1]](../sprint_4/user_stories.md)
@@ -64,9 +70,16 @@
 
 ### 8. Postconditions
 
-#### -- High-risk groups are tested, influencing the progression of the epidemic in the simulation.
+#### Postcondition 1 -- High-risk groups are tested, influencing the progression of the epidemic in the simulation.
 
-#### -- If prioritization delays testing for others, the system provides a warning.
+#### Postcondition 2 -- If prioritization delays testing for others, the system provides a warning.
+
+### Tests
+
+#### Test 1
+- Step 1: Select a specific jurisdiction. Check to see if metrics shown are from that jurisdiction chosen. If not FAIL.
+- Step 2: Increase testing investment. Check if this has the correct impact on test metrics shown. If not FAIL.
+
 
 
 ## 16 (v1) [[User story 16 v1]](user_stories.md)
@@ -95,6 +108,12 @@
 
 ### 8. Postcondition -- The simulation reflects the real-world consequences of delays, allowing the player to refine their plans.
 
+### 9. Tests
+
+#### Test 1
+- Step 1: Select a specific jurisdiction. Check to see if metrics shown are from that jurisdiction chosen. If not FAIL.
+- Step 2: Increase testing investment. Check if this has the correct impact on test metrics shown. If not FAIL.
+
 
 
 ## 17 (v1) [[User story 10 v2]](user_stories.md)
@@ -107,7 +126,7 @@
 
 ### 4. Actors -- The User.
 
-### 5. Preconditions -- The game has a functioning save systme.
+### 5. Preconditions -- The game has a functioning save system.
 
 ### 6. Main Flow -- regular flow of activities
 
@@ -123,6 +142,11 @@
 
 ### 8. Postcondition -- The game successfully runs.
 
+### 9. Tests
+
+#### Test 1
+- Step 1: Press the save game button. Check to see if save file is recieved. If not FAIL.
+- Step 2: Start game using recieved save file. Check to see if game continues from where you left off. If not FAIL.
 
 
 ## 18 (v1) [[User story 19 v1]](user_stories.md)
@@ -150,3 +174,8 @@
 #### Exception 1 - Error message is sent to user or system that the save file is not valid.
 
 ### 8. Postcondition -- The game successfully runs from the point of the save.
+
+### 9. Tests
+
+#### Test 1
+- Step 1: Start game using recieved save file. Check to see if game continues from where you left off. If not FAIL.

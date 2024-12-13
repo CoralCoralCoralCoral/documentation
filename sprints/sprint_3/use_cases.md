@@ -30,6 +30,14 @@
 
 **Postcondition:** The game successfully resumes with any changes made during the pause implemented.
 
+### 9. Tests
+
+#### Test 1
+- Step 1: While the game is running, press the pause button. Check to see if game pauses correctly. If not FAIL.
+- Step 2: While the game is paused check metrics. If metrics do not appear FAIL.
+- Step 3: While the game is paused implement an action. If action is not implemented FAIL.
+- Step 4: While the game is paused, press the play button. Check to see if game restarts correctly. If not FAIL.
+- Step 5: While the game is running, check to see if any actions implemented while paused have been correctly implemented. If not FAIL.
 
 
 ### 9 (v1) [[User story 11 v1]](user_stories.md)
@@ -56,4 +64,10 @@
 
 **Postcondition:** The game continues playing.
 
-**Tests:** Does the map update when the button has been pressed by the player?
+### 9. Tests
+
+#### Test 1
+- Step 1: While game is running, check to see if metrics update to show correct information. If not FAIL.
+- Step 2: Click on a LAD. Check to see if metrics update to show that specific LAD's metrics. If not FAIL.
+- Step 3: Click on MSOA. Check to see if metrics update to show that specific MSOA's metrics. If not FAIL.
+
