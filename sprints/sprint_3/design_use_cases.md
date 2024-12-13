@@ -72,6 +72,27 @@
 6. **Postcondition**:
     - There are no side-effects from this flow
 
+## D10 (v1)
+
+1. **Title**: Create Game
+2. **Purpose**: Allow a User to create and start a new simulation
+3. **Actors**: Api Server, UI, User
+4. **Preconditions**:
+    - Rabbit is running and connected to API server
+    - API Server is running and served frontend UI to user
+5. **Main Flow**:
+    - User presses Start Game button
+    - UI provides simulation config options
+    - UI sends POST request to API Server with the config
+    - API Server generates Game UUID
+    - API Server receives Init Sim request and forwards to appropriate Rabbit queue along with generated UUID
+    - API Server responds to POST request with generated UUID
+    - UI initialises a websocket connection and listens to appropriate STOMP endpoints based on UUID
+6. **Postcondition**:
+    - The init game Rabbit Exchange has received a message to pass to an eligible Sim Engine instance
+    - The UI has received the simulation UUID
+    - The UI and Api Server are connected via Websocket and STOMP endpoint subscription setup
+
 ## D3 (v2) [[Updated from D3 (v1)]](../sprint_2/design_use_cases.md)
 
 1. **Title**: Agent infection state update subroutine
