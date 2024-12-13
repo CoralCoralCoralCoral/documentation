@@ -11,7 +11,7 @@ The goal of this sprint is to create a first prototype for the game.
 
 ### Sprint Review
 ###### We decided:
-- We should standardize our User Stories.
+- We should standardise our User Stories.
 - Further work is needed on the prototypes.
 - We needed to begin working on Use Cases.
 
@@ -82,21 +82,19 @@ N/A
 - **Agenda:** Finalise technology decisions, UI mockups and distribute sprint tasks.
 - **Ongoing Collaboration:** Use a mix of online and in-person sessions for effective teamwork.
   
+---
 
 ### Meeting 2 
 **Date:** 2024-11-02
 **Location:** Teams
 
 
-##### Agenda:
+#### Agenda:
  
- 1. Feedback Review and Next steps for Prjoect develpment
-
- 2. Simulation prototypying and Framework stepup
-
- 3. Sprint Documentation and Workflow
-
- 4. Schedule for Next meeting
+ 1. Feedback review and next steps for project development.
+ 2. Simulation prototyping and framework setup.
+ 3. Sprint documentation and workflow.
+ 4. Schedule for next meeting.
 
 
 ### Discussion Points
@@ -132,7 +130,7 @@ We were advised by the customer to keep the initial prototype simple to ensure c
   - Finalise Spring Boot setup and UI framework.
   - Review backlog items and documentation.
 
-
+---
 
 ### Meeting 3 
 Date: 2024-11-03
@@ -175,7 +173,7 @@ This meeting was to decide on the intial prototype.
 -   Develop prototype
 
 
-
+---
 
 
 ### Sprint 1 Customer Meeting

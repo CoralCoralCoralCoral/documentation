@@ -25,10 +25,12 @@ Since we were dealing with a lot more integration tasks (having the UI stream up
 ## Exception Handling
 Simulation engine produces too much data to be stored on the clientside, if we decided to send updates on every tick. So we decided to aggregate simulation metrics per ingame day, before sending it to the client. This lead to design of an entrire module dedicated to metrics.
 
+---
+
 ## Meeting Minutes
 
 ### Meeting 1 (Sprint Planning)
-**Date:** 13/11/2024
+**Date:** 2024-11-13
 **Place:** Unrecorded
 
 ### Sprint Goals
@@ -43,13 +45,13 @@ Simulation engine produces too much data to be stored on the clientside, if we d
 
 #### Advisory Systems (Oracle)
 
--  Oracle should provide scripted notifications based on predefined thresholds ( e.g., hospital capacity reaching 90%).
+-  Oracle should provide scripted notifications based on predefined thresholds (e.g. hospital capacity reaching 90%).
 - Include a menu option where users can request advice based on current game play. 
-- Oracle can be styled as an assistant( e.g., an advisor to a public health official) for better gameplay.
+- Oracle can be styled as an assistant(e.g. an advisor to a public health official) for better gameplay.
 
 **User Interface (UI):**
-- A stats page for zooming into specific areas and viewing detailed metrics
-- Visual elements inspired by real-world tools( maps)
+- A stats page for zooming into specific areas and viewing detailed metrics.
+- Visual elements inspired by real-world tools (maps).
  
 **Simulation Framework:**
 - A way to integrate a compliance server to allow real-time adjustment during simulations.
@@ -73,26 +75,26 @@ Simulation engine produces too much data to be stored on the clientside, if we d
 - Prepare a structured demo for the customer meeting.
 
 **Summary**
- The team agreed on key deliverables for next sprint and emphasized importance of addressing scalability and user engagements. 
+ The team agreed on key deliverables for next sprint and emphasised importance of addressing scalability and user engagements. 
 
+---
 
 ### Meeting 2
-**Date:** 16/11/2024
+**Date:** 2024-11-16
 **Location:** Unrecorded
-Objective?
 
 #### Agenda
 
-**Updates and Issues**
+**1. Updates and Issues**
 - GitHub access rights and merging conflicts.
 - Progress updates on assigned tasks.
 - Addressing missing files and repository concerns.
 
-**Sprint Documentation Tasks**
+**2. Sprint Documentation Tasks**
 - Assigning roles for meeting notes, user stories and sprint documentation.
 - Reviewing user stories and use cases.
 
-**Clarifications and Next Steps**
+**3. Clarifications and Next Steps**
 - Task breakdown for the upcoming week
 - Schedule meetings.
 
@@ -126,7 +128,7 @@ User stories should be refined using lecture notes to attain consistency.
 Use structured templates for clarity in Sprint documents.
 
 
-Agreed Action plan before next meeting
+##### Agreed Action plan before next meeting:
 
 1) Finalise user stories for Sprint 1 and 2.
 
@@ -134,12 +136,14 @@ Agreed Action plan before next meeting
 
 3) Complete meeting notes and sprint documentation.
 
+---
+
 ### Customer Meeting and Analysis
-**Date:** 13/11/2024
+**Date:** 2024-11-13
 
 #### Discussion Points
 
-**Simulation:**
+##### Simulation:
 - The game simulates the spread of an epidemic using discretized version of the SEIR model and the Wells-Riley equation for infection dynamics.
 - ###### Key factors include:
   - **Space Characteristics:** Volume, ventilation rate, and population density.
@@ -148,32 +152,30 @@ Agreed Action plan before next meeting
 
 **Demonstration:**
 
-- **Simulation Setup:**
-  - Pathogen Properties: Covid-like characteristics with a 7-day incubation period.
-  - Time resolution: Metrics recorded every 15 minutes but displayed daily.
-  - Metrics Displayed:
+- ######  Simulation Setup:
+  - **Pathogen Properties:** Covid-like characteristics with a 7-day incubation period.
+  - **Time resolution:** Metrics recorded every 15 minutes but displayed daily.
+  - **Metrics Displayed:**
     - New infections.
     - Total active infections.
     - Mean Serial interval.
   
-**Interactions:**
- - Enabling a mask mandate lowered infection rates
- - Lockdown reduced movements but showed more drastic results.
+- ###### Interactions:
+  - Enabling a mask mandate lowered infection rates
+  - Lockdown reduced movements but showed more drastic results.
 
-**Technical Insights:**
-- The simulation uses a custom-built-agent-based framework.
-- The current setup can simulate 150,000 agents, with scalability planned for millions.
-
-
+- ###### Technical Insights:
+  - The simulation uses a custom-built-agent-based framework.
+  - The current setup can simulate 150,000 agents, with scalability planned for millions.
 
 
 #### Feedback from the Customer
 
 **Target Audience:**
-Customer asked who the target audience are; Team Coral specified that it include both public health officials and general academics. The game will also ensure accessibility to wilder audiences through gamified learning. 
+Customer asked who the target audience is. Team Coral specified that it include both public health officials and general academics. The game will also ensure accessibility to wilder audiences through gamified learning. 
 
 **Simulation Features:**
-Customer asked if game can be incorporated to mimic other pathogens? The game have functionality to modify pathogen profiles dynamically( e.g., incubation period, recovery rate, immunity duration).The game also explore ways to simulate broader economic and social impacts, such as GDP changes due to intervention like lockdown.
+Customer asked if game can be incorporated to mimic other pathogens? The game have functionality to modify pathogen profiles dynamically (e.g. incubation period, recovery rate, immunity duration). The game also explore ways to simulate broader economic and social impacts, such as GDP changes due to intervention like lockdown.
 
 **Oracle Improvements:**
 Customer asked how Oracle could be implemented into the game. The game provides actionable advice during interventions, such as when and how to implement specific measures. It also include real-time metrics and projections to enhance user decision-making.

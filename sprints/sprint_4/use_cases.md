@@ -34,15 +34,12 @@
 
 **Postcondition:** The game is paused, and the user can resume playing at any time.
 
-### 9. Tests
+**Test:**
+- **Step 1** - Start game and make sure that the game is in a state that would require the oracle to pop up.
+- **Step 2** - Check to see if oracle pops up when preconditions limit is met. If not FAIL.
+- **Step 3** - Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
 
-#### Test 1
-- Step 1: Start game and make sure that the game is in a state that would require the oracle to pop up.
-- Step 2: Check to see if oracle pops up when preconditions limit is met. If not FAIL.
-- Step 3: Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
-
-
-
+---
 
 ### 11 (v1) [[User story 5 v2]](user_stories.md)
 
@@ -79,14 +76,12 @@
 
 **Postcondition:** The game is paused, and the user can resume playing at any time.
 
-### 9. Tests
+ **Test:**
+- **Step 1** -  Start game and make sure that the game is in a state that would require the oracle to pop up.
+- **Step 2** - Check to see if oracle pops up when preconditions limit is met. If not FAIL.
+- **Step 3** - Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
 
-#### Test 1
-- Step 1: Start game and make sure that the game is in a state that would require the oracle to pop up.
-- Step 2: Check to see if oracle pops up when preconditions limit is met. If not FAIL.
-- Step 3: Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
-
-
+---
 
 ### 12 (v1) [[User story 5 v2]](user_stories.md)
 
@@ -123,15 +118,12 @@
 
 **Postcondition:** The game is paused, and the user can resume playing at any time.
 
-### 9. Tests
+**Test:** 
+- **Step 1** - Start game and make sure that the game is in a state that would require the oracle to pop up.
+- **Step 2** - Check to see if oracle pops up when preconditions limit is met. If not FAIL.
+- **Step 3** - Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
 
-#### Test 1
-- Step 1: Start game and make sure that the game is in a state that would require the oracle to pop up.
-- Step 2: Check to see if oracle pops up when preconditions limit is met. If not FAIL.
-- Step 3: Dismiss the oracle and restart the game. Check to see if game restarts correctly. If not FAIL.
-
-
-
+---
 
 ### 13 (v1) [[User story 13 v1]](user_stories.md)
 
@@ -165,8 +157,6 @@
 
 **Postcondition:** The action is applied, and a pop-up informs the user of the change.
 
-### 9. Test
-
-#### Test 1
-- Step 1: Select the testing strategy button.
-- Step 2: Select a different testing strategy. Check if it is implemented correctly. If not FAIL.
+**Test:**
+- **Step 1** - Select the testing strategy button.
+- **Step 2** - Select a different testing strategy. Check if it is implemented correctly. If not FAIL.

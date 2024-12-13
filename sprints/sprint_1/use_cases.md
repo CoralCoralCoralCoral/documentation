@@ -46,6 +46,7 @@
 - Step 2: Check if the UI recieves data from simulation instance at the expected frequency (demermined while running test). If not FAIL.
 - Step 3: Check if UI displays the game state changes. If not FAIL.
 
+---
 
 ### 2 (v1) [[User story 2 v1]](user_stories.md)
 
@@ -83,7 +84,7 @@
   - dispatch interaction when the action would be deemed valid. If UI does not accept the action FAIL.
     - The UI sends a command message to the API server. If the message fails to be sent FAIL.
 
-
+---
 
 ## 3 (v1) [[User story 3 v1]](user_stories.md)
 
@@ -124,7 +125,7 @@
 - Step 4: Restart the simulation. Check if simulation successfully starts. If not FAIL.
 
 
-
+---
 
 ### 4 (v1) [[User story 4 v1]](user_stories.md)
 
@@ -164,4 +165,3 @@
 - Step 1: Is there a way for a user to select a strategy (policy). If not FAIL.
 - Step 2: Is that successfully implemeted by the system. If not FAIL.
 - Step 3: Can you see the impact of your decision. If not FAIL.
-

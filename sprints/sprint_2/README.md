@@ -57,7 +57,7 @@ Place: Teams
 - Use the provided template for sprint documentation.
 
 ##### Next Meeting Schedule:
-**Date:** Monday(2024-11-11)
+**Date:** Monday (2024-11-11)
 **Agenda:**
 - A functional backend setup (Sprint Boot Scaffolding) by next meeting.
 - Initial UI with a grid overlay and basic agent interactions.
@@ -67,18 +67,16 @@ Place: Teams
 ##### Conclusion
  The team  took the customer's advice on board by focusing on simplicity and making improvements as the game development advances. Also discussed different ways to collaborate to ensure team is on track with a clear roadmap for next sprint. 
 
+---
+
 ### Meeting 2 
 **Date:** 2024-11-11
 **Place:** School of Management
 
-##### Agenda:
-
+#### Agenda:
 1. Review of sprint documentation.
-
 2. Updates on ongoing project components.
-
 3. Discussion of feedback and next steps.
-
 
 
 ### Discussion Points
@@ -98,8 +96,6 @@ Place: Teams
 **Action Items:**
 - Finalise documentation for the last sprint and ensure consistency across all future sprints.
 - Include sections for code updates and user stories.
-
-
 
 #### Sprint Activities and Updates
 **UI Development:**
@@ -130,8 +126,6 @@ Place: Teams
 **Data Streaming:**
 - Simulation data designed to stream events, allowing integration with Spring Boot systems for further analysis and visualization.
 
-
-
 #### Challenges and Feedback
 
 **Feedback from Advisors:**
@@ -141,8 +135,6 @@ Place: Teams
 **Challenges:**
 - Balancing complexity with clarity.
 - Handling computational efficiency for large-scale simulations (e.g. 400,000 agents).
-
-
 
 #### Next Steps
 
@@ -158,8 +150,6 @@ Place: Teams
 - Establish workflows for integrating team contributions via GitHub.
 - Schedule follow-up meetings to review progress and refine tasks.
 
-
-
 **Key Decisions:**
 - Use Spring Boot for backend management and GIS data for map-based modeling.
 - Adopt a phased approach for simulation development:
@@ -169,6 +159,7 @@ Place: Teams
   2. Gradually incorporate additional variables like ventilation and transit spaces.
 
 - Prioritise resource management in the simulation to reflect real-world scenarios (e.g. GDP impacts, hospital capacity).
+
 ## Backlog
 
 -   Develop prototype

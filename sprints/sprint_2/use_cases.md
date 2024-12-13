@@ -1,40 +1,40 @@
 
 # Use Cases
 
-### 1. Title -- Geo Visualisation of Jurisdictions
+**Title:** Geo Visualisation of Jurisdiction
 
-  ### 2. Purpose -- Display the Local Authority Districts and MSOA contained within them, visualized on a map.
+**Purpose:** Display the Local Authority Districts and MSOA contained within them, visualised on a map.
 
 **Purpose:** As a user, I want to implement actions within a given geographic scope so that I can use resources efficiently.
 
-### 4. Actors -- The System and the User
+**Actors:** 
+- System
+- User
 
-### 5. Preconditions -- Data for LAD and MSOA is loaded onto the UI. 
+**Preconditions:**  Data for LAD and MSOA is loaded onto the UI. 
 
 **Main Flow:** Regular flow of activities.
 
-#### Step 1 -  UI map shows the outlines for the LADs.
+- **Step 1** -  UI map shows the outlines for the LADs.
 
-#### Step 2 - The User selects a LAD.
+- **Step 2** - The User selects a LAD.
 
-#### Step 3 - The System zooms into the LAD and displays the MSOAs within the LAD.
+- **Step 3** - The System zooms into the LAD and displays the MSOAs within the LAD.
 
 - **Step 4** - The system updates the simulation to reflect the effects of the action in the chosen area. 
 
 **Alternative Flow:** Exceptions to main flow.
 
-### 8. Postcondition -- Actions are successfully applied within the specified geographic scope, optimizing resource use. 
+**Postcondition:** Actions are successfully applied within the specified geographic scope, optimizing resource use. 
 
-### 9. Tests
+**Test:** 
+- **Step 1:** Check if LAD outlines are displayed on the map. If not FAIL.
+- **Step 2:** Select LAD. Check if the currently selected LAD is the LAD that was selected. If not FAIL.
+- **Step 3:** Check if the map state has been updated to reflect the selected LAD. If not FAIL.
+- **Step 4:** Check if map zooms to the bounds of the selected LAD. If not FAIL.
+- **Step 5:** Check if the outlines of the MSOAs within the LAD are displayed on the map. If not FAIL. 
 
-#### Test 1
-- Step 1: Check if LAD outlines are displayed on the map. If not FAIL.
-- Step 2: Select LAD. Check if the currently selected LAD is the LAD that was selected. If not FAIL.
-- Step 3: Check if the map state has been updated to reflect the selected LAD. If not FAIL.
-  - Check if map zooms to the bounds of the selected LAD. If not FAIL.
-  - Check if the outlines of the MSOAs within the LAD are displayed on the map. If not FAIL. 
-
-
+---
 
 ## 6 (v1) [[User story 6 v1]](user_stories.md)
 
@@ -59,21 +59,17 @@
 
 **Alternative Flow:** Exceptions to main flow.
 
-**Exception:** If the user tries to apply actions to an unselected region, the system provides a prompt to select a scope first. 
+**Exception:** If the user tries to apply actions to an unselected region, the system provides a prompt to select a scope first.  
 
-#### Exception 1 - If the user tries to apply actions to an unselected region, the system provides a prompt to select a scope first. 
+**Postcondition:** Actions are successfully applied within the specified geographic scope, optimising resource use.
 
-### 8. Postcondition -- Actions are successfully applied within the specified geographic scope, optimizing resource use.
-
-### 9. Tests
-
-#### Test 1
-- Step 1: Select a region on the map.
+**Test:** 
+- **Step 1:** Select a region on the map.
   - Does the region get highlighted. If not FAIL.
   - Does the region's metrics get shown on the sidebar. If not FAIL.
-- Step 2: Implement a policy. Does the sidebar show that the policy is active. If not FAIL
+- **Step 2:** Implement a policy. Does the sidebar show that the policy is active. If not FAIL
 
-
+---
 
 ### 7 (v1) [[User story 7 v1]](user_stories.md)
 
@@ -99,16 +95,16 @@
 
 **Exception:** If resources run low, the system provides alerts and suggests ways to obtain more (e.g., reallocating or prioritizing).
 
-### 9. Tests
+**Tests:**
 
-#### Test 1 (On Action Costs)
-- Step 1: Check to see if resources are visable on UI. If not FAIL.
-- Step 2: Check if actions have visable resource cost. If not FAIL.
-- Step 3: Implement an action. Check to see if resources are deducted by expected amount. If not FAIL.
+- **Test 1 - Action Costs**
+  - **Step 1:** Check to see if resources are visable on UI. If not FAIL.
+  - **Step 2:** Check if actions have visable resource cost. If not FAIL.
+  - **Step 3:** Implement an action. Check to see if resources are deducted by expected amount. If not FAIL.
 
-#### Test 2 (Running Costs)
-- Step 1: Run game.
-- Step 2: Implement testing.
-- Step 3: Check to see if resources are deducted regularly by expected amount. If not FAIL.
+- **Test 2 - Running Costs**
+  - **Step 1:** Run game.
+  - **Step 2:** Implement testing.
+  - **Step 3:** Check to see if resources are deducted regularly by expected amount. If not FAIL.
   
 
