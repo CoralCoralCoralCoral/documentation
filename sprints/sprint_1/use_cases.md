@@ -1,6 +1,6 @@
 # Use Cases
 
-### 1 (v1) [[User story 1 v1]](user_stories.md)
+### 1 (v1) [User story 1 v1]
 **Title:** UI
 
 **Purpose:** Have a good visualisation of the information for the user.
@@ -48,7 +48,7 @@
 
 ---
 
-### 2 (v1) [[User story 2 v1]](user_stories.md)
+### 2 (v1) [User story 2 v1]
 
 **Title:** Enable Interactive Gameplay 
 
@@ -86,7 +86,7 @@
 
 ---
 
-## 3 (v1) [[User story 3 v1]](user_stories.md)
+## 3 (v1) [User story 3 v1]
 
 **Title:** Simulate Epidemic Scenarios 
 
@@ -127,7 +127,7 @@
 
 ---
 
-### 4 (v1) [[User story 4 v1]](user_stories.md)
+### 4 (v1) [User story 4 v1]
 
 **Title:** Use Multiple Strategies for Realistic Gameplay
 
