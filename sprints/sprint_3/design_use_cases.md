@@ -106,7 +106,7 @@
     - this is a noop, return
 13. **Post Condition**:
     - the agent's infection state has potentially been updated
-    - if the agent's infection state has changed, log an `AgentStateUpdate` event
+    - _if the agent's infection state has changed, log an `AgentStateUpdate` event_
 
 ## D4 (v2) [[Updated from D4 (v1)]](../sprint_2/design_use_cases.md)
 
@@ -137,4 +137,4 @@
     - set the `next_move_epoch` to the current epoch + a duration sampled randomly from a normal distribution of expected durations spent seeking treatment in healthcare spaces
 11. **Post Condition**:
     - the agent's location has potentially been updated
-    - if the agent's location has changed, log an `AgentLocationUpdate` event
+    - _if the agent's location has changed, log an `AgentLocationUpdate` event_
