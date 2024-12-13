@@ -1,4 +1,4 @@
-### 19 (v1) [[User story 20 v1]](user_stories.md)
+### 19 (v1) [User story 20 v1]
 
 **Title:** GDP System  
 
@@ -30,7 +30,7 @@
 
 ---
 
-### 20 (v1) [[User story 21 v1]](user_stories.md)
+### 20 (v1) [User story 21 v1]
 
 **Title:** Influence Actions  
 
@@ -62,7 +62,7 @@
 
 ---
 
-### 21 (v1) [[User story 22 v1]](user_stories.md)
+### 21 (v1) [User story 22 v1]
 
 **Title:** Play as Different Countries  
 
@@ -87,7 +87,7 @@
 
 ---
 
-### 22 (v1) [[User story 23 v1]](user_stories.md)
+### 22 (v1) [User story 23 v1]
 
 **Title:** Different Diseases  
 
