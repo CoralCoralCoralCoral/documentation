@@ -154,29 +154,6 @@ This meeting was to decide on the intial prototype.
 
 - We proposed that agents would transition through infections states as laid out in the [SEIRS model](https://www.nature.com/articles/s41592-020-0856-2).
 
-#### Backlog
-
--   Set up sprint documentation format
--   Set up documentation repository
--   Set up sprints and kanban board
--   Develop initial customer stories
--   Develop prototype
-
-#### Complete Backlog Tasks
-
--   Set up sprint documentation format
--   Set up documentation repository
--   Set up sprints and kanban board
--   Develop initial customer stories
-
-#### New Backlog Tasks
-
--   Develop prototype
-
-
----
-
-
 ### Sprint 1 Customer Meeting
 
 Four concepts were pitched to the customer during the meeting.
