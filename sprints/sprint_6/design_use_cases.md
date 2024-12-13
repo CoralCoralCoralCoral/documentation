@@ -19,11 +19,14 @@
 - The simulation engine silently drops the message and continues
 **Postcondition:** A new simulation instance is running
 
-**Test:** Test that InitRx receives init messages from remote endpoint:
-- Create new InitRx.
-- Attach closured callback function to the receiver by calling the OnReceive method.
-- send an init message to the queue init receiver is listening on.
-- assert that the closured callback function receives the init message as expected.
+### Tests
+
+    1. Test that InitRx receives init messages from remote endpoint:
+    
+        - Create new InitRx.
+        - Attach closured callback function to the receiver by calling the OnReceive method.
+        - send an init message to the queue init receiver is listening on.
+        - assert that the closured callback function receives the init message as expected.
 
 ---
 
@@ -70,9 +73,11 @@
 **Postcondition:**
 - There are no side-effects from this flow
 
-**Test:** Test that EventTx transmits events to remote endpoint:
+### Tests
 
-- Create new EventTx bound to a test queue.
-- Create a mock remote endpoint that consumes from a test queue that event tx will publish to.
-- Send an event message to the test queue.
-- Assert that the mock remote endpoint receives the event message as expected.
+    1. Test that EventTx transmits events to remote endpoint:
+
+        - Create new EventTx bound to a test queue.
+        - Create a mock remote endpoint that consumes from a test queue that event tx will publish to.
+        - Send an event message to the test queue.
+        - Assert that the mock remote endpoint receives the event message as expected.
