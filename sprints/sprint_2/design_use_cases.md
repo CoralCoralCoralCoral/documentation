@@ -1,10 +1,10 @@
 # Design Use Cases
 
-## D1 (v1)
+## D1 (v1) [[User Story 3 (v1)]](../sprint_1/use_cases.md)
 
 1. **Title**: Main simulation loop
 2. **Purpose**: To simulate a model in which agents move between spaces over time
-3. **Associated User Stories**:
+3. **Associated User Stories**: 3 (v1)
 4. **Actors**: Simulation Engine
 5. **Preconditions**:
     - The simulation has been initialized (agents, spaces, jurisdictions, etc have been created)
@@ -46,7 +46,7 @@
 1. **Title**: Agent update subroutine
 2. **Purpose**: To simulate the infection state transition and movement of an agent within a single timestep of the simulation
 3. **Associated User Stories**:
-4. **Associated Use Cases**: D1, D3
+4. **Associated Use Cases**: D1 (v1), D3 (v1)
 5. **Actors**: Simulation Engine
 6. **Preconditions**:
     - The main simulation loop is running
@@ -58,12 +58,17 @@
     - the agent's state has potentially been updated
     - the agent's location has potentially been updated
 
+### Tests
+
+1. Perform tests for D3
+2. Perform tests for D4
+
 ## D3 (v1)
 
 1. **Title**: Agent infection state update subroutine
 2. **Purpose**: To simulate an agent's infection state transition within a single time step of the simulation
-3. **Associated User Stories**: [3](../sprint_1/user_stories.md)
-4. **Associated Use Cases**: D2
+3. **Associated User Stories**:
+4. **Associated Use Cases**: D2 (v1)
 5. **Actors**: Simulation Engine
 6. **Preconditions**:
     - The main simulation loop is running
@@ -93,12 +98,21 @@
 13. **Post Condition**:
     - the agent's infection state has potentially been updated
 
+### Tests
+
+1. Test that agent state updates correctly
+
+    - initialize agent in a known state with a known transition duration
+    - call agent state update with mock simulator instance, each time advancing the epoch until known duration is reached
+    - assert that agent state transitioned to new expected state
+    - repeat above for every possible state transition
+
 ## D4 (v1)
 
 1. **Title**: Agent location update subroutine
 2. **Purpose**: To simulate movement of an agent within a single timestep of the simulation
 3. **Associated User Stories**:
-4. **Associated Use Cases**: D2
+4. **Associated Use Cases**: D2 (v1)
 5. **Actors**: Simulation Engine
 6. **Preconditions**:
     - The main simulation loop is running
@@ -123,12 +137,20 @@
 11. **Post Condition**:
     - the agent's location has potentially been updated
 
+### Tests
+
+1. Test that agent location updates correctly
+
+    - initialize agent in a known location with a known next_move_epoch
+    - call agent state update with mock simulator instance, each time advancing the epoch until known next_move_epoch is reached
+    - assert that agent location transitioned to new expected location (this is not deterministic, as next location is determined randomly, but maybe can be tested using a seeded RNG)
+
 ## D5 (v1)
 
 1. **Title**: Space update subroutine
 2. **Purpose**: To simulate the change in state of a space within a single timestep of the simulation
 3. **Associated User Stories**:
-4. **Associated Use Cases**: D1
+4. **Associated Use Cases**: D1 (v1)
 5. **Actors**: Simulation Engine
 6. **Preconditions**:
     - The main simulation loop is running
@@ -141,6 +163,7 @@
 ### Tests
 
 1. Test correctness of discretized Wells-Riley model
+
     - introduce an infectious agent with a known pulmmonary ventilation rate and quanta emission rate into a space with a known volume and ventillation rate
     - simulate some time steps such that the elapsed duration > 0, then record the amount of infectious quanta in the space
     - calculate the expected infectious quanta analytically for the elapsed duration
