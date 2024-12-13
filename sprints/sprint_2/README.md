@@ -160,14 +160,6 @@ Place: Teams
 
 - Prioritise resource management in the simulation to reflect real-world scenarios (e.g. GDP impacts, hospital capacity).
 
-## Backlog
-
--   Develop prototype
--   Refine user stories
--   Implement basic user interface
--   Implement basic epidemic simulation
--   Implement basic http api server
-
 ### Customer Meeting and Analysis
 - Concerns were raised over how many members of the group were missing. This was dealt with later, and explanations were made for those group members missing. Group members had communicated about abscenses over the previous Sprint, a couple illnesses meant there was less members available for the Customer meeting.
 
