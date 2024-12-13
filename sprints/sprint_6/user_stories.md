@@ -67,4 +67,4 @@ N/A
 
 ## Summary of Changes
 
-This initial set of user stories covers the generic gameplay elements we expect out of the game, as well as the educational aspects we intend to cover. We intend to expand on these use cases as we figure out more about the complexities of this type of simulation game as it applies to our collective abilities and time constraints.
+This weeks user stories are things that we will not have time to implement, but would like to implement into the game if we had more time to work on this project.
