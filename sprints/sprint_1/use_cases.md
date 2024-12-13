@@ -1,34 +1,34 @@
 # Use Cases
 
-## 1 (v1) [[User story 1 v1]](user_stories.md)
+### 1 (v1) [[User story 1 v1]](user_stories.md)
+**Title:** UI
 
-### 1. Title -- UI
+**Purpose:** Have a good visualisation of the information for the user.
 
-### 2. Purpose -- Have a good visualisation of the information for the user.
+**Associated User Stories:** 1 (v1)
 
-### 3. Associated User Stories -- 1 (v1)
+**Actors:** 
+- User
+- System
 
-### 4. Actors -- The User and the System
+**Preconditions:** The system has a functional simulation engine ready to display data. 
 
-### 5. Preconditions -- The system has a functional simulation engine ready to display data. 
+**Main Flow:** regular flow of activities.
 
-### 6. Main Flow -- regular flow of activities
+ - **Step 1** - The user opens the webpage.
 
-#### Step 1 - The user opens the webpage.
+ - **Step 2** - The system has a functional simulation engine ready to display data with these key functions: 
+    - A map showing affected areas. 
+    - Graphs showing infection trends. 
+    - A panel with simulation controls (e.g start, pause, reset). 
 
-#### Step 2 - The system has a functional simulation engine ready to display data with these key functions: 
+- **Step 3** - The user observes how data changes over time. 
 
-- A map showing affected areas. 
-- Graphs showing infection trends. 
-- A panel with simulation controls (start, pause, reset). 
+**Alternative Flow:** Exceptions to main flow.
 
-#### Step 3 - The user observes how data changes over time. 
+**Exception:** If the user interface fails to load, the system displays an error message and provides troubleshooting steps. 
 
-### 7. Alternative Flow -- exceptions to main flow
-
-#### Exception - If the user interface fails to load, the system displays an error message and provides troubleshooting steps. 
-
-### 8. Postcondition -- The user has access to an intuitive and visually appealing interface to monitor the simulation. 
+**Postcondition:** The user has access to an intuitive and visually appealing interface to monitor the simulation.
 
 ### 9. Tests
 
@@ -46,32 +46,35 @@
 - Step 2: Check if the UI recieves data from simulation instance at the expected frequency (demermined while running test). If not FAIL.
 - Step 3: Check if UI displays the game state changes. If not FAIL.
 
+---
 
-## 2 (v1) [[User story 2 v1]](user_stories.md)
+### 2 (v1) [[User story 2 v1]](user_stories.md)
 
-### 1. Title -- Enable Interactive Gameplay 
+**Title:** Enable Interactive Gameplay 
 
-### 2. Purpose -- The system provides interactive elements like buttons, sliders, and clickable maps. 
+**Purpose:** The system provides interactive elements like buttons, sliders and clickable maps. 
 
-### 3. Associated User Stories -- 2 (v1)
+**Associated User Stories:** 2 (v1)
 
-### 4. Actors -- The User and the System
+**Actors:**
+- User
+- System
 
-### 5. Preconditions -- The system has a functional simulation engine and UI. 
+**Preconditions:** The system has a functional simulation engine and UI. 
 
-### 6. Main Flow -- regular flow of activities
+**Main Flow:** Regular flow of activities.
 
-#### Step 1 - The user selects options from the interface (e.g., deploying a strategy, adjusting parameters). 
+**Step 1** - The user selects options from the interface (e.g. deploying a strategy, adjusting parameters). 
 
-#### Step 2 - The system responds immediately to user input, updating the simulation in real-time.  
+**Step 2** - The system responds immediately to user input, updating the simulation in real-time.  
 
-#### Step 3 - The user receives feedback on their actions (e.g., changes in infection rates or resource allocation). 
+**Step 3** - The user receives feedback on their actions (e.g. changes in infection rates or resource allocation). 
 
-### 7. Alternative Flow -- exceptions to main flow
+**Alternative Flow:** Exceptions to main flow.
 
-#### Exception - If input is invalid (e.g., exceeding resource limits), the system displays a warning and suggests corrections. 
+**Exception:** If input is invalid (e.g. exceeding resource limits), the system displays a warning and suggests corrections. 
 
-### 8. Postcondition -- The user can seamlessly interact with the game to influence the simulation. 
+**Postcondition:** The user can seamlessly interact with the game to influence the simulation. 
 
 ### 9. Tests
 
@@ -81,35 +84,37 @@
   - dispatch interaction when the action would be deemed valid. If UI does not accept the action FAIL.
     - The UI sends a command message to the API server. If the message fails to be sent FAIL.
 
-
+---
 
 ## 3 (v1) [[User story 3 v1]](user_stories.md)
 
-### 1. Title -- Simulate Epidemic Scenarios 
+**Title:** Simulate Epidemic Scenarios 
 
-### 2. Purpose -- The system provides a range of epidemic scenarios with adjustable parameters (e.g., infection rate, population density). 
+**Purpose:** The system provides a range of epidemic scenarios with adjustable parameters (e.g., infection rate, population density). 
 
-### 3. Associated User Stories -- 3 (v1)
+**Associated User Stories:** 3 (v1)
 
-### 4. Actors -- The User and the System
+**Actors:** 
+- User 
+- System
 
-### 5. Preconditions -- The simulation engine is functional and ready to execute scenarios. 
+**Preconditions:** The simulation engine is functional and ready to execute scenarios. 
 
-### 6. Main Flow -- regular flow of activities
+**Main Flow:** Regular flow of activities
 
-#### Step 1 - The user selects or customizes an epidemic scenario (e.g., a new virus, a specific region). 
+**Step 1** - The user selects or customizes an epidemic scenario (e.g., a new virus, a specific region). 
 
-#### Step 2 - The system runs the simulation, showing the spread of the disease over time. 
+**Step 2** - The system runs the simulation, showing the spread of the disease over time. 
 
-#### Step 3 - The user can pause mid-simulation and restart to take time to think and plan. 
+**Step 3** - The user can pause mid-simulation and rewind post-simulation to explore different outcomes. 
 
-### 7. Alternative Flow -- exceptions to main flow
+**Alternative Flow:**  Exceptions to main flow.
 
-#### Exception 1 - If the selected scenario has errors (e.g., conflicting parameters), the system prompts the user to adjust settings.
+**Exceptions:**
+- If the selected scenario has errors (e.g., conflicting parameters), the system prompts the user to adjust settings.
+- If the simulation engine encounters issues, the system provides debug options or loads a default scenario. 
 
-#### Exception 2 - If the simulation engine encounters issues, the system provides debug options or loads a default scenario. 
-
-### 8. Postcondition -- The simulation run functionally.
+**Postcondition:** The simulation runs functionally.
 
 ### 9. Tests
 
@@ -120,35 +125,39 @@
 - Step 4: Restart the simulation. Check if simulation successfully starts. If not FAIL.
 
 
+---
 
+### 4 (v1) [[User story 4 v1]](user_stories.md)
 
-## 4 (v1) [[User story 4 v1]](user_stories.md)
+**Title:** Use Multiple Strategies for Realistic Gameplay
 
-### 1. Title -- Use Multiple Strategies for Realistic Gameplay
+**Purpose:** As a user, I want to use multiple strategies so that the gameplay is diverse and realistic. 
 
-### 2. Purpose -- As a user, I want to use multiple strategies so that the gameplay is diverse and realistic. 
+**Associated User Stories:** 4 (v1)
 
-### 3. Associated User Stories -- 4 (v1)
+**Actors:**
+- User
+- System
 
-### 4. Actors -- The User and the System
+**Preconditions:** 
+- The system supports a variety of strategies (e.g., lockdowns, mass testing, vaccination campaigns).
+- Each strategy has defined effects and outcomes in the simulation. 
 
-### 5. Preconditions -- The system supports a variety of strategies (e.g., lockdowns, mass testing, vaccination campaigns). Each strategy has defined effects and outcomes in the simulation. 
+**Main Flow:** Regular flow of activities.
 
-### 6. Main Flow -- regular flow of activities
+**Step 1** - The user chooses a strategy from a list or combination of strategies. 
 
-#### Step 1 - The user chooses a strategy from a list or combination of strategies. 
+**Step 2** - The system simulates the impact of the chosen strategies, showing how they affect infection rates and resource usage. The system runs the simulation, showing the spread of the disease over time. 
 
-#### Step 2 - The system simulates the impact of the chosen strategies, showing how they affect infection rates and resource usage. The system runs the simulation, showing the spread of the disease over time. 
+**Step 3** - The user evaluates outcomes and decides whether to adjust or add new strategies. 
 
-#### Step 3 - The user evaluates outcomes and decides whether to adjust or add new strategies. 
+**Alternative Flow:** Exceptions to main flow.
 
-### 7. Alternative Flow -- exceptions to main flow
+**Exceptions:**
+- If a strategy is unavailable due to resource limitations, the system suggests alternatives. 
+- If conflicting strategies are chosen (e.g., simultaneous lockdown and mass gatherings), the system provides a warning and requests clarification. 
 
-#### Exception 1 - If a strategy is unavailable due to resource limitations, the system suggests alternatives. 
-
-#### Exception 2 - If conflicting strategies are chosen (e.g., simultaneous lockdown and mass gatherings), the system provides a warning and requests clarification. 
-
-### 8. Postcondition -- The user experiences diverse gameplay with realistic outcomes based on strategic decisions. 
+**Postcondition:** The user experiences diverse gameplay with realistic outcomes based on strategic decisions. 
 
 ### 9. Tests
 
