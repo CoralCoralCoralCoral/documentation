@@ -67,4 +67,4 @@ N/A
 
 ## Summary of Changes
 
-This weeks user stories are things that we will not have time to implement, but would like to implement into the game if we had more time to work on this project.
+This week's user stories are things that we will not have time to implement, but would like to implement into the game if we had more time to work on this project.
