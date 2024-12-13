@@ -1,4 +1,5 @@
 # Sprint 1: 2024-10-30 to 2024-11-05
+Link to github repositories: https://github.com/orgs/CoralCoralCoralCoral/repositories
 
 ### Sprint Goal
 The goal of this sprint is to create a first prototype for the game.
