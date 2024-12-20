@@ -12,7 +12,7 @@ Learn from your mistakes and successes to improve your strategies for next time 
 As our target user was a healthcare professional or student studying epidemics, we realised that our simulation must be very real life accurate. 
 Therefore, we have used real peer reviewed models to simulate our epidemic.
 
-To start the game, press the start button. **Press the start button.** As you can see the game will take some time to load, then you can begin playing the game. 
+To start the game, press the start button. **Press the start button.** Then you can customize you game as you like **show the adjustable factors** or you can press one of easy, medium or hard presets to start the game **show the buttons then start the game**. As you can see the game will take some time to load, then you can begin playing the game. 
 At any point you can pause and play the game using the pause/play button. **Demonstrate by pausing the game then playing.**
 
 You can see important metrics about the epidemic on the right-hand side.
